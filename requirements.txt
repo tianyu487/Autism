@@ -1,0 +1,8 @@
+# 循证疗愈内容生成器 —— 依赖
+anthropic>=0.40          # Claude 文本生成
+edge-tts>=6.1            # 免费中英双语 TTS(无需密钥,需联网)
+Pillow>=10.2             # 程序化渲染幻灯画面
+pydantic>=2.5            # 结构化数据模型与校验
+PyYAML>=6.0              # 方法库/配置读取
+imageio-ffmpeg>=0.5      # 自带静态 ffmpeg 二进制(无需系统安装)
+python-dotenv>=1.0       # 读取 .env 中的 ANTHROPIC_API_KEY

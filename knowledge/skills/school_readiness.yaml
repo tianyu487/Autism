@@ -1,0 +1,245 @@
+# TEACCH/工作系统证据已核验入库(2026-07-13):
+#   - [[hume_odom_2007]] 独立工作系统提升自闭症学生独立完成任务的实证(直接支撑 independent_work_system)
+#   - [[virues_ortega_2013]] TEACCH 元分析(效应偏小、勿夸大;用于框定结构化教学)
+#   二者卷期/DOI 已核对,现置 verify:true,商用前再终核一次原文。
+
+# =====================================================================
+# 技能领域库:入学/课堂准备技能 School Readiness & Classroom Skills
+# 每个目标(target)标注:发展层级 level、中英描述、可用循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 生成时一并注入,帮助模块选准课堂参与目标、写出可测量的 learning_objective。
+# =====================================================================
+
+id: school_readiness
+name_zh: 入学与课堂准备技能
+name_en: School Readiness & Classroom Skills
+one_line_zh: 从入座注意到独立完成集体常规的课堂参与技能序列;帮助生成器为孩子挑选发展适宜、循证的入学准备目标。
+
+evidence_note_zh: |
+  课堂参与技能(入座与注意、听从集体指令、集体中等待轮流、独立工作、活动过渡、集体常规)
+  是自闭症儿童进入普校/融合班常见的「入学准备」瓶颈,且与学业成绩本身并不等同。
+  实务要点:优先借结构化教学(TEACCH:物理结构、视觉日程、工作系统)与视觉支持把课堂常规
+  可视化、可预期;用任务分析把复杂常规拆小步,用提示—强化—提示褪除建立独立性。
+  集体指令须专门训练——在 1 对 1 情境会做,不代表在「面向全班」时也会反应。
+  目标应基于评估的当前水平与个别化需要,而非年龄或年级。
+
+developmental_levels:
+  - key: emerging
+    zh: 萌发(高支持)
+    en: Emerging
+  - key: supported
+    zh: 支持下完成
+    en: Supported
+  - key: independent
+    zh: 独立
+    en: Independent
+
+frameworks_zh:
+  - "TEACCH 结构化教学:物理结构、视觉日程、工作系统(做什么/做多少/怎样算完成/接下来做什么)是入学准备技能的核心组织框架;独立工作系统有实证支持,但 TEACCH 整体疗效为小效应,勿夸大。见 [[hume_odom_2007]]、[[virues_ortega_2013]]、[[teacch]]、[[odom_2010]]"
+  - "视觉支持与可预期常规:用视觉日程、提示卡、计时器/倒计时把课堂常规可视化,降低焦虑、提升独立过渡。见 [[steinbrenner_2020]]"
+  - "中国本土:GB/T 47041-2026 机构服务国标强调康教结合与个别化;培智学校《生活适应》课标含集体参与、分享合作等目标,可作本土目标骨架。见 [[cn_gbt_47041_2026]]、[[cn_peizhi_2016]]"
+
+skill_areas:
+  - id: attending_sitting
+    name_zh: 注意与入座
+    name_en: Attending & Sitting
+    targets:
+      - level: emerging
+        zh: 在提示与视觉支持下走到指定座位并坐下,短暂停留
+        en: "With prompts and visual supports, comes to an assigned seat and sits down briefly"
+        methods: [visual_supports, prompting, reinforcement]
+        prereq_zh: 能容忍在座位区域、听懂「坐下」
+        examples_zh:
+          - 听到「上课了」走到贴着自己名字的椅子坐下
+          - 椅子上贴脚印图/名字帮助定位座位
+        indicator_zh: 在≤2 次口头提示下走到座位坐下并连续停留≥1 分钟,5 次中≥3 次
+      - level: supported
+        zh: 在偶尔提示下坐在桌边/圆圈,面向老师或材料保持注意
+        en: "With occasional prompts, stays seated and orients to the teacher or materials"
+        methods: [visual_supports, video_modeling, reinforcement, self_management]
+        prereq_zh: 能在提示下就座
+        examples_zh:
+          - 圆圈时间坐在垫子上看老师讲解
+          - 用沙漏/计时器显示「要坐多久」
+        indicator_zh: 偶尔(≤1 次)提示下保持就座并面向活动≥5 分钟
+      - level: independent
+        zh: 无需提示,在整段短活动中保持就座与注意,直到活动结束
+        en: Independently stays seated and attentive for a whole short activity until it ends
+        methods: [reinforcement, self_management]
+        prereq_zh: 能在提示下维持注意一段时间
+        examples_zh:
+          - 独立坐完 10 分钟的集体讲解
+          - 用自我记录卡给自己「坐好了」打勾
+        indicator_zh: 无提示下就座并参与整段活动(≥10 分钟),连续 3 天达成
+    citations: [steinbrenner_2020, cooper_2007, odom_2010]
+
+  - id: following_group_instructions
+    name_zh: 遵循集体指令
+    name_en: Following Group Instructions
+    targets:
+      - level: emerging
+        zh: 当老师对全班发出指令时,在个别提示下跟随执行 1 步指令
+        en: "When the teacher gives a whole-class direction, follows a 1-step cue with individual prompting"
+        methods: [prompting, visual_supports, reinforcement]
+        prereq_zh: 能在 1 对 1 情境下听从简单指令
+        examples_zh:
+          - 老师对全班说「拿出书」,在轻拍提示下拿出书
+          - 配合手势或图片提示理解集体指令
+        indicator_zh: 面向全班的 1 步指令,在个别提示后执行,5 次中≥3 次
+      - level: supported
+        zh: 借助视觉提示或同伴示范,跟随面向全班的 1–2 步指令
+        en: "Follows a 1-2 step whole-class direction with visual cues or peer modeling"
+        methods: [visual_supports, modeling, peer_based_intervention, time_delay]
+        prereq_zh: 能在个别提示下响应集体指令
+        examples_zh:
+          - 「把书翻到第 3 页并坐好」——看同伴怎么做后跟着做
+          - 依墙上的步骤图卡跟随两步集体指令
+        indicator_zh: 面向全班的 1–2 步指令,仅需视觉提示即完成,5 次中≥4 次
+      - level: independent
+        zh: 无需个别提示,和全班一起跟随常见的 1–2 步集体指令
+        en: Follows common 1-2 step group directions along with the class, without individual prompts
+        methods: [reinforcement, self_management]
+        prereq_zh: 能在视觉提示下跟随集体指令
+        examples_zh:
+          - 老师说「排队去操场」,跟大家一起排队
+          - 「收好文具准备下课」时自己照做
+        indicator_zh: 无个别提示随班执行集体指令,连续 5 天每天≥3 次
+    citations: [steinbrenner_2020, cooper_2007, nac_2015]
+
+  - id: waiting_turn_taking
+    name_zh: 集体中的等待与轮流
+    name_en: Waiting & Turn-Taking in a Group
+    targets:
+      - level: emerging
+        zh: 在视觉与计时支持下短暂等待轮到自己
+        en: "Waits briefly for a turn, with visual and timer supports"
+        methods: [visual_supports, prompting, reinforcement]
+        prereq_zh: 能容忍短暂延迟
+        examples_zh:
+          - 用「等待」卡与沙漏等老师叫到自己的名字
+          - 传递材料时等上一位同学传过来
+        indicator_zh: 在视觉支持下等待≥30 秒不离位、不抢,5 次中≥3 次
+      - level: supported
+        zh: 举手并等待被老师叫到,或在队伍中依序等待
+        en: Raises hand and waits to be called, or waits in line
+        methods: [video_modeling, social_narratives, modeling, reinforcement]
+        prereq_zh: 能短暂等待
+        examples_zh:
+          - 想发言时先举手,等老师点名再说
+          - 排队接水/排队洗手时不插队
+        indicator_zh: 举手后等待被叫(≥5 秒)不喊出、或排队等待,提示≤1 次,5 次中≥4 次
+      - level: independent
+        zh: 在集体游戏或活动中独立等待并完成多轮轮流
+        en: Independently waits and takes multiple turns in a group game or activity
+        methods: [self_management, reinforcement]
+        prereq_zh: 能举手或排队等待
+        examples_zh:
+          - 集体桌游中轮到自己才动手
+          - 传球游戏里等待接球并传给下一位
+        indicator_zh: 集体活动中无提示完成≥4 轮轮流,连续 3 次活动达成
+    citations: [steinbrenner_2020, nac_2015, cooper_2007]
+
+  - id: independent_work_system
+    name_zh: 独立工作系统
+    name_en: Independent Work System
+    targets:
+      - level: emerging
+        zh: 借助从左到右的工作系统,取出并完成 1–2 件已掌握的任务,放入「完成」框
+        en: "Using a left-to-right work system, completes 1-2 mastered tasks and puts them in a finished bin"
+        methods: [visual_supports, task_analysis, prompting, reinforcement]
+        prereq_zh: 能完成个别已掌握的操作任务
+        examples_zh:
+          - 从左边篮筐取任务、做完放到右边「完成」筐
+          - 使用配对/分类等已掌握的任务作为工作内容
+        indicator_zh: 结构支持下独立完成 1–2 件任务,过程提示≤2 次
+      - level: supported
+        zh: 依视觉工作系统明白「做什么、做多少、怎样算完成、完成后做什么」,完成一组任务
+        en: "Uses a visual work system to know what work, how much, when finished, and what next, completing a set of tasks"
+        methods: [visual_supports, task_analysis, time_delay, reinforcement]
+        prereq_zh: 能在结构支持下完成 1–2 件任务
+        examples_zh:
+          - 按数字/颜色配对依次完成 3 件任务
+          - 看到「完成」标记后去查看接下来的活动卡
+        indicator_zh: 独立完成一组(≥3 件)任务并转向下一活动,过程提示≤1 次
+      - level: independent
+        zh: 独立启动并完成整套工作系统,收好材料并过渡到下一活动
+        en: Independently starts, completes, and finishes a whole work system, then transitions to the next activity
+        methods: [self_management, reinforcement]
+        prereq_zh: 能依工作系统完成一组任务
+        examples_zh:
+          - 自习时间自己开始并做完全部任务、收好、去做下一件事
+          - 用打勾表自我监控每件任务是否完成
+        indicator_zh: 无成人提示独立完成整套工作并过渡,连续 5 个工作时段中≥4 次
+    citations: [hume_odom_2007, odom_2010, steinbrenner_2020, cooper_2007]
+
+  - id: transitions
+    name_zh: 校园过渡
+    name_en: Transitions Within the School Day
+    targets:
+      - level: emerging
+        zh: 借助视觉日程,在提示下从一个活动/地点过渡到下一个
+        en: "With a visual schedule and prompts, transitions from one activity or place to the next"
+        methods: [visual_supports, prompting, reinforcement]
+        prereq_zh: 能容忍活动结束、认得日程图卡
+        examples_zh:
+          - 看「现在—接下来」图卡从教室去洗手间
+          - 听到过渡提示音时收起手上的东西
+        indicator_zh: 视觉加口头提示下完成过渡且无明显抗拒,5 次中≥3 次
+      - level: supported
+        zh: 借视觉日程与倒计时,完成收拾、排队等过渡常规
+        en: "Uses a visual schedule and countdown to tidy up, line up, and transition"
+        methods: [visual_supports, video_modeling, social_narratives, time_delay]
+        prereq_zh: 能在提示下完成一次过渡
+        examples_zh:
+          - 倒计时后把玩具收进筐、到门口排队
+          - 看过渡主题的社交叙事预习整个流程
+        indicator_zh: 仅需视觉提示完成「收拾加排队」过渡,提示≤1 次,5 次中≥4 次
+      - level: independent
+        zh: 独立查阅日程,完成一天中多次活动/地点间的过渡
+        en: Independently checks the schedule and manages multiple transitions across the day
+        methods: [self_management, reinforcement]
+        prereq_zh: 能借视觉日程完成过渡常规
+        examples_zh:
+          - 自己看日程知道下一节课在哪并按时过渡
+          - 下课后自己收拾好去下一个地点
+        indicator_zh: 无成人提示独立完成当天≥4 次过渡,连续 3 天达成
+    citations: [steinbrenner_2020, odom_2010, nac_2015]
+
+  - id: group_participation_routines
+    name_zh: 集体参与与常规
+    name_en: Group Participation & Routines
+    targets:
+      - level: emerging
+        zh: 在示范与提示下参与圆圈时间的简单动作/响应
+        en: "With modeling and prompts, joins simple circle-time actions or responses (e.g., a greeting song)"
+        methods: [modeling, visual_supports, prompting, reinforcement]
+        prereq_zh: 能坐在集体中短暂停留
+        examples_zh:
+          - 问好歌里跟着做手势动作
+          - 点名时在提示下举手或应答「到」
+        indicator_zh: 提示或示范下参与圆圈响应,每节课≥2 次
+      - level: supported
+        zh: 借视觉与示范承担分发/收取材料等集体常规角色
+        en: "With visual cues and modeling, takes a class-routine role such as handing out or collecting materials"
+        methods: [visual_supports, video_modeling, peer_based_intervention, task_analysis]
+        prereq_zh: 能参与圆圈的简单响应
+        examples_zh:
+          - 当「小助手」给每位同学发一张纸
+          - 活动结束后收回全组的蜡笔盒
+        indicator_zh: 仅需视觉提示完成一项集体常规角色,提示≤1 次
+      - level: independent
+        zh: 独立参与全班常规与集体响应(合唱、齐答、遵守集体游戏规则)
+        en: Independently participates in whole-class routines and group responses
+        methods: [self_management, peer_based_intervention, reinforcement]
+        prereq_zh: 能承担集体常规角色
+        examples_zh:
+          - 和全班一起唱晨会歌并做配套动作
+          - 集体游戏中遵守规则参与到活动结束
+        indicator_zh: 无提示参与全班常规与集体响应,连续 5 天每天≥3 次
+    citations: [steinbrenner_2020, cn_gbt_47041_2026, cn_peizhi_2016]
+
+notes_zh:
+  - 目标须依据评估的当前发展水平选取,并做个别化调整;所有产出仍为需专业审核的草稿。
+  - 「集体指令」「集体等待」等技能须在真实集体情境专门训练与泛化,1 对 1 会做不等于在班级会做。
+  - methods 列出的是「证据上适配该目标」的聚焦式实践;TEACCH 作为综合结构化框架见 frameworks_zh 的 [[teacch]],不作为单一目标的 methods。
+  - 本库为教育/辅助用途,不构成诊断或治疗建议;具体到某个孩子由专业人员定夺。

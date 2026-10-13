@@ -1,0 +1,273 @@
+# =====================================================================
+# 技能领域库:社区参与技能 Community Participation
+# 每个目标(target)标注:发展层级 level、中英描述、可用循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 社区参与技能常用循证教法:任务分析+链锁、视频示范、社交叙事、
+#   视觉支持/日程、提示与强化,并强调预告(priming)与真实情境泛化。
+# =====================================================================
+#
+# =====================================================================
+# TODO_CITATIONS(社区参与「特异性」证据尚无 id,勿在正文引用、勿臆造)
+# 本领域目前复用通用循证锚点:
+#   steinbrenner_2020 / nac_2015 / cooper_2007 /
+#   bellini_akullian_2007(视频示范) / gray_garand_1993(社交叙事) /
+#   bergstrom_2012(走失时向店员求助,已核) / cn_gbt_47041_2026 / cn_peizhi_2016
+# 以下「社区参与特异性」一手研究方向在 citations.yaml 中尚无对应条目,
+#   商用前须联网检索、核对卷期/DOI 后再入库;严禁在此臆造作者/年份/DOI:
+#   - 视频示范/视频提示教超市购物(杂货购物、自助结账)
+#   - 视频示范/社交叙事教餐厅就餐流程
+#   - 自我管理/行为链教社区出行(乘公交/地铁)技能
+#   - 看诊/牙科/理发的脱敏与配合(结合社交叙事 + 视觉日程)
+# =====================================================================
+
+id: community_participation
+name_zh: 社区参与技能
+name_en: Community Participation
+one_line_zh: 从公共场所举止、购物、就餐、出行到看诊与社区求助的社区参与技能序列;帮助生成器为孩子挑选发展适宜、可测量、以真实情境泛化为导向的训练目标。
+
+evidence_note_zh: |
+  社区参与是自闭症儿童迈向独立生活与融合的关键功能领域:去超市、餐厅、乘车、看医生、理发都需要成套的行为链与等待/求助技能。
+  常用循证教法:把复杂流程用任务分析拆步并链锁教学(task_analysis)、视频示范(video_modeling)、
+  社交叙事(social_narratives)、视觉支持与图片日程/清单(visual_supports),配合提示褪除、时间延迟与强化。
+  实务要点:先用「预告/预演(priming)」让孩子提前知道会发生什么以降低焦虑;先在结构化环境教会,再到真实场景泛化。
+  安全提示:出行需过马路、外出可能走失等高风险环节应结合 [[skills/safety_skills]] 演练,并全程在成人监护下进行。
+
+developmental_levels:
+  - key: emerging
+    zh: 萌发
+    en: Emerging
+  - key: supported
+    zh: 支持下
+    en: Supported
+  - key: independent
+    zh: 独立
+    en: Independent
+
+frameworks_zh:
+  - "社区技能宜先做「预告/预演(priming)」再进入真实场景:用社交叙事与图片日程预告流程,用任务分析拆步并链锁教学。见 [[gray_garand_1993]]、[[steinbrenner_2020]]"
+  - "真实情境的在场演练与泛化(在真的超市/餐厅/车站里练)是社区技能能否奏效的关键;须在成人监护下进行。见 [[nac_2015]]"
+  - "本土可对齐《培智学校·生活适应课程标准(2016)》的「社区适应/社会生活」目标,以及 GB/T 47041-2026 康教结合、个别化的要求。见 [[cn_peizhi_2016]]、[[cn_gbt_47041_2026]]"
+
+skill_areas:
+  - id: public_behavior
+    name_zh: 公共场所举止
+    name_en: Conduct in Public Places
+    targets:
+      - level: emerging
+        zh: 在室内公共场所使用「室内声音」(小声说话),不喊叫
+        en: Uses an indoor voice in public places (no shouting)
+        methods: [social_narratives, visual_supports, modeling, prompting, reinforcement]
+        prereq_zh: 能理解「大声/小声」的区别
+        examples_zh:
+          - 在图书馆或超市里用小声说话
+          - 看到「安静」提示卡时把声音调小
+        indicator_zh: 一次外出中在提示≤2 次下能保持室内声音
+      - level: supported
+        zh: 排队时能跟着队伍等候、不插队
+        en: Waits in line and follows the queue without cutting in
+        methods: [social_narratives, video_modeling, task_analysis, prompting, time_delay]
+        prereq_zh: 能短暂等待、能跟随大人
+        examples_zh:
+          - 在收银台后面排队等候
+          - 队伍前移时跟着往前走
+        indicator_zh: 支持下能排队等候≥1 分钟并轮到自己再上前,连续 3 次
+      - level: supported
+        zh: 不随意乱碰或乱拿商品,并跟紧大人在身边
+        en: Does not grab merchandise and stays close to the adult
+        methods: [social_narratives, visual_supports, modeling, prompting, reinforcement]
+        prereq_zh: 能听从「看,不碰」的指令
+        examples_zh:
+          - 逛超市时把手放好、不乱拿货架上的商品
+          - 始终走在大人身边一臂之内
+        indicator_zh: 一次购物途中乱碰商品≤1 次,且能持续跟在大人身边
+    citations: [steinbrenner_2020, nac_2015, gray_garand_1993, cn_peizhi_2016]
+
+  - id: shopping
+    name_zh: 购物
+    name_en: Shopping
+    targets:
+      - level: emerging
+        zh: 进店后拿购物篮或推购物车
+        en: Takes a basket or pushes a cart on entering
+        methods: [task_analysis, video_modeling, modeling, prompting]
+        prereq_zh: 能跟随大人进店
+        examples_zh:
+          - 进超市门口自己拿一个购物篮
+          - 帮忙推小推车跟着大人走
+        indicator_zh: 支持下连续 3 次进店能主动拿篮或推车
+      - level: supported
+        zh: 按图片清单找到并取下 1–2 样商品放进篮子
+        en: Finds and puts 1-2 items from a picture list into the basket
+        methods: [task_analysis, video_modeling, visual_supports, prompting, time_delay]
+        prereq_zh: 能配对图片与实物
+        examples_zh:
+          - 拿着图片清单找到牛奶并放进篮子
+          - 在货架上找到与卡片相同的零食
+        indicator_zh: 支持下能按图片清单取到≥2 样商品(提示≤2 次)
+      - level: supported
+        zh: 到收银台把商品放上台、付款并等待、拿好东西离开
+        en: "At the checkout: puts items on the counter, pays and waits, then takes the bag and leaves"
+        methods: [task_analysis, video_modeling, social_narratives, prompting, self_management]
+        prereq_zh: 能排队等候、能完成简单交换
+        examples_zh:
+          - 把篮子里的东西放到收银台上
+          - 递钱或出示付款码后等结束再拿袋子走
+        indicator_zh: 支持下能完成「放上台→付款→等待→拿走」全流程(提示≤3 步)
+      - level: independent
+        zh: 在大人远处看护下,独立完成一次熟悉的小额购物(取物→付款→拿走)
+        en: With an adult watching from nearby, independently completes a familiar small purchase (get item, pay, leave)
+        methods: [task_analysis, self_management, video_modeling, time_delay]
+        prereq_zh: 能完成收银台全流程、能识别常买商品
+        examples_zh:
+          - 自己拿一瓶水到收银台付款并拿走
+          - 按清单取 1 样商品完成结账,大人在旁观望
+        indicator_zh: 大人远处看护下能独立完成一次「取物→付款→拿走」
+    citations: [steinbrenner_2020, nac_2015, bellini_akullian_2007, cn_gbt_47041_2026]
+
+  - id: dining_out
+    name_zh: 外出就餐
+    name_en: Dining Out
+    targets:
+      - level: emerging
+        zh: 进店后跟随引导到座位坐下并等待
+        en: Enters, follows to a seat, sits down and waits
+        methods: [social_narratives, visual_supports, modeling, prompting]
+        prereq_zh: 能跟随大人、能短暂坐好
+        examples_zh:
+          - 进餐厅后跟着服务员到桌边坐下
+          - 坐下后把菜单或手放好等待
+        indicator_zh: 支持下能入座并安坐等待≥2 分钟
+      - level: supported
+        zh: 点餐时用图片或指认菜单选择想吃的
+        en: Orders by pointing to or using a picture of the menu item
+        methods: [task_analysis, video_modeling, visual_supports, prompting, time_delay]
+        prereq_zh: 有指认或表达选择的方式
+        examples_zh:
+          - 指着菜单图片选自己想吃的
+          - 用图片卡告诉服务员「我要面」
+        indicator_zh: 支持下能指认或表达至少 1 项点单选择
+      - level: supported
+        zh: 等待上菜期间保持在座,并用基本餐桌礼仪用餐
+        en: Waits for the food while seated and eats with basic table manners
+        methods: [social_narratives, visual_supports, self_management, modeling, prompting]
+        prereq_zh: 能短暂等待、会用餐具或手抓进食
+        examples_zh:
+          - 上菜前坐着玩安静的小物件等待
+          - 用勺子吃、嘴里有东西时不说话
+        indicator_zh: 一次就餐中能安坐等待并遵守≥2 条餐桌礼仪
+    citations: [steinbrenner_2020, nac_2015, gray_garand_1993, bellini_akullian_2007]
+
+  - id: transportation
+    name_zh: 社区出行
+    name_en: Getting Around (Public Transport)
+    targets:
+      - level: emerging
+        zh: 在站点安全区域候车、不越线,上下车时跟紧大人
+        en: Waits behind the safety line and boards/exits close to the adult
+        methods: [social_narratives, visual_supports, task_analysis, prompting, reinforcement]
+        prereq_zh: 能听从「停/等」指令
+        examples_zh:
+          - 在公交站站在黄线后面等车
+          - 上下车时牵着大人的手
+        indicator_zh: 候车与上下车演练中 3 次里≥2 次能待在安全区并跟紧
+      - level: supported
+        zh: 上车刷卡或投币,然后坐稳、扶好
+        en: Taps the card or drops the coin on boarding, then sits or holds on
+        methods: [task_analysis, video_modeling, prompting, time_delay, reinforcement]
+        prereq_zh: 能跟随上车、能握扶手
+        examples_zh:
+          - 上公交时把卡在机器上刷一下
+          - 找座位坐好或抓稳扶手
+        indicator_zh: 支持下能完成「刷卡或投币→坐稳或扶好」(提示≤2 次)
+      - level: supported
+        zh: 到站识别下车信号,跟随大人有序下车
+        en: Recognizes the stop and exits in order with the adult
+        methods: [social_narratives, video_modeling, visual_supports, prompting]
+        prereq_zh: 能识别到站提示或听从指令
+        examples_zh:
+          - 听到报站或看到大人起身时准备下车
+          - 排队跟着大人从车门下车
+        indicator_zh: 支持下连续 3 次能在到站时随大人有序下车
+      - level: independent
+        zh: 在成人陪同或远处看护下,乘坐熟悉的短途固定路线并按站下车
+        en: Rides a familiar short fixed route and gets off at the right stop (adult accompanying or nearby)
+        methods: [task_analysis, self_management, video_modeling, visual_supports]
+        prereq_zh: 能刷卡或坐稳、能识别到站
+        examples_zh:
+          - 乘固定一路公交到熟悉的站下车
+          - 用手机或卡片记住「在哪一站下」
+        indicator_zh: 熟悉路线上连续 2 次能按正确站点下车(成人看护)
+    citations: [steinbrenner_2020, nac_2015, bellini_akullian_2007, cn_peizhi_2016]
+
+  - id: appointments
+    name_zh: 社区常规(看诊/理发)
+    name_en: Community Appointments (Doctor, Dentist, Haircut)
+    targets:
+      - level: emerging
+        zh: 事前用社交叙事或图片日程了解流程,进入诊室或理发店不抗拒
+        en: Previews the routine and enters the clinic or salon without resisting
+        methods: [social_narratives, visual_supports, video_modeling, prompting]
+        prereq_zh: 能看懂简单图片日程
+        examples_zh:
+          - 看「去看牙医」的社交故事了解会发生什么
+          - 按图片日程走进理发店坐上椅子
+        indicator_zh: 事前预演后能进入并坐上诊椅或理发椅(提示≤2 次)
+      - level: supported
+        zh: 候诊时能安坐等待(可用等待包或可视计时器)
+        en: Waits seated in the waiting area (may use a wait kit or timer)
+        methods: [social_narratives, visual_supports, self_management, prompting, time_delay]
+        prereq_zh: 能短暂等待
+        examples_zh:
+          - 候诊时看绘本或玩安静小物等叫号
+          - 看可视计时器知道「还要等多久」
+        indicator_zh: 支持下能候诊安坐≥5 分钟(提示≤2 次)
+      - level: supported
+        zh: 配合完成检查或理发的关键步骤(张嘴、量身高、围围布等)
+        en: Cooperates with key steps of the exam or haircut (opens mouth, stands to be measured, wears the cape)
+        methods: [task_analysis, video_modeling, social_narratives, prompting, reinforcement]
+        prereq_zh: 能容忍被触碰或器械靠近
+        examples_zh:
+          - 医生检查时按要求张嘴或伸舌
+          - 理发时围上围布、按指令低头
+        indicator_zh: 一次就诊或理发中能配合完成≥2 个关键步骤
+    citations: [steinbrenner_2020, nac_2015, gray_garand_1993, bellini_akullian_2007]
+
+  - id: community_helpers_help
+    name_zh: 社区求助与识别帮助者
+    name_en: Seeking Help & Identifying Community Helpers
+    targets:
+      - level: emerging
+        zh: 认识社区里的「工作人员/帮助者」(收银员、保安、服务员、警察)
+        en: Recognizes community helpers (cashier, security guard, waiter, police)
+        methods: [social_narratives, visual_supports, discrete_trial_training, prompting]
+        prereq_zh: 能配对人物图片与角色
+        examples_zh:
+          - 在图片中指出「谁是可以帮忙的工作人员」
+          - 认出穿制服的保安或收银员
+        indicator_zh: 5 张图片中能正确指出帮助者≥4 张
+      - level: supported
+        zh: 需要时走向工作人员表达需要(找洗手间、找不到东西)
+        en: Approaches a staff member to express a need (restroom, cannot find something)
+        methods: [task_analysis, video_modeling, social_narratives, prompting, time_delay]
+        prereq_zh: 有基本表达方式(口语/图片/卡片)
+        examples_zh:
+          - 走到服务台说或出示卡片「我要洗手间」
+          - 找店员帮忙拿够不到的东西
+        indicator_zh: 演练中能走向工作人员并表达需要 1 次(提示≤2 次)
+      - level: supported
+        zh: 与大人走散时,走向店员或服务台求助(衔接安全域走失求助脚本)
+        en: If separated from the adult, goes to a staff member or service desk for help
+        methods: [social_narratives, video_modeling, task_analysis, prompting, reinforcement]
+        prereq_zh: 能识别工作人员、能先停在原地
+        examples_zh:
+          - 走散时到商场服务台说「我找不到妈妈了」
+          - 找收银员求助并出示安全卡
+        indicator_zh: 走散演练中 3 次里≥2 次能走向合适工作人员求助
+    citations: [steinbrenner_2020, nac_2015, bergstrom_2012, cn_gbt_47041_2026]
+
+notes_zh:
+  - 社区技能须先在结构化环境教会,再到真实场景泛化,并全程在成人监护下进行;孩子「学会」不等于「可独自应对」。
+  - 出行中的过马路、外出中的走失属高风险环节,本领域目标聚焦社区常规;真实路口与走失的安全演练见 [[skills/safety_skills]] 的 road_traffic 与 getting_help_lost,须成人严密监护。
+  - methods 列出的是证据上适配该目标的方法(尤其需要预告与真实情境泛化);具体到某孩子由专业人员定夺。
+  - 社区参与「特异性」一手研究尚未入库(见顶部 TODO_CITATIONS),现引用为通用循证锚点;商用前须补齐并核对原文,勿臆造疗效数据。
+  - 所有产出仍为需专业审核的草稿;应经专业人员与家长共同把关后使用。

@@ -1,0 +1,135 @@
+{
+  "title_zh": "乐乐第一次去看牙医",
+  "title_en": "Lele's First Visit to the Dentist",
+  "learning_goal": "帮助乐乐了解看牙医的完整流程,知道会发生什么、自己可以怎么做,从而减少焦虑。",
+  "method_id": "social_stories",
+  "scenes": [
+    {
+      "index": 1,
+      "sentence_type": "descriptive",
+      "text_zh": "我叫乐乐。今天,我要第一次去看牙医。",
+      "text_en": "My name is Lele. Today, I am going to the dentist for the first time.",
+      "narration_zh": "我叫乐乐。今天,我要第一次去看牙医。",
+      "narration_en": "My name is Lele. Today, I am going to the dentist for the very first time.",
+      "visual_keyword": "牙医诊所",
+      "icon": "🦷",
+      "duration_hint": 6
+    },
+    {
+      "index": 2,
+      "sentence_type": "descriptive",
+      "text_zh": "诊所里有一把椅子,可以慢慢地往后躺。",
+      "text_en": "At the office there is a chair that slowly leans back.",
+      "narration_zh": "牙医的诊所里,有一把椅子,可以慢慢地往后躺。",
+      "narration_en": "At the dentist's office, there is a chair that slowly leans back.",
+      "visual_keyword": "牙科椅",
+      "icon": "🪑",
+      "duration_hint": 6
+    },
+    {
+      "index": 3,
+      "sentence_type": "perspective",
+      "text_zh": "牙医阿姨很温柔,她想帮我把牙齿照顾得健健康康。",
+      "text_en": "The dentist is gentle. She wants to help keep my teeth healthy.",
+      "narration_zh": "牙医阿姨很温柔,她想帮我,把我的牙齿照顾得健健康康。",
+      "narration_en": "The dentist is gentle, and she wants to help keep my teeth healthy.",
+      "visual_keyword": "温柔的牙医",
+      "icon": "👩‍⚕️",
+      "duration_hint": 7
+    },
+    {
+      "index": 4,
+      "sentence_type": "descriptive",
+      "text_zh": "检查的时候,上面有一盏灯,帮阿姨看清楚我的牙齿。",
+      "text_en": "During the check, a light helps her see my teeth clearly.",
+      "narration_zh": "检查的时候,上面会有一盏灯,帮阿姨看清楚我的牙齿。",
+      "narration_en": "During the check, a light above helps the dentist see my teeth clearly.",
+      "visual_keyword": "检查灯",
+      "icon": "💡",
+      "duration_hint": 7
+    },
+    {
+      "index": 5,
+      "sentence_type": "directive",
+      "text_zh": "灯有点亮的时候,我可以眯一眯眼睛,这样会更舒服。",
+      "text_en": "When the light is bright, I can squint my eyes to feel more comfortable.",
+      "narration_zh": "灯有点亮的时候,我可以眯一眯眼睛,这样会更舒服。",
+      "narration_en": "When the light feels bright, I can gently squint my eyes to feel more comfortable.",
+      "visual_keyword": "眯眼舒适",
+      "icon": "😌",
+      "duration_hint": 7
+    },
+    {
+      "index": 6,
+      "sentence_type": "descriptive",
+      "text_zh": "她会用一面小镜子,轻轻地看看我的每一颗牙齿。",
+      "text_en": "She uses a small mirror to gently look at each of my teeth.",
+      "narration_zh": "她会用一面小镜子,轻轻地看看我的每一颗牙齿。",
+      "narration_en": "She uses a small mirror to gently look at each one of my teeth.",
+      "visual_keyword": "小镜子",
+      "icon": "🪞",
+      "duration_hint": 6
+    },
+    {
+      "index": 7,
+      "sentence_type": "descriptive",
+      "text_zh": "有时候会有轻轻的“滋滋”声,那是在帮牙齿洗个澡。",
+      "text_en": "Sometimes there is a soft buzzing sound. It is like giving my teeth a bath.",
+      "narration_zh": "有时候,会有轻轻的滋滋声,那是在帮我的牙齿洗个澡。",
+      "narration_en": "Sometimes there is a soft buzzing sound, and it is like giving my teeth a little bath.",
+      "visual_keyword": "轻柔的声音",
+      "icon": "🫧",
+      "duration_hint": 7
+    },
+    {
+      "index": 8,
+      "sentence_type": "affirmative",
+      "text_zh": "这些声音是安全的,这很好。",
+      "text_en": "These sounds are safe. That is good.",
+      "narration_zh": "这些声音是安全的,这很好。",
+      "narration_en": "These sounds are safe, and that is good.",
+      "visual_keyword": "安全安心",
+      "icon": "✅",
+      "duration_hint": 5
+    },
+    {
+      "index": 9,
+      "sentence_type": "directive",
+      "text_zh": "我可以试着张大嘴巴,就像小恐龙打哈欠一样。",
+      "text_en": "I can try to open my mouth wide, like a little dinosaur yawning.",
+      "narration_zh": "我可以试着张大嘴巴,就像一只小恐龙打哈欠一样。",
+      "narration_en": "I can try to open my mouth wide, just like a little dinosaur yawning.",
+      "visual_keyword": "张大嘴巴",
+      "icon": "🦕",
+      "duration_hint": 7
+    },
+    {
+      "index": 10,
+      "sentence_type": "directive",
+      "text_zh": "想休息一下,我可以举起手,像红灯让小汽车停一停。",
+      "text_en": "If I want a short break, I can raise my hand, like a red light stopping a car.",
+      "narration_zh": "如果我想休息一下,我可以举起手,就像红灯让小汽车停一停。",
+      "narration_en": "If I want a short break, I can raise my hand, like a red light telling a car to stop.",
+      "visual_keyword": "举手请求休息",
+      "icon": "✋",
+      "duration_hint": 7
+    },
+    {
+      "index": 11,
+      "sentence_type": "affirmative",
+      "text_zh": "看完牙医,我做得很好。健康的牙齿让我笑得更开心。",
+      "text_en": "After the dentist, I did a great job. Healthy teeth help me smile happily.",
+      "narration_zh": "看完牙医,我做得很好。健康的牙齿,让我笑得更开心。",
+      "narration_en": "After the dentist, I did a great job. Healthy teeth help me smile happily.",
+      "visual_keyword": "开心的笑容",
+      "icon": "⭐",
+      "duration_hint": 7
+    }
+  ],
+  "citations_used": ["gray_2015_newbook", "wong_2015", "nac_2015"],
+  "review_flags": [
+    "请核对诊所的真实流程(如是否会洁牙、是否提供墨镜)与故事描述是否一致,并按需调整。",
+    "乐乐对强光和尖锐声敏感:实际使用时请留意环境光线与音量,可先在家熟悉本片。",
+    "本片由 Claude Code 依据社交故事规则现场生成,属草稿,正式/售卖前请专业人员审核。"
+  ]
+}

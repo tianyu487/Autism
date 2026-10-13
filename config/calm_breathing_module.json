@@ -1,0 +1,267 @@
+{
+  "title_zh": "深呼吸,让我平静下来",
+  "title_en": "Taking Deep Breaths to Calm Down",
+  "learning_objective": "当情绪升高(着急、生气)时,孩子能在提示下用一次慢深呼吸把自己带回平静,触发情境 3 次中≥2 次达成。",
+  "method_id": "cognitive_behavioral",
+  "cast": "solo_calm",
+  "intro_zh": "有时候我会觉得着急、生气,身体紧紧的。这时候,我可以到我的安静角,做一个深呼吸,让自己慢慢平静下来。",
+  "intro_en": "Sometimes I feel upset or angry, and my body feels tight. When that happens, I can go to my calm corner and take a deep breath to help myself feel calm again.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "先停下来,感觉一下我的身体。",
+      "text_en": "First I stop and notice my body.",
+      "narration_zh": "当我觉得快要生气时,我先停下来,感觉一下身体是不是紧紧的。",
+      "narration_en": "When I feel upset coming, I stop and notice if my body feels tight.",
+      "visual_keyword": "停一停",
+      "icon": "🛑",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "慢慢用鼻子吸气,数到三。",
+      "text_en": "Slowly breathe in through my nose, count to three.",
+      "narration_zh": "我慢慢用鼻子吸气,一、二、三,像闻一朵花。",
+      "narration_en": "I breathe in slowly through my nose, one, two, three, like smelling a flower.",
+      "visual_keyword": "吸气",
+      "icon": "🌸",
+      "duration_hint": 7.0
+    },
+    {
+      "index": 3,
+      "text_zh": "慢慢用嘴巴呼气,数到三。",
+      "text_en": "Slowly breathe out through my mouth, count to three.",
+      "narration_zh": "我慢慢用嘴巴呼气,一、二、三,像轻轻吹蜡烛。",
+      "narration_en": "I breathe out slowly through my mouth, one, two, three, like gently blowing a candle.",
+      "visual_keyword": "呼气",
+      "icon": "🕯️",
+      "duration_hint": 7.0
+    },
+    {
+      "index": 4,
+      "text_zh": "再做几次,我就平静下来了。",
+      "text_en": "I do it a few more times, and I feel calm.",
+      "narration_zh": "我再多做几次深呼吸,身体松下来,心情也平静下来了。",
+      "narration_en": "I take a few more deep breaths, my body relaxes, and I feel calm.",
+      "visual_keyword": "平静",
+      "icon": "🙂",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "你觉得有点着急,身体紧紧的。轮到你,试着做做看。",
+      "prompt_en": "You feel a little upset and your body feels tight. Your turn — give it a try.",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先停一停,做一个深呼吸。",
+      "answer_en": "I stop and take a deep breath.",
+      "reinforce_zh": "你愿意先停下来深呼吸,做得很好。",
+      "reinforce_en": "You chose to stop and breathe. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "深呼吸的时候,用鼻子吸气要怎么做?你会怎么做?",
+      "prompt_en": "How do you breathe in through your nose? Give it a try.",
+      "pause_seconds": 4.0,
+      "answer_zh": "慢慢吸气,数一、二、三。",
+      "answer_en": "Breathe in slowly, count one, two, three.",
+      "reinforce_zh": "你慢慢吸气数到三,真棒。",
+      "reinforce_en": "You breathed in slowly to three. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "做完几次深呼吸,你现在感觉怎么样?可以怎么说?",
+      "prompt_en": "After a few breaths, how do you feel? What can you say?",
+      "pause_seconds": 5.0,
+      "answer_zh": "我平静多了,可以继续了。",
+      "answer_en": "I feel calmer now, I can keep going.",
+      "reinforce_zh": "你用深呼吸让自己平静下来,做得好。",
+      "reinforce_en": "You calmed yourself with deep breaths. Well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "你觉得快要生气了……你可以怎么做?",
+    "scenario_en": "You feel anger coming... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "做一个深呼吸",
+        "label_en": "Take a deep breath",
+        "outcome_zh": "你深呼吸几次,慢慢平静下来,感觉好多了。",
+        "outcome_en": "You take a few deep breaths, slowly feel calm, and feel much better.",
+        "icon": "😌"
+      },
+      {
+        "label_zh": "去安静角待一会儿",
+        "label_en": "Go to the calm corner",
+        "outcome_zh": "你到安静角坐一会儿、深呼吸,心情慢慢松下来。",
+        "outcome_en": "You sit in the calm corner and breathe, and your feelings gently settle.",
+        "icon": "🙂"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "深呼吸三步",
+      "title_en": "Three steps to breathe",
+      "caption_zh": "停一停 → 吸气数三 → 呼气数三",
+      "caption_en": "Stop → Breathe in for 3 → Breathe out for 3",
+      "icon": "🌬️"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以对自己说的话",
+      "title_en": "What I can say",
+      "caption_zh": "我先停一停,做个深呼吸。",
+      "caption_en": "I stop and take a deep breath.",
+      "icon": "🗣️"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "身体的信号",
+      "title_en": "My body signals",
+      "caption_zh": "拳头紧、心跳快 = 我需要深呼吸",
+      "caption_en": "Tight fists, fast heartbeat = time to breathe",
+      "icon": "💗"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "平静下来的顺序",
+      "title_en": "Calming order",
+      "caption_zh": "停 → 呼吸 → 平静 → 继续",
+      "caption_en": "Stop → Breathe → Calm → Continue",
+      "icon": "🔁"
+    }
+  ],
+  "review_zh": "我学会了用深呼吸让自己平静:先停一停,慢慢吸气、慢慢呼气,再做几次,我就从着急变得平静了。我能照顾好自己的心情。",
+  "review_en": "I learned to calm myself with deep breaths: I stop, breathe in slowly, breathe out slowly, and after a few times I feel calm instead of upset. I can take care of my feelings.",
+  "citations_used": [
+    "kuypers_2011",
+    "buron_curtis_2003",
+    "wood_2009"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子的情绪调节水平与真实触发情境个别化调整。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting calmly cross-legged in a cozy quiet calm-down corner at home, peaceful and relaxed, a gentle soft smile, big bright lively sparkling eyes with clear catchlight highlights, warm soothing light"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in a cozy calm-down corner with soft cushions, looking calm and ready, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pausing and placing a hand gently on his chest, noticing his body, calm and thoughtful, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy taking a slow deep breath in through his nose with a hand on his belly, calm and focused, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy slowly breathing out through his mouth with relaxed shoulders, calm and peaceful, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step4": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting calm and content after breathing, a soft peaceful smile, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in the calm corner feeling a little tense and about to calm himself, thoughtful, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pausing and taking a calm deep breath with a hand on his belly, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy showing how to breathe in slowly through the nose with a hand on his belly, calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy breathing in slowly and calmly through his nose, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy feeling calmer after a few breaths, a gentle relaxed smile, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a calm relaxed young boy feeling peaceful and ready to continue, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy noticing he is starting to feel upset and choosing to calm himself, thoughtful, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy taking a calming deep breath and feeling better, a relaxed smile, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting quietly and relaxing in the cozy calm-down corner, content, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "review": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy calm young boy feeling peaceful and proud in the calm corner, big bright lively sparkling eyes with clear catchlight highlights, warm and cozy"
+    }
+  }
+}

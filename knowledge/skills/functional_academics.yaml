@@ -1,0 +1,245 @@
+# =====================================================================
+# 技能领域库:功能性学业 · 生活数学 Functional Academics (Life Math)
+# 面向「独立生活」的实用数学/识字:钱币、时间、日程、取量、测量、生活数字。
+# 不做抽象学业,只做「日常用得上」的功能性技能。
+# 每个目标标注:发展层级 level(按功能独立程度)、中英描述、循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 主证据组合:任务分析 + 回合式教学 + 视频示范 + 视觉支持 + 提示褪除 + 强化;
+#   本土可对齐《培智学校·生活适应课程标准(2016)》生活数学相关内容。
+# =====================================================================
+
+id: functional_academics
+name_zh: 功能性学业 · 生活数学
+name_en: Functional Academics (Life Math)
+one_line_zh: 面向独立生活的实用数学与数字识读(钱、时间、日程、取量、测量、生活数字);帮助生成器为孩子挑选功能取向、循证的训练目标。
+
+evidence_note_zh: |
+  功能性学业强调「在真实生活情境中用得上」,而非抽象计算。教学优先把技能用任务分析拆成小步,
+  以回合式教学(DTT)建立基础指认/命名,用视频示范与视觉支持示范全流程,并系统性地由多到少褪除提示、
+  以自然强化巩固。钱币可先教「进一元(next-dollar)」策略绕开找零心算;时间/日程用视觉支持增强可预期性。
+  发展层级按「功能独立程度」看:萌芽(需教基础指认)→ 发展中(结构化情境下运用)→ 功能运用(真实情境独立)。
+  目标应基于评估的当前水平个别化选取,并优先教「最能提升日常独立」的技能。
+
+developmental_levels:
+  - key: emerging
+    zh: 萌芽
+    en: Emerging
+  - key: developing
+    zh: 发展中
+    en: Developing
+  - key: functional
+    zh: 功能运用
+    en: Functional use
+
+frameworks_zh:
+  - "任务分析 + 视频示范 + 视觉支持 + 提示褪除 + 强化 是功能性学业的常用循证组合。见 [[steinbrenner_2020]]"
+  - "回合式教学(DTT)适合建立币值/数字/时间的基础指认与命名,再迁移到自然情境。见 [[cooper_2007]]"
+  - "「进一元(next-dollar)」付钱策略绕开找零心算,常用于购物技能教学。见 [[cooper_2007]]"
+  - "视觉支持(视觉日程/时间表/流程卡)增强时间与日程的可预期性与独立性。见 [[nac_2015]]"
+  - "本土对齐:中国《培智学校·生活适应课程标准(2016)》生活数学相关内容。见 [[cn_peizhi_2016]]"
+  - "机构服务须个别化、康教结合,与国标一致。见 [[cn_gbt_47041_2026]]"
+
+skill_areas:
+  - id: money_skills
+    name_zh: 钱币与购物
+    name_en: Money Skills & Purchasing
+    targets:
+      - level: emerging
+        zh: 认识并配对常见币值(1 元、5 元、10 元的纸币/硬币)
+        en: "Recognizes and matches common coin/note values (1, 5, 10 yuan)"
+        methods: [discrete_trial_training, visual_supports, prompting, reinforcement]
+        prereq_zh: 能做简单配对、认读 0–10 数字
+        examples_zh:
+          - 把 1 元硬币和写着「1 元」的卡片配对
+          - 从一堆钱里挑出 5 元那张
+        indicator_zh: 呈现常见币值 5 次中≥4 次正确指认
+      - level: developing
+        zh: 用「进一元」策略付钱:价格几元几角就付上一个整元数
+        en: "Next-dollar strategy: pays with the next whole yuan above the price"
+        methods: [task_analysis, video_modeling, prompting, reinforcement]
+        prereq_zh: 认读常见币值、能点数到 10
+        examples_zh:
+          - 标价 3 元 5 角时,数出 4 张 1 元付款
+          - 看到价签「7.2 元」就拿出 8 元
+        indicator_zh: 3 个不同价格中≥2 次用进一元策略付对
+      - level: functional
+        zh: 完成一次简单购物:选物→付钱→等找零→收好零钱
+        en: Completes a simple purchase (select, pay, wait for change, keep change)
+        methods: [task_analysis, video_modeling, self_management, naturalistic_intervention]
+        prereq_zh: 会进一元付钱、能听从多步指令
+        examples_zh:
+          - 在便利店买一瓶水并完成付款
+          - 付款后确认找回的零钱并放进钱包
+        indicator_zh: 在真实或模拟商店独立完成一次购物(≤1 处提示)
+    citations: [steinbrenner_2020, cooper_2007, cn_peizhi_2016]
+
+  - id: time_clock
+    name_zh: 认识时间与时钟
+    name_en: Time & Clock Reading
+    targets:
+      - level: emerging
+        zh: 读出指针钟的整点,并认读电子钟数字
+        en: Reads whole hours on an analog clock and digits on a digital clock
+        methods: [discrete_trial_training, visual_supports, prompting]
+        prereq_zh: 认读 1–12 数字
+        examples_zh:
+          - 指针指向 3 时说出「3 点」
+          - 电子钟显示 8:00 读作「8 点」
+        indicator_zh: 5 个整点中≥4 个读对
+      - level: developing
+        zh: 读半点,并把「几点做什么」与日常活动对应
+        en: "Reads half-hours and links times to daily activities (what happens at each time)"
+        methods: [visual_supports, task_analysis, prompting, reinforcement]
+        prereq_zh: 能读整点
+        examples_zh:
+          - 把 7:30 读作「七点半」
+          - 知道「12 点吃午饭、9 点睡觉」
+        indicator_zh: 能把 3 个时间与对应活动正确配对
+      - level: functional
+        zh: 看日历定位今天/明天与重要日子,并按时间准备活动
+        en: Uses a calendar to find today/tomorrow and key dates, and gets ready on time
+        methods: [visual_supports, self_management, naturalistic_intervention, prompting]
+        prereq_zh: 能读整点/半点、认识星期
+        examples_zh:
+          - 在日历上指出今天是星期几
+          - 看到「周三上游泳课」提前准备泳具
+        indicator_zh: 能在日历上找到今天并说出一件当天要做的事
+    citations: [steinbrenner_2020, cn_peizhi_2016, nac_2015]
+
+  - id: schedule_reading
+    name_zh: 看懂日程与时间表
+    name_en: Schedule & Timetable Reading
+    targets:
+      - level: emerging
+        zh: 看懂图片式视觉日程,知道「现在/接下来」
+        en: "Reads a picture visual schedule: knows now vs next"
+        methods: [visual_supports, prompting, reinforcement]
+        prereq_zh: 能理解图片、能指认
+        examples_zh:
+          - 看日程条从「画画」移到「点心」
+          - 指出「接下来」那一格
+        indicator_zh: 提示下能按日程说出下一项活动
+      - level: developing
+        zh: 把活动和时间对应,读带时间的时间表/课表
+        en: Matches activities to times and reads a timetable with clock times
+        methods: [visual_supports, task_analysis, prompting]
+        prereq_zh: 能读整点、能看图片日程
+        examples_zh:
+          - 看课表知道「9 点是数学课」
+          - 把「10 点」贴到「课间」旁边
+        indicator_zh: 3 个时段中≥2 个能对应到正确活动
+      - level: functional
+        zh: 用日程/时间表自我管理一天,并勾掉已完成项
+        en: Uses a schedule/timetable to self-manage the day and checks off completed items
+        methods: [self_management, visual_supports, naturalistic_intervention]
+        prereq_zh: 能把活动和时间对应
+        examples_zh:
+          - 完成一项就在清单上打勾
+          - 照时间表自己走完上午流程
+        indicator_zh: 能独立照日程完成 3 项活动并逐项勾掉
+    citations: [steinbrenner_2020, nac_2015, cn_gbt_47041_2026]
+
+  - id: functional_counting
+    name_zh: 功能性数数与取量
+    name_en: Functional Counting
+    targets:
+      - level: emerging
+        zh: 一一对应点数到 10(手口一致)
+        en: "One-to-one correspondence: counts objects up to 10"
+        methods: [discrete_trial_training, modeling, prompting, reinforcement]
+        prereq_zh: 会口头唱数到 10
+        examples_zh:
+          - 一边指一边数出 5 块积木
+          - 点数盘子里的饼干并说出总数
+        indicator_zh: 点数 10 以内物品时手口一致≥4/5
+      - level: developing
+        zh: 按要求数出所需数量(取 N 个)
+        en: Counts out a requested quantity (give me N)
+        methods: [discrete_trial_training, task_analysis, prompting, time_delay]
+        prereq_zh: 能一一对应点数
+        examples_zh:
+          - 听到「拿 3 个苹果」正好拿 3 个
+          - 为 5 个人各摆 1 个碗
+        indicator_zh: 3 个不同数量指令中≥2 次取对
+      - level: functional
+        zh: 在生活情境中数出并核对数量(购物/摆放/分发)
+        en: Counts and checks quantities in daily situations (shopping, setting, sharing)
+        methods: [naturalistic_intervention, task_analysis, self_management]
+        prereq_zh: 能按要求取出指定数量
+        examples_zh:
+          - 照购物清单买 3 个苹果、2 瓶奶
+          - 给全家每人发一份餐具并核对够不够
+        indicator_zh: 能照清单数出 2 种物品的正确数量
+    citations: [steinbrenner_2020, cooper_2007, cn_peizhi_2016]
+
+  - id: measurement_basics
+    name_zh: 功能性测量
+    name_en: Measurement Basics
+    targets:
+      - level: emerging
+        zh: 比较多/少、大/小、长/短、够不够
+        en: "Compares more/less, big/small, long/short, enough/not enough"
+        methods: [discrete_trial_training, modeling, visual_supports, prompting]
+        prereq_zh: 能配对与指认
+        examples_zh:
+          - 指出两杯水里「多」的那一杯
+          - 判断这段绳子够不够长
+        indicator_zh: 5 组比较中≥4 组判断正确
+      - level: developing
+        zh: 功能性使用量杯/刻度:倒到线、按量取用
+        en: "Uses a measuring cup/marks functionally (fill to the line, take by amount)"
+        methods: [task_analysis, video_modeling, visual_supports, prompting]
+        prereq_zh: 能比较多少、能对应刻度线
+        examples_zh:
+          - 把米倒到量杯「1 杯」的刻度线
+          - 按食谱量出 2 勺
+        indicator_zh: 能把液体/米倒到指定刻度线(误差在一格内)
+      - level: functional
+        zh: 读温度/长度并据此行动(冷热、体温、长短、放不放得下)
+        en: Reads temperature/length and acts on it (hot/cold, body temp, fits or not)
+        methods: [naturalistic_intervention, visual_supports, self_management]
+        prereq_zh: 能读数字、能对应刻度
+        examples_zh:
+          - 看体温计判断是否发烧
+          - 用尺量物品能否放进书包
+        indicator_zh: 能读出一个测量值并作出对应决定(如「发烧要告诉大人」)
+    citations: [steinbrenner_2020, cn_peizhi_2016, cooper_2007]
+
+  - id: number_recognition
+    name_zh: 生活数字认读
+    name_en: Functional Number Recognition
+    targets:
+      - level: emerging
+        zh: 认读 0–20 数字,并与实物/图片数量对应
+        en: "Reads numerals 0–20 and matches them to objects/pictures"
+        methods: [discrete_trial_training, visual_supports, prompting, reinforcement]
+        prereq_zh: 能配对、能注视图卡
+        examples_zh:
+          - 认出电梯按钮上的「5」
+          - 把数字卡和相应数量的物品配对
+        indicator_zh: 随机呈现 0–20 数字,10 个中≥8 个读对
+      - level: developing
+        zh: 认读与生活相关的数字串(门牌、公交线路、价格标签)
+        en: Reads life-relevant number strings (house numbers, bus routes, price tags)
+        methods: [naturalistic_intervention, visual_supports, prompting, time_delay]
+        prereq_zh: 能认读 0–20 数字
+        examples_zh:
+          - 认出自家的门牌号
+          - 找到写着「302 路」的公交车
+        indicator_zh: 情境中呈现 3 类目标数字,能认出其中≥2 类
+      - level: functional
+        zh: 记住并使用重要数字(电话/紧急号码),并据数字做选择
+        en: Recalls and uses important numbers (phone, emergency) and chooses by number
+        methods: [task_analysis, self_management, video_modeling, naturalistic_intervention]
+        prereq_zh: 能认读数字串
+        examples_zh:
+          - 说出或拨打家长的电话号码
+          - 看价格标签选更便宜的一件
+        indicator_zh: 能正确说出或拨出一串重要电话号码
+    citations: [steinbrenner_2020, nac_2015, cn_peizhi_2016]
+
+notes_zh:
+  - 功能性学业以「日常用得上」为准绳:优先教最能提升独立的技能(付钱、看时间、认生活数字),而非抽象计算。
+  - 钱币教学常先用「进一元」策略绕开找零心算;能力提升后再教精确找零。
+  - methods 列出的是「证据上适配该目标」的方法组合;具体到某孩子由专业人员定夺。
+  - 目标须依据评估的当前功能水平个别化选取,并在真实情境中泛化;所有产出仍为需专业审核的草稿。

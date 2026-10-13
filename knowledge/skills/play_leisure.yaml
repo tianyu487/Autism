@@ -1,0 +1,292 @@
+# =====================================================================
+# 技能领域库:游戏与休闲技能 Play & Leisure Skills
+# 每个目标(target)标注:发展层级 level、中英描述、可用循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 生成时这些一并注入,帮助模块选准目标、写出可测量的 learning_objective。
+# =====================================================================
+#
+# CITATIONS_CATALOGUED(以下经典发展框架文献已于 2026-07-13 联网核验并入 citations.yaml,
+#   可直接用文末所标 id 引用;各条暂置 verify:true,商用前仍须终核卷期/页码/DOI):
+#   - Parten, M. B. (1932). Social participation among preschool children.
+#       Journal of Abnormal and Social Psychology, 27(3), 243-269.
+#       —— 社会游戏阶段(独自→旁观→平行→联合→合作)的经典来源。  已入库 id=parten_1932
+#   - Piaget, J. (1962). Play, Dreams and Imitation in Childhood. New York: Norton.
+#       —— 感觉运动→象征游戏发展序列的理论谱系。  已入库 id=piaget_1962
+#   - Westby, C. E. (1980). Assessment of cognitive and language abilities through play.
+#       Language, Speech, and Hearing Services in Schools, 11(3), 154-168.
+#       (并见其后修订的 Symbolic Play Scale)
+#       —— 象征游戏发展量表(功能性→物品替代→社会戏剧游戏)的常用出处。  已入库 id=westby_1980
+#   - Lifter, K., Sulzer-Azaroff, B., Anderson, S. R., & Cowdery, G. E. (1993).
+#       Teaching play activities to preschool children with disabilities:
+#       The importance of developmental considerations.
+#       Journal of Early Intervention, 17(2), 139-159.
+#       —— 按发展水平选取游戏目标的实证依据。  已入库 id=lifter_1993
+# =====================================================================
+
+id: play_leisure
+name_zh: 游戏与休闲技能
+name_en: Play & Leisure Skills
+one_line_zh: 从探索物体到合作游戏与独立休闲的发展序列;帮助生成器为孩子挑选发展适宜、循证的游戏与休闲训练目标。
+
+evidence_note_zh: |
+  游戏发展大致沿两条并行序列展开:
+  ①社会维度(Parten):独自游戏 → 旁观 → 平行游戏 → 联合游戏 → 合作游戏;
+  ②象征维度(Piaget–Westby):感觉运动/探索 → 功能性/关系性 → 象征/假装(含物品替代)→ 社会戏剧游戏。
+  自闭症儿童常见:自发象征游戏减少、游戏刻板重复、社会性游戏发起少。
+  实务要点:先教"响应"再教"发起";象征游戏可借共同注意与模仿撬动(如 JASPER);
+  拓展受限/重复游戏时用"在孩子已有兴趣上加变化"的自然情境策略,而非直接禁止。
+  目标应基于评估的当前游戏水平,而非实际年龄。
+
+developmental_levels:
+  - key: pre
+    zh: 游戏基础前技能
+    en: Prerequisite
+  - key: functional
+    zh: 功能性/关系性游戏
+    en: Functional / relational play
+  - key: symbolic
+    zh: 象征/假装游戏
+    en: Symbolic / pretend play
+  - key: social
+    zh: 社交游戏
+    en: Social play
+  - key: independent
+    zh: 独立休闲
+    en: Independent leisure
+
+frameworks_zh:
+  - "Parten 社会游戏阶段:独自游戏 → 旁观 → 平行游戏 → 联合游戏 → 合作游戏(经典社会参与发展序列)。见 [[parten_1932]]"
+  - "象征游戏发展序列:感觉运动/探索 → 功能性/关系性 → 象征/假装(含物品替代)→ 社会戏剧游戏(Piaget–Westby 谱系)。见 [[piaget_1962]]、[[westby_1980]]"
+  - "象征游戏更细的发展亚序列(物品替代 → 以娃娃为承受者 → 娃娃为施动者 → 串联多元图式 → 计划性假装与假想物品 → 主题角色扮演),应按发展水平而非实际年龄选取目标。见 [[westby_1980]]、[[lifter_1993]]"
+  - "JASPER:靶向共同注意与象征游戏的 NDBI,是把游戏发展序列转为干预目标的代表。见 [[kasari_2006]]"
+  - "VB-MAPP:含独立游戏、社交游戏、玩玩具等里程碑,可作游戏技能分级骨架。见 [[sundberg_2008]]"
+  - "SCERTS / 中国实务:多在 VB-MAPP / ABLLS-R / PEP-3 评估当前游戏水平后再定目标。见 [[prizant_2006]]"
+
+skill_areas:
+  - id: play_prerequisites
+    name_zh: 游戏基础前技能
+    name_en: Play Prerequisites
+    targets:
+      - level: pre
+        zh: 探索性/感觉运动游戏:操作物体、探索因果关系
+        en: Exploratory / sensorimotor play (manipulates objects, explores cause-effect)
+        methods: [naturalistic_intervention, modeling, prompting, reinforcement]
+        prereq_zh: 无(最基础)
+        examples_zh:
+          - 摇铃铛听声音、敲打玩具
+          - 按下按钮玩具看灯亮或听音乐
+        indicator_zh: 能主动操作 2–3 种玩具并探索其反应
+      - level: pre
+        zh: 模仿玩玩具的动作,并与人共同注意同一个玩具
+        en: Imitates play actions with toys; shares attention to a toy
+        methods: [modeling, video_modeling, jasper, prompting]
+        prereq_zh: 能注视玩具与示范者
+        examples_zh:
+          - 看大人推小车后自己也推
+          - 大人指玩具时看过去、再看回大人
+        indicator_zh: 能即时模仿 2–3 个玩玩具的新动作
+    citations: [kasari_2006, sundberg_2008]
+
+  - id: functional_play
+    name_zh: 功能性游戏
+    name_en: Functional / Object Play
+    targets:
+      - level: functional
+        zh: 按物品的常规用途来玩(功能性/关系性游戏)
+        en: Uses objects for their conventional function (functional / relational play)
+        methods: [modeling, naturalistic_intervention, prompting, reinforcement]
+        prereq_zh: 能操作与模仿简单玩玩具动作
+        examples_zh:
+          - 推着小车走、用杯子假装喝水
+          - 给娃娃梳头、用勺子喂玩偶
+        indicator_zh: 能对 3 种玩具做出符合其功能的玩法
+      - level: functional
+        zh: 组合/建构游戏:搭建、拼插、按步骤完成
+        en: Constructive / combinatorial play (blocks, puzzles, threading)
+        methods: [task_analysis, modeling, prompting, reinforcement]
+        prereq_zh: 能功能性地玩单个物品
+        examples_zh:
+          - 用积木搭一座塔或一列火车
+          - 完成简单拼图、串珠子
+        indicator_zh: 能独立完成一项 3–5 步的建构游戏
+    citations: [sundberg_2008, schreibman_2015]
+
+  - id: symbolic_play
+    name_zh: 象征/假装游戏
+    name_en: Symbolic / Pretend Play
+    targets:
+      - level: symbolic
+        zh: 单一假装动作 → 物品替代 → 赋予假想属性
+        en: Single pretend acts, then object substitution, then imaginary properties
+        methods: [jasper, naturalistic_intervention, modeling, pivotal_response_training]
+        prereq_zh: 有功能性游戏与共同注意
+        examples_zh:
+          - 用积木当电话贴在耳边
+          - 假装空杯子里有水并"喝"下去
+        indicator_zh: 每节游戏能自发出现≥2 个象征性动作
+      - level: symbolic
+        zh: 串联假装情节(游戏脚本)→ 角色扮演/社会戏剧游戏
+        en: Sequenced pretend scripts, then role-play / sociodramatic play
+        methods: [video_modeling, scripting, modeling, naturalistic_intervention]
+        prereq_zh: 能做单一象征动作
+        examples_zh:
+          - 给玩偶"看病":量体温→打针→包扎
+          - 过家家分配角色(你当妈妈我当宝宝)
+        indicator_zh: 能串联≥3 个假装步骤完成一段小情节
+      - level: symbolic
+        zh: 物品替代:用一个物品代表另一个物品来玩
+        en: "Object substitution: uses one object to stand for another (a block as a phone, a stick as a spoon)"
+        methods: [jasper, naturalistic_intervention, modeling, prompting]
+        prereq_zh: 能对物品做功能性玩法与单一假装动作
+        examples_zh:
+          - 把积木当电话贴在耳边"喂喂"
+          - 用小棒当勺子喂玩偶、用香蕉当电话
+        indicator_zh: 每节游戏能自发用≥2 个物品做替代
+      - level: symbolic
+        zh: 把假装从指向自己扩展到指向他人,以娃娃或玩偶为承受者
+        en: "Directs pretend toward others, with a doll as the recipient (feeds the doll, puts the doll to bed)"
+        methods: [jasper, modeling, naturalistic_intervention, prompting]
+        prereq_zh: 能对自己做单一假装动作(如假装自己喝水)
+        examples_zh:
+          - 用奶瓶喂娃娃、给玩偶盖被子睡觉
+          - 帮玩偶梳头、给小熊"擦嘴"
+        indicator_zh: 能把≥2 个假装动作指向娃娃/玩偶而非只对自己
+      - level: symbolic
+        zh: 让娃娃或玩偶成为主动的"施动者",仿佛它自己会做动作
+        en: "Treats the doll as an active agent that acts on its own (the doll feeds itself, walks, talks)"
+        methods: [jasper, modeling, naturalistic_intervention, video_modeling]
+        prereq_zh: 能把假装动作指向娃娃(以娃娃为承受者)
+        examples_zh:
+          - 让娃娃自己拿勺子"吃饭"
+          - 让玩偶自己走路、替玩偶说话
+        indicator_zh: 能让玩偶作为施动者完成≥2 个动作而非只被动接受
+      - level: symbolic
+        zh: 串联多个相关假装动作,形成多元图式的连续情节
+        en: "Combines several related pretend acts into a sequence (pours, stirs, then drinks)"
+        methods: [jasper, video_modeling, modeling, task_analysis]
+        prereq_zh: 能做单一象征动作、能模仿动作序列
+        examples_zh:
+          - 倒水→搅拌→喝下去,连成一段"泡茶"
+          - 把菜"切好"→放进锅→端给娃娃吃
+        indicator_zh: 能自发串联≥3 个相关假装动作完成一小段情节
+      - level: symbolic
+        zh: 计划性假装:先用语言说出要玩什么、再按计划去做并找齐道具
+        en: "Planned pretend: announces the plan in words first, then carries it out and seeks the props needed"
+        methods: [naturalistic_intervention, pivotal_response_training, scripting, modeling]
+        prereq_zh: 能串联多个假装动作
+        examples_zh:
+          - 先说"我们来给娃娃做生日蛋糕",再动手做
+          - 玩前先找齐锅、勺、"食材"等道具
+        indicator_zh: 能在动手前用语言说出游戏计划并据此进行
+      - level: symbolic
+        zh: 赋予不在场或想象的物品与属性:把空杯当作装满水、凭空变出道具
+        en: "Assigns absent or imaginary objects and attributes (an empty cup is full; invents a prop out of thin air)"
+        methods: [jasper, naturalistic_intervention, modeling, pivotal_response_training]
+        prereq_zh: 能做物品替代与串联假装动作
+        examples_zh:
+          - 假装空杯里有果汁并"喝"光、说"好烫"
+          - 用手比划出一把不存在的钥匙去"开门"
+        indicator_zh: 能在无实物时假想物品或属性并据此做出相应动作
+      - level: symbolic
+        zh: 主题社会戏剧游戏:围绕一个简单情节分配角色、扮演并用语言推进故事
+        en: "Thematic sociodramatic play: takes assigned roles and enacts a simple shared narrative with peers"
+        methods: [peer_based_intervention, scripting, video_modeling, naturalistic_intervention]
+        prereq_zh: 能做计划性假装、能与同伴联合游戏
+        examples_zh:
+          - 玩"开商店":分别当店员和顾客完成买卖
+          - 玩"医院":分配医生、护士、病人并演完看病过程
+        indicator_zh: 能承担一个角色与同伴合作演完一段有情节的假装游戏
+    citations: [kasari_2006, nac_2015, westby_1980, piaget_1962, lifter_1993]
+
+  - id: social_play
+    name_zh: 从平行到合作的社交游戏
+    name_en: Parallel-to-Cooperative Social Play
+    targets:
+      - level: social
+        zh: 旁观 → 平行游戏:容忍同伴在旁、各玩各的并偶尔互看
+        en: Onlooker, then parallel play (tolerates peers nearby, glances at them)
+        methods: [naturalistic_intervention, peer_based_intervention, modeling, reinforcement]
+        prereq_zh: 能容忍同伴靠近
+        examples_zh:
+          - 在同一沙池各玩但偶尔互看
+          - 与同伴并排搭各自的积木
+        indicator_zh: 能在同伴身旁持续游戏≥5 分钟
+      - level: social
+        zh: 联合 → 合作游戏:共享材料、轮流、朝共同目标
+        en: Associative, then cooperative play (shares materials, takes turns, shared goal)
+        methods: [peer_based_intervention, video_modeling, social_skills_training, pivotal_response_training]
+        prereq_zh: 能平行游戏、能等待轮流
+        examples_zh:
+          - 你递我接一起搭一座塔
+          - 分工完成一幅拼图或一场过家家
+        indicator_zh: 能在合作游戏里坚持到共同完成目标
+    citations: [chan_2009, kasari_2006, parten_1932]
+
+  - id: games_with_rules
+    name_zh: 有规则的游戏
+    name_en: Games with Rules
+    targets:
+      - level: social
+        zh: 参与简单有规则的游戏,遵守规则并接受输赢
+        en: Plays simple games with rules; follows rules and accepts winning/losing
+        methods: [video_modeling, social_narratives, social_skills_training, peer_based_intervention]
+        prereq_zh: 能合作游戏、能等待轮流
+        examples_zh:
+          - 玩抢椅子、老鹰捉小鸡
+          - 玩简单桌游并按回合行动
+        indicator_zh: 能完整参与一局有规则的游戏并接受一次输
+    citations: [chan_2009, nac_2015]
+
+  - id: independent_leisure
+    name_zh: 独立休闲技能
+    name_en: Independent Leisure
+    targets:
+      - level: independent
+        zh: 独自恰当地玩一段时间(独立游戏/独处技能)
+        en: Plays appropriately alone for a period (independent / solitary play)
+        methods: [task_analysis, visual_supports, self_management, video_modeling]
+        prereq_zh: 有若干可独立完成的功能性/建构游戏
+        examples_zh:
+          - 按活动清单独立玩 10 分钟
+          - 用视觉日程从几项活动中自选一项
+        indicator_zh: 能在最少提示下独立进行一项休闲活动≥10 分钟
+      - level: independent
+        zh: 休闲与放松技能(年长儿童:兴趣爱好、安排空闲时间)
+        en: Leisure and downtime skills (hobbies, filling free time)
+        methods: [self_management, visual_supports, task_analysis, video_modeling]
+        prereq_zh: 有初步的独立游戏与自我监控能力
+        examples_zh:
+          - 空闲时自己选择读绘本或听音乐
+          - 用清单安排放学后的休闲时段
+        indicator_zh: 能在无结构的空闲时段自主选择并进行恰当休闲
+    citations: [steinbrenner_2020, lee_2007]
+
+  - id: play_flexibility
+    name_zh: 游戏的灵活性(拓展受限/刻板游戏)
+    name_en: Flexibility in Play
+    targets:
+      - level: functional
+        zh: 拓展受限/重复游戏:在已有兴趣上引入变化、扩大玩法
+        en: Expands restricted / repetitive play into varied, flexible play
+        methods: [naturalistic_intervention, pivotal_response_training, modeling, reinforcement]
+        prereq_zh: 有稳定但较受限的游戏兴趣
+        examples_zh:
+          - 除了把小车排成一排,还推着小车"送货"
+          - 在反复的搭积木里加入新造型或新角色
+        indicator_zh: 能在原有游戏上接受并使用≥2 种新玩法
+      - level: social
+        zh: 接受他人加入并改变游戏,能灵活地在活动间转换
+        en: Accepts others changing the play; shifts flexibly between activities
+        methods: [naturalistic_intervention, video_modeling, social_narratives, self_management]
+        prereq_zh: 能拓展自己的游戏玩法
+        examples_zh:
+          - 同伴提出新玩法时愿意尝试
+          - 到时间时能平和地从一项游戏切换到下一项
+        indicator_zh: 能在提示下接受他人对游戏的一次改变而不明显抗拒
+    citations: [schreibman_2015, nac_2015]
+
+notes_zh:
+  - 目标须依据评估的当前游戏发展水平选取(社会维度与象征维度分别评估),并做个别化调整;所有产出仍为需专业审核的草稿。
+  - methods 列出的是"证据上适配该目标"的方法;具体到某孩子由专业人员定夺。
+  - 拓展受限游戏遵循"顺兴趣、加变化"的自然情境原则,不以直接压制刻板游戏为手段。
+  - 文首所列 Parten / Piaget / Westby / Lifter 文献已入 citations.yaml(id=parten_1932 / piaget_1962 / westby_1980 / lifter_1993),商用引用前仍须按各条 verify 终核原文。

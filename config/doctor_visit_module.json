@@ -1,0 +1,280 @@
+{
+  "title_zh": "去看医生",
+  "title_en": "Going to the Doctor",
+  "learning_objective": "就医时,孩子能在预演后进入诊室、在候诊区安坐等待,并配合完成检查的≥2 个关键步骤(如张嘴、量身高),提示下达成。",
+  "method_id": "video_modeling",
+  "cast": "clinic_visit",
+  "intro_zh": "今天我要去看医生,做一次健康检查。医生很温和,会帮我看看身体好不好。我先了解一下会发生什么。",
+  "intro_en": "Today I am going to the doctor for a check-up. The doctor is kind and will check that my body is healthy. First, I learn what will happen.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "先在候诊室安静地坐着等。",
+      "text_en": "First I sit and wait quietly in the waiting room.",
+      "narration_zh": "到了诊所,我先在候诊室安静地坐着等,可以看看绘本。",
+      "narration_en": "At the clinic, I sit and wait quietly in the waiting room. I can look at a picture book.",
+      "visual_keyword": "候诊等待",
+      "icon": "🪑",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "轮到我,我走进诊室,和医生打招呼。",
+      "text_en": "When it is my turn, I go in and greet the doctor.",
+      "narration_zh": "轮到我了,我走进诊室,对医生说“你好”。",
+      "narration_en": "When it is my turn, I go into the room and say hello to the doctor.",
+      "visual_keyword": "打招呼",
+      "icon": "🙂",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "医生请我张开嘴、量量身高,我配合做。",
+      "text_en": "The doctor asks me to open my mouth and measure my height; I cooperate.",
+      "narration_zh": "医生请我张开嘴看一看,量一量身高,我照着做,很配合。",
+      "narration_en": "The doctor asks me to open my mouth and measures my height; I do it and cooperate.",
+      "visual_keyword": "配合检查",
+      "icon": "🩺",
+      "duration_hint": 7.0
+    },
+    {
+      "index": 4,
+      "text_zh": "检查做完了,我做得很好。",
+      "text_en": "The check-up is done, and I did great.",
+      "narration_zh": "检查做完了,医生说我做得很好,我也为自己高兴。",
+      "narration_en": "The check-up is done, the doctor says I did great, and I feel proud of myself.",
+      "visual_keyword": "做得好",
+      "icon": "⭐",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "到了诊所,还没轮到你。轮到你,试试看该怎么做。",
+      "prompt_en": "You are at the clinic and it is not your turn yet. Your turn — what can you do?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先在候诊室安静地坐着等。",
+      "answer_en": "I sit and wait quietly in the waiting room.",
+      "reinforce_zh": "你安静地等待,做得很好。",
+      "reinforce_en": "You waited quietly. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "医生请你张开嘴看一看,你可以怎么做?",
+      "prompt_en": "The doctor asks you to open your mouth. What can you do?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我张开嘴,配合医生看一看。",
+      "answer_en": "I open my mouth and let the doctor take a look.",
+      "reinforce_zh": "你配合医生检查,真棒。",
+      "reinforce_en": "You cooperated with the doctor. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "检查的时候有点紧张,你可以怎么帮自己?",
+      "prompt_en": "If you feel a little nervous during the check-up, how can you help yourself?",
+      "pause_seconds": 5.0,
+      "answer_zh": "我做一个深呼吸,告诉自己“一会儿就好了”。",
+      "answer_en": "I take a deep breath and tell myself it will be over soon.",
+      "reinforce_zh": "你用深呼吸让自己放松,做得好。",
+      "reinforce_en": "You used a deep breath to relax. Well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "在诊室里,医生要给你做检查……你可以怎么做?",
+    "scenario_en": "In the room, the doctor is going to examine you... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "配合医生,做完检查",
+        "label_en": "Cooperate and finish the check-up",
+        "outcome_zh": "你配合医生一步步做完检查,很快就好了,医生夸你很棒。",
+        "outcome_en": "You cooperate step by step, the check-up is soon done, and the doctor says you did great.",
+        "icon": "😊"
+      },
+      {
+        "label_zh": "有点紧张就先深呼吸",
+        "label_en": "If nervous, take a deep breath first",
+        "outcome_zh": "你觉得紧张时先深呼吸,让自己平静一点,再继续配合检查。",
+        "outcome_en": "When you feel nervous, you take a deep breath, feel calmer, and keep cooperating.",
+        "icon": "😌"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "schedule",
+      "title_zh": "看医生的顺序",
+      "title_en": "Doctor visit order",
+      "caption_zh": "候诊等待 → 进诊室 → 配合检查 → 做完啦",
+      "caption_en": "Wait → Go in → Cooperate → All done",
+      "icon": "🩺"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以说的话",
+      "title_en": "What I can say",
+      "caption_zh": "医生你好。 / 一会儿就好了。",
+      "caption_en": "Hello, doctor. / It will be over soon.",
+      "icon": "🗣️"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "紧张时的办法",
+      "title_en": "If I feel nervous",
+      "caption_zh": "有点紧张 → 深呼吸 → 平静一点",
+      "caption_en": "A little nervous → Deep breath → Calmer",
+      "icon": "😌"
+    },
+    {
+      "kind": "step",
+      "title_zh": "配合检查",
+      "title_en": "Cooperating with the check-up",
+      "caption_zh": "张开嘴 · 量身高 · 听听心跳",
+      "caption_en": "Open mouth · Measure height · Listen to heartbeat",
+      "icon": "✅"
+    }
+  ],
+  "review_zh": "我知道看医生会发生什么了:先安静候诊,轮到我就进诊室、和医生打招呼,配合张嘴、量身高。有点紧张时我就深呼吸。检查做完,我做得很好!",
+  "review_en": "Now I know what happens at the doctor: I wait quietly, go in when it is my turn, greet the doctor, and cooperate by opening my mouth and getting measured. If I feel nervous, I take a deep breath. The check-up is done — I did great!",
+  "citations_used": [
+    "bellini_akullian_2007",
+    "gray_garand_1993",
+    "steinbrenner_2020",
+    "nac_2015"
+  ],
+  "review_flags": [
+    "草稿·需专业审核:就医/医疗属敏感主题,须专业人员与家长按孩子情况把关,配合分级暴露与预演,语气平静赋能、非恐吓;不得把检查描述为疼痛或惩罚。",
+    "方法:本课以 video_modeling(分步示范看诊流程)为训练模块方法;社交叙事/社交故事(social_narratives)是本主题的互补形式,宜由专业人员配合个别化社交故事一并使用。",
+    "医疗/牙科脱敏与配合的特异性一手实证待补(见 design/video_lesson_ideas.md TODO_CITATION),商用前须补齐核对。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy and a kind female doctor smiling warmly in a friendly clinic room, calm and reassuring, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting calmly in a friendly clinic, ready for a check-up, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting and waiting quietly in a cozy clinic waiting area, calm, looking at a picture book on his lap, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy walking into the exam room and greeting a kind female doctor with a friendly wave, both smiling, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy calmly cooperating as a kind female doctor gently checks him, the boy opening his mouth for a look, both calm, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step4": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy smiling proudly after the check-up while a kind female doctor gives a warm thumbs up, both cheerful, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting in the clinic waiting area waiting for his turn patiently, calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting quietly and calmly in the clinic waiting area with a picture book, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a kind female doctor gently ready to take a look while a young boy stays calm and cooperative, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy opening his mouth cooperatively while a kind female doctor gently looks, calm, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy feeling a little nervous during the check-up and starting to calm himself, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy taking a calm deep breath to relax during the check-up, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy in the exam room with a kind female doctor, deciding to cooperate calmly, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy cooperating step by step with a kind female doctor and finishing the check-up, both cheerful, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": 1337,
+      "visual_en": "a young boy in the clinic taking a slow calm deep breath to feel calmer, close up upper body, both eyes perfectly symmetric and natural, each eye with a clear round dark pupil, a well-defined iris and visible white sclera, no warped or melting or broken eyes, natural well-formed face, bright lively gaze with a catchlight sparkle"
+    },
+    "review": {
+      "roles": [
+        "boy_ming",
+        "doctor"
+      ],
+      "visual_en": "a young boy smiling proudly with a kind female doctor after a successful check-up, both cheerful, both with big bright lively sparkling eyes with clear catchlight highlights"
+    }
+  }
+}

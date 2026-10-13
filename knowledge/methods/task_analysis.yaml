@@ -1,0 +1,72 @@
+# =====================================================================
+# 循证方法条目:任务分析·分步训练(Task Analysis)
+# 作为「训练模块」可生成方法:把一个多步骤技能拆成清晰小步,一步一屏示范
+# + 回合式练习 + 视觉步骤卡,配提示褪除,直到独立完成。
+# 证据:Task Analysis 属 NCAEP 2020 的 28 项 EBP。见 methods/_registry.yaml。
+# =====================================================================
+
+id: task_analysis
+name_zh: 任务分析·分步训练
+name_en: Task Analysis
+evidence_level: established
+one_line_zh: 把一个多步骤技能(如洗手、穿衣、问候)拆成清晰的小步,一步一屏示范并练习,提示由多到少褪除,直到孩子能独立完成。
+one_line_en: Break a multi-step skill into clear small steps, demonstrate and practice one step at a time, fade prompts, until the child can do it independently.
+
+use_for_zh:
+  - 训练一个可拆成步骤的自理/日常/社交序列(洗手、穿衣、如厕、问候、求助流程)
+  - 让复杂技能"可教、可练、可独立",并支持泛化到真实生活
+target_audience_zh: 需要把技能拆细、按步支持的自闭症儿童;由家长/康复师在每步给必要提示并逐步撤除。
+
+method_components_zh:
+  breakdown: 任务分解——把技能拆成 3–6 个清晰、可观察的小步。
+  chaining: 串链——按顺序把各步连起来(可正向或反向串链)。
+  visual_steps: 视觉步骤卡——每步配一张具体的步骤卡,可离屏使用。
+  prompt_fading: 提示褪除——由多到少(全示范→部分→手势→独立)撤除提示。
+  reinforce_each: 逐步强化——完成每一步/整串都给具体鼓励。
+
+writing_rules_zh:
+  - 每个模块只训练"一个"可拆步的目标技能;learning_objective 写清"谁、在什么情境、做出什么、达到什么程度(如独立完成)"。
+  - 把技能拆成清晰、可观察的小步(一步一屏),用具体、字面的语言;只示范正确做法。
+  - 练习段让孩子按步自己做,提示由多到少褪除;及时、具体地强化每一步与整串完成。
+  - 视觉卡片给出该技能的"步骤卡/流程卡",顺序清楚、图文简洁、可打印。
+  - 开场与收尾用第一人称、故事化叙述,直接进入情境;不用"今天我们来练习/学习"等说教口吻(练习互动提示如"轮到你"除外)。
+  - 自然融入孩子兴趣与真实日常场景(写实、贴切),照顾其感官特点。
+
+reinforcement_rules_zh:
+  - 及时:每完成一步/整串马上给。
+  - 具体:说清是"哪一步"做得好(描述行为),而非泛泛"真棒"。
+  - 真诚正向:强化努力与独立;不讽刺、不比较、不用威胁。
+
+phase_system:
+  intro:
+    zh: 开场
+    role_zh: 直接进入故事——一个需要按步骤完成的日常情境正在发生(第一人称),不说教。
+  teach:
+    zh: 示范段
+    role_zh: 把技能分解成小步,一步一屏正向示范。
+  practice:
+    zh: 练习段
+    role_zh: 数个回合:提示某一步 → 留白(轮到你)让孩子做 → 示范正确做法 → 具体鼓励;提示逐步减少。
+  choice:
+    zh: 选择段
+    role_zh: 就"下一步该怎么做"给若干选项,每个选择都有温和反馈(无惩罚),可点出正确顺序。
+  review:
+    zh: 收尾
+    role_zh: 故事化收束——顺利完成整件事 + 温暖鼓励,让孩子带着独立感结束。
+
+per_module_guidance_zh:
+  min_steps: 3
+  max_steps: 6
+  min_trials: 2
+  max_trials: 4
+  min_cards: 3
+  max_cards: 6
+  pause_seconds_default: 4
+
+skill_domain: daily_living_behavior
+
+citations:
+  - steinbrenner_2020
+  - cooper_2007
+  - bellini_akullian_2007
+  - nac_2015

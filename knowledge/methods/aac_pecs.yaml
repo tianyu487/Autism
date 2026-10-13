@@ -1,0 +1,73 @@
+# =====================================================================
+# 循证方法条目:图片沟通·功能性请求训练(AAC / PECS)
+# 作为「训练模块」可生成方法:用图片交换/沟通板建立功能性请求与沟通,
+# 让孩子"用图片说出需要",减少因表达受阻带来的挫败。
+# 证据:NCAEP 2020 将 PECS 并入 AAC(EBP)。见 methods/_registry.yaml。
+# =====================================================================
+
+id: aac_pecs
+name_zh: 图片沟通·功能性请求训练
+name_en: Picture / Augmentative Communication (AAC)
+evidence_level: established
+one_line_zh: 用图片交换或沟通板建立功能性请求与沟通,让无口语或口语少的孩子"用图片说出需要",减少挫败、支持社交发起。
+one_line_en: Build functional requesting and communication with picture exchange or a communication board, so a child can express needs with pictures.
+
+use_for_zh:
+  - 训练一个功能性沟通目标(用图片请求想要的物品/活动、请求帮助/休息)
+  - 为无口语/口语少的孩子建立可发起的沟通,减少因表达受阻的问题行为
+target_audience_zh: 无口语或口语较少、能分辨图片的自闭症儿童;由家长/康复师准备图片并在有动机时创造沟通机会。
+
+method_components_zh:
+  exchange: 图片交换——把图片递给对方来换取想要的东西。
+  discrimination: 图片辨别——在多张图片中选对目标。
+  sentence_strip: 句条——组合"我要 + X"表达。
+  spontaneity: 主动发起——在有动机时自己发起,而非仅被问才应。
+  functional_replace: 功能替代——用沟通替代哭闹/抢夺(如教"帮我/休息")。
+
+writing_rules_zh:
+  - 每个模块只训练"一个"功能性沟通目标;learning_objective 写清情境与达标程度(如"想要时能主动递出图片请求")。
+  - 示范图片交换/指认/组句条的清晰步骤;只示范正确做法,视觉、具体、低刺激。
+  - 练习段让孩子在有动机时自己发起请求;强化任何真实的沟通尝试。
+  - 不强迫开口说话;图片/AAC 不会阻碍口语(常促进);句子短、图卡清楚。
+  - visual_cards 给出示例图片卡("我要"、目标物、"帮我"、"休息"等),可打印。
+  - 开场与收尾用第一人称、故事化叙述,直接进入情境;不用"今天我们来练习/学习"等说教口吻(练习互动提示如"轮到你"除外)。
+  - 自然融入孩子兴趣与真实动机情境(写实、贴切),照顾其感官特点。
+
+reinforcement_rules_zh:
+  - 及时:孩子一发起沟通(递图片/指认)就马上给到想要的,并配一句鼓励。
+  - 具体:说清"你自己用图片说出来了"这件事。
+  - 真诚正向:强化主动与尝试;不讽刺、不比较、不用威胁。
+
+phase_system:
+  intro:
+    zh: 开场
+    role_zh: 直接进入故事——一个"想要某样东西/需要帮助"的真实情境正在发生(第一人称),不说教。
+  teach:
+    zh: 示范段
+    role_zh: 分步示范如何用图片发起请求(拿图片→递出/指认→组"我要+X"),一步一屏。
+  practice:
+    zh: 练习段
+    role_zh: 数个回合:制造动机 → 留白(轮到你)让孩子发起 → 示范正确做法 → 立刻满足 + 具体鼓励。
+  choice:
+    zh: 选择段
+    role_zh: 就"用哪张图片来表达"给若干选项,每个选择都有温和反馈(无惩罚)。
+  review:
+    zh: 收尾
+    role_zh: 故事化收束——用图片成功表达、需要被满足 + 温暖鼓励,让孩子带着成就感结束。
+
+per_module_guidance_zh:
+  min_steps: 3
+  max_steps: 6
+  min_trials: 2
+  max_trials: 4
+  min_cards: 3
+  max_cards: 6
+  pause_seconds_default: 4
+
+skill_domain: communication_language
+
+citations:
+  - bondy_frost_1994
+  - steinbrenner_2020
+  - schreibman_2015
+  - nac_2015

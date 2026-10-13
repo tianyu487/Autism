@@ -1,0 +1,284 @@
+# =====================================================================
+# 技能领域库:运动与感觉调节 Motor & Sensory Regulation
+# 每个目标(target)标注:发展层级 level、中英描述、可用循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 生成时这些一并注入,帮助模块选准目标、写出可测量的 learning_objective。
+#
+# ⚠️ 证据边界(本领域尤须注意):
+#   本库围绕两条证据较扎实的主线——(甲)可教学的大/精细动作技能;
+#   (乙)以感觉为基础的自我调节支持与便利。感觉统合疗法(Ayres SI/感统训练)
+#   针对自闭症核心症状的证据仍属新兴且有争议,勿宣称其"有效"或能改善核心症状。
+# =====================================================================
+
+# =====================================================================
+# 感觉处理干预证据已核验入库(2026-07-13),仅用于「证据新兴/混杂」的背景说明:
+#   - [[schaaf_2014]] Ayres 感统 OT 干预 RCT(样本小,勿据此宣称改善核心症状)
+#   - [[case_smith_2015]] 感觉处理干预系统综述(证据有限、须谨慎)
+#   卷期/DOI 已核对,现置 verify:true。切记:入库不等于背书疗效——本域仍以
+#   「功能性运动技能 + 感觉性自我调节支持」为落点,不做感统治疗的疗效承诺。
+# =====================================================================
+
+id: motor_sensory
+name_zh: 运动与感觉调节
+name_en: Motor & Sensory Regulation
+one_line_zh: 聚焦可教学的大/精细动作技能与以感觉为基础的自我调节支持;帮助生成器挑选发展适宜、循证的运动目标与调节策略。
+
+evidence_note_zh: |
+  本领域围绕两条证据较扎实的主线构建:
+  (一)大肌肉与精细动作技能的发展——可用任务分析、视频/现场示范、提示与强化系统地教
+       (动作模仿、身体觉知、协调、书写/剪/自理精细动作);
+  (二)以感觉为基础的自我调节支持与环境调整(重活动/运动休息/安静空间/感觉工具)——
+       作为"调节策略与便利支持",与 emotion_library 的 take_a_break、squeeze_push、quiet_corner 等策略重叠。
+  重要提醒:感觉统合疗法(Ayres SI/感统训练)针对自闭症核心症状的证据仍属新兴且存在争议,
+  NCAEP 2020 只把"感觉为基础的干预"作狭义、有限的收录。本库条目瞄准的是"功能性运动技能"
+  与"调节支持",而非"感觉统合治疗";请勿宣称感统训练能改善核心症状或"有效"。
+  所有产出仍为需专业(作业治疗/康复/特教)审核的草稿。
+
+developmental_levels:
+  - key: emerging
+    zh: 萌发
+    en: Emerging
+  - key: developing
+    zh: 发展中
+    en: Developing
+  - key: functional
+    zh: 功能性与独立
+    en: Functional & independent
+
+frameworks_zh:
+  - "任务分析 + 示范 + 提示 + 强化:教大/精细动作与自理动作的核心组合。见 [[cooper_2007]]、[[steinbrenner_2020]]"
+  - "视频示范:适合动作模仿、体操/律动等可视化动作技能。见 [[nac_2015]]"
+  - "自我管理 + 视觉支持:支撑'识别信号→选用感觉策略→请求休息'的自我调节链条,与情绪库策略互通。见 [[steinbrenner_2020]]"
+  - "中国实务多以 VB-MAPP / PEP-3 / 大运动-精细运动发育评估确定当前动作水平后再定目标;感觉调节支持的设计宜由作业治疗师参与。"
+
+skill_areas:
+  - id: gross_motor
+    name_zh: 大肌肉运动
+    name_en: Gross Motor
+    targets:
+      - level: emerging
+        zh: 基础移动与姿势控制:稳定站立、蹲下再站起、独立行走并绕过障碍
+        en: "Basic locomotion and postural control: stands steadily, squats and rises, walks around obstacles"
+        methods: [task_analysis, modeling, prompting, reinforcement]
+        prereq_zh: 能独立行走数步
+        examples_zh:
+          - 沿地面直线走 2–3 米不跌倒
+          - 蹲下捡起玩具再站起来
+        indicator_zh: 连续行走 3 米并绕过 1 个障碍物,5 次中≥4 次成功
+      - level: developing
+        zh: 走—跑—跳的进阶:双脚原地跳、单脚站立、扶栏交替脚上下楼梯
+        en: "Progressing through walk-run-jump: two-foot jump, single-leg stand, alternating stairs"
+        methods: [task_analysis, video_modeling, modeling, prompting]
+        prereq_zh: 能稳定行走与蹲起
+        examples_zh:
+          - 双脚原地向上跳并落稳
+          - 扶栏杆交替脚上楼梯
+        indicator_zh: 双脚跳连续 3 次落稳;单脚站立≥3 秒
+      - level: functional
+        zh: 平衡与球类协调:走低平衡木、拍/接/踢球、参与简单运动游戏
+        en: "Balance and ball coordination: beam walking, bounce/catch/kick a ball, simple sports games"
+        methods: [task_analysis, video_modeling, naturalistic_intervention, reinforcement]
+        prereq_zh: 具备跑跳与单脚平衡
+        examples_zh:
+          - 走过低平衡木不掉下来
+          - 双手接住 1 米外滚来的球
+        indicator_zh: 连续接球或踢球 3 次中≥2 次成功
+      - level: functional
+        zh: 器械与同伴球类游戏:玩攀爬架/滑梯等游乐设施,与同伴玩追逐、抛接、踢球等运动游戏
+        en: "Playground apparatus and peer ball games: uses climbing frames and slides, plays chase, throw-catch, and kicking games with peers"
+        methods: [task_analysis, video_modeling, naturalistic_intervention, reinforcement]
+        prereq_zh: 具备跑跳、平衡与基本球类协调
+        examples_zh:
+          - 独立爬上攀爬架并从滑梯滑下
+          - 和同伴一来一回抛接大球数个回合
+        indicator_zh: 在游乐场与≥1 名同伴玩合作性球类或追逐游戏,持续参与≥3 分钟,3 次中≥2 次
+    citations: [steinbrenner_2020, nac_2015, cooper_2007]
+
+  - id: fine_motor
+    name_zh: 精细动作
+    name_en: Fine Motor
+    targets:
+      - level: emerging
+        zh: 抓握与释放、双手协作:拇食指捏取、把物件放入容器、传递物品
+        en: "Grasp-release and bimanual use: pincer grasp, places objects into a container, passes items"
+        methods: [task_analysis, prompting, reinforcement, time_delay]
+        prereq_zh: 能注视并伸手够物
+        examples_zh:
+          - 用拇指食指捏起小豆子放进碗里
+          - 一手扶碗一手把积木放入
+        indicator_zh: 拇食指捏取并放入容器 5 次中≥4 次
+      - level: developing
+        zh: 工具操作:握笔涂鸦/仿画线条、使用安全剪刀沿线剪
+        en: "Tool use: holds a crayon to scribble or copy lines, cuts along a line with safety scissors"
+        methods: [task_analysis, video_modeling, modeling, prompting]
+        prereq_zh: 具备稳定抓握与双手协作
+        examples_zh:
+          - 在方框内涂色大致不出界
+          - 用剪刀沿粗直线剪开纸条
+        indicator_zh: 沿直线剪 10 厘米,偏离线≤1 厘米
+      - level: developing
+        zh: 穿珠与仿写基本笔画:双手协作穿珠/串扣,描或仿写竖、横、圆、十字等入门笔画
+        en: "Threading and pre-writing strokes: threads beads or buttons with both hands, traces or copies vertical, horizontal, circle, and cross strokes"
+        methods: [task_analysis, modeling, prompting, time_delay]
+        prereq_zh: 具备稳定抓握与拇食指捏取
+        examples_zh:
+          - 把 5 颗珠子依次穿到线上
+          - 沿虚线描出竖线和圆形
+        indicator_zh: 穿珠≥5 颗且描画 3 种基本笔画大致成形,5 次中≥4 次
+      - level: functional
+        zh: 自理相关精细动作:扣扣子、拉拉链、系/穿鞋带、拧瓶盖
+        en: "Self-help fine motor: buttons, zippers, laces, twisting a lid"
+        methods: [task_analysis, video_modeling, prompting, reinforcement]
+        prereq_zh: 具备工具操作与双手分工
+        examples_zh:
+          - 独立扣好 3 颗中等大小纽扣
+          - 把外套拉链拉到顶端
+        indicator_zh: 独立扣或解 3 颗纽扣,5 次中≥4 次成功
+    citations: [steinbrenner_2020, cooper_2007]
+
+  - id: motor_imitation
+    name_zh: 动作模仿
+    name_en: Motor Imitation
+    targets:
+      - level: emerging
+        zh: 即时单步动作模仿:模仿拍手、举手、拍腿等大动作
+        en: "Immediate single-step motor imitation: claps, raises arms, pats legs"
+        methods: [modeling, video_modeling, prompting, discrete_trial_training]
+        prereq_zh: 能注视示范者数秒
+        examples_zh:
+          - 老师拍手,孩子跟着拍手
+          - 模仿"举高高"的动作
+        indicator_zh: 即时模仿新动作 5 个中≥4 个
+      - level: developing
+        zh: 多步与连续动作模仿:模仿两三步动作序列、跟做简单律动
+        en: "Multi-step and sequential imitation: copies a 2-3 step action sequence, follows simple movement rhythms"
+        methods: [video_modeling, modeling, task_analysis, prompting]
+        prereq_zh: 能稳定完成单步动作模仿
+        examples_zh:
+          - 模仿"拍手—跺脚—转圈"三步动作
+          - 跟做儿歌里的简单手部律动
+        indicator_zh: 正确复现 3 步动作序列,3 次中≥2 次
+      - level: functional
+        zh: 集体体操/律动跟做:在小组中跟随示范完成一段操节或舞蹈
+        en: "Group exercise or movement routines: follows a modeled routine within a group"
+        methods: [video_modeling, naturalistic_intervention, reinforcement, self_management]
+        prereq_zh: 具备多步动作模仿、能在集体中维持注意
+        examples_zh:
+          - 跟着视频做完整套早操
+          - 在律动课里跟做一段舞蹈
+        indicator_zh: 在集体中跟做完成一段律动的主要动作(≥70%)
+    citations: [nac_2015, steinbrenner_2020]
+
+  - id: body_awareness
+    name_zh: 身体觉知
+    name_en: Body Awareness
+    targets:
+      - level: emerging
+        zh: 身体部位命名与指认:指认并命名头、手、脚等主要部位
+        en: "Body-part identification and naming: points to and names head, hands, feet"
+        methods: [discrete_trial_training, prompting, visual_supports, reinforcement]
+        prereq_zh: 有基本接受性语言或指认能力
+        examples_zh:
+          - 听指令指出自己的鼻子
+          - 在图片上指认身体部位
+        indicator_zh: 指认 5 个身体部位中≥4 个正确
+      - level: developing
+        zh: 空间与身体位置概念:上/下、前/后、里/外,按指令摆放身体
+        en: "Spatial and body-position concepts: up/down, front/back, in/out; positions the body on cue"
+        methods: [naturalistic_intervention, modeling, prompting, visual_supports]
+        prereq_zh: 能命名主要身体部位
+        examples_zh:
+          - 按指令"手举高、蹲下去"
+          - 钻过呼啦圈、坐到椅子后面
+        indicator_zh: 正确执行含空间词的身体指令 5 次中≥4 次
+      - level: functional
+        zh: 动作计划与协调:按顺序完成跨越、钻爬、够取的多步动作路线
+        en: "Motor planning and coordination completes a multi-step obstacle route in order"
+        methods: [task_analysis, video_modeling, modeling, prompting]
+        prereq_zh: 具备空间概念与基本平衡
+        examples_zh:
+          - 按顺序走过"跨栏—钻洞—拍球"路线
+          - 模仿并规划一段动作组合
+        indicator_zh: 独立按顺序完成 3 步动作路线,3 次中≥2 次
+    citations: [steinbrenner_2020, cooper_2007]
+
+  - id: sensory_regulation_supports
+    name_zh: 感觉调节支持
+    name_en: Sensory-Based Self-Regulation Supports
+    targets:
+      - level: emerging
+        zh: 识别身体的过载/不适信号:察觉太吵、太亮、太挤、发痒等带来的不舒服
+        en: "Noticing bodily overload or discomfort signals: registers that loud, bright, crowded, or itchy feels uncomfortable"
+        methods: [visual_supports, modeling, naturalistic_intervention, prompting]
+        prereq_zh: 有基本身体感受与情绪的初步觉察
+        examples_zh:
+          - 用图卡指出"太吵了,我不舒服"
+          - 环境变吵时捂耳朵表示不适
+        indicator_zh: 在过载情境中能用图卡或动作示意不适 3 次中≥2 次
+      - level: developing
+        zh: 使用感觉调节策略自我平静:深压/挤压、推举重物、动一动、去安静角(与情绪库策略互通)
+        en: "Using sensory strategies to self-calm: deep pressure or squeeze, heavy work, movement break, quiet corner"
+        methods: [visual_supports, self_management, modeling, reinforcement]
+        prereq_zh: 能识别自身不适或紧张信号
+        examples_zh:
+          - 感到烦躁时抱一抱重毯子或挤压球
+          - 走到安静角戴上降噪耳罩
+        indicator_zh: 提示下能选用并完成 1 种感觉调节策略,使情绪回落
+      - level: functional
+        zh: 主动请求休息或感觉工具并独立调节:用语言/图卡请求"我需要休息""我要挤压球"
+        en: "Independently requesting a break or sensory tool: asks for a break or a tool and self-regulates"
+        methods: [self_management, visual_supports, time_delay, naturalistic_intervention]
+        prereq_zh: 会使用至少一种感觉调节策略
+        examples_zh:
+          - 课堂上出示"休息"卡,去感觉角待 2 分钟再回来
+          - 主动说"我要抱重毯子"
+        indicator_zh: 需要时能主动请求休息或工具,并在数分钟内自我平复,每周记录≥3 次
+      - level: functional
+        zh: 按视觉日程主动进行运动/重活动休息以自我调节:在过载前照计划完成一次跳弹/推箱/搬书等重活动,再回到任务(作为调节支持与便利,非感统治疗)
+        en: "Proactively taking a scheduled movement or heavy-work break to self-regulate: completes a planned jumping, pushing, or carrying break before overload builds, then returns to task"
+        methods: [self_management, visual_supports, task_analysis, reinforcement]
+        prereq_zh: 能识别不适信号并会使用至少一种感觉调节策略
+        examples_zh:
+          - 看视觉日程,在长时坐姿活动中途去蹦床跳 10 下再回座位
+          - 按提醒卡帮老师搬一摞书作为重活动休息
+        indicator_zh: 在提示或日程提醒下主动完成计划中的运动/重活动休息并返回任务,每周记录≥3 次
+    citations: [steinbrenner_2020, nac_2015, schaaf_2014, case_smith_2015]
+
+  - id: daily_movement_participation
+    name_zh: 参与体育与律动集体活动
+    name_en: Daily Movement Participation
+    targets:
+      - level: emerging
+        zh: 进入并加入集体运动情境:走进活动区、坐进圆圈或队伍、短暂观察并跟做一个简单动作
+        en: "Entering and joining a group movement setting: comes into the activity area, sits in the circle or line, watches briefly and copies one simple action"
+        methods: [visual_supports, modeling, prompting, reinforcement]
+        prereq_zh: 能被带领进入活动区并短暂停留
+        examples_zh:
+          - 音乐律动开始时走进圈里坐下
+          - 观察老师后跟做一个拍手动作
+        indicator_zh: 在提示下进入集体并跟做≥1 个动作,5 次中≥4 次
+      - level: developing
+        zh: 参与结构化体育/律动集体活动:排队、听口令开始或停止、跟做热身
+        en: "Participating in structured PE or movement groups: lines up, starts or stops on cue, follows warm-ups"
+        methods: [visual_supports, video_modeling, prompting, reinforcement]
+        prereq_zh: 能在集体中维持短暂注意、具备基本动作模仿
+        examples_zh:
+          - 体育课按口令"开始/停"做动作
+          - 排队等待轮到自己上器械
+        indicator_zh: 一节课内跟随集体口令完成≥3 个环节
+      - level: functional
+        zh: 融入合作性运动游戏并遵守规则:轮流、传接、简单团队配合
+        en: "Joining cooperative movement games with rules: turn-taking, passing, simple teamwork"
+        methods: [naturalistic_intervention, video_modeling, self_management, reinforcement]
+        prereq_zh: 能参与结构化集体活动并遵守简单规则
+        examples_zh:
+          - 在传球游戏里等到轮次再传给同伴
+          - 跟随小组完成接力中自己的一棒
+        indicator_zh: 在有规则的运动游戏中遵守规则参与到结束,3 次中≥2 次
+    citations: [steinbrenner_2020, nac_2015]
+
+notes_zh:
+  - 目标须依据评估的当前动作发展水平选取并个别化;大/精细动作教学优先用任务分析拆步、示范与提示,再逐步褪除。
+  - 感觉调节支持是"帮助自我调节的策略与便利",与 emotion_library(take_a_break / squeeze_push / quiet_corner)相通;不等同于、也不应表述为"感觉统合治疗"。
+  - 感觉统合疗法对自闭症核心症状的疗效证据新兴且混杂,切勿夸大;涉及感觉处理与运动的专业评估与方案由作业治疗师/康复师定夺。
+  - methods 列出的是"证据上适配该目标"的方法;具体到某孩子由专业人员定夺,所有产出仍为需专业审核的草稿。

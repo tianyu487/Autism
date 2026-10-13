@@ -1,0 +1,288 @@
+{
+  "title_zh": "停一停,想一想",
+  "title_en": "Stop and Think",
+  "learning_objective": "在有冲动想马上行动的情境中,孩子能自发使用“停一停—想一想—再行动”,把冲动和反应隔开,做出更好的选择(每周记录≥3 次)。",
+  "method_id": "cognitive_behavioral",
+  "intro_zh": "有时候我特别想马上做一件事。这时候我可以先停一停,再想一想:这样做好不好?然后再行动。停一停、想一想,能帮我做出更好的选择。",
+  "intro_en": "Sometimes I really want to do something right away. I can first stop, then think: is this a good idea? Then I act. Stop and think helps me make a better choice.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "我先停一停,手放下来。",
+      "text_en": "First I stop and put my hands down.",
+      "narration_zh": "特别想马上去做的时候,我先停一停,把手放下来,深呼吸一下。",
+      "narration_en": "When I really want to act right away, I stop, put my hands down, and take a breath.",
+      "visual_keyword": "停一停",
+      "icon": "🛑",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 2,
+      "text_zh": "我想一想:这样做会怎么样?",
+      "text_en": "I think: what will happen if I do this?",
+      "narration_zh": "停下来以后,我想一想:如果我马上这样做,会发生什么?好不好?",
+      "narration_en": "After I stop, I think: if I do this right now, what will happen? Is it a good idea?",
+      "visual_keyword": "想一想",
+      "icon": "🤔",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 3,
+      "text_zh": "我想想有没有更好的做法。",
+      "text_en": "I think of a better way.",
+      "narration_zh": "我再想一想,有没有更好、更安全的做法,比如先问一问、先等一等。",
+      "narration_en": "I think of a better and safer way, like asking first or waiting a moment.",
+      "visual_keyword": "更好的做法",
+      "icon": "💡",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 4,
+      "text_zh": "想好了,我再慢慢去做。",
+      "text_en": "Once I decide, I go ahead calmly.",
+      "narration_zh": "想清楚以后,我再慢慢地去做,这样我常常会做得更好。",
+      "narration_en": "Once I have decided, I go ahead calmly, and it often turns out better.",
+      "visual_keyword": "再行动",
+      "icon": "✅",
+      "duration_hint": 6.5
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "你很想马上拿桌上那个玩具,可是朋友正在玩。轮到你,先怎么做?",
+      "prompt_en": "You really want the toy on the table right now, but a friend is using it. Your turn — what do you do first?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先停一停,想一想,再决定。",
+      "answer_en": "First I stop, then I think, then I decide.",
+      "reinforce_zh": "你先停下来想一想,真了不起。",
+      "reinforce_en": "You stopped to think first. Wonderful.",
+      "icon": "🛑"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "你看到门外很好玩,好想马上跑出去。你可以先怎么做?",
+      "prompt_en": "It looks fun outside and you want to run out right away. What can you do first?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我停一停,先想想安不安全。",
+      "answer_en": "I stop and think about whether it is safe.",
+      "reinforce_zh": "你停下来想安全,做得很好。",
+      "reinforce_en": "You stopped to think about safety. Well done.",
+      "icon": "🤔"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "停下来、想过以后,你想到一个更好的做法。可以是什么?",
+      "prompt_en": "After you stop and think, you come up with a better way. What could it be?",
+      "pause_seconds": 5.0,
+      "answer_zh": "我可以先问一问,或者先等一等。",
+      "answer_en": "I can ask first, or wait a little.",
+      "reinforce_zh": "你想到了更好的办法,真会动脑筋。",
+      "reinforce_en": "You found a better way. Great thinking.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "你搭的积木被碰倒了,你有点生气,好想把积木推开……你可以怎么做?",
+    "scenario_en": "Your blocks got knocked over and you feel a little angry, you want to push them away... what can you do?",
+    "options": [
+      {
+        "label_zh": "先停一停,想一想",
+        "label_en": "Stop and think first",
+        "outcome_zh": "你先停下来、深呼吸、想一想,气慢慢小了,你决定重新搭一次。",
+        "outcome_en": "You stop, breathe, and think, the anger gets smaller, and you decide to build again.",
+        "icon": "🤔"
+      },
+      {
+        "label_zh": "先深呼吸,再请人帮忙",
+        "label_en": "Breathe, then ask for help",
+        "outcome_zh": "你先深呼吸,再请朋友一起帮忙,你们把积木重新搭得更高了。",
+        "outcome_en": "You breathe, then ask a friend to help, and together you build it even higher.",
+        "icon": "🤝"
+      }
+    ],
+    "icon": "🤝"
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "停想做三步",
+      "title_en": "Stop, think, act",
+      "caption_zh": "停一停 → 想一想 → 再行动。",
+      "caption_en": "Stop, think, then act.",
+      "icon": "🚦"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以对自己说",
+      "title_en": "What I can tell myself",
+      "caption_zh": "先停一停;这样做好不好?",
+      "caption_en": "Stop first; is this a good idea?",
+      "icon": "🗣️"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "冲动来的时候",
+      "title_en": "When an urge comes",
+      "caption_zh": "好想马上做 = 该停一停、想一想了。",
+      "caption_en": "A strong urge means it is time to stop and think.",
+      "icon": "💗"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "顺序",
+      "title_en": "The order",
+      "caption_zh": "冲动 → 停 → 想 → 更好的选择。",
+      "caption_en": "Urge, stop, think, better choice.",
+      "icon": "🔁"
+    }
+  ],
+  "review_zh": "我学会了停一停、想一想、再行动:特别想马上做的时候,我先停下来、深呼吸,想一想会怎么样、有没有更好的做法,再慢慢去做。这样我常常能做出更好的选择。",
+  "review_en": "I learned to stop, think, and then act: when I really want to do something right away, I stop, breathe, think about what will happen and a better way, then go ahead calmly. This helps me make better choices.",
+  "citations_used": [
+    "lee_2007",
+    "kuypers_2011",
+    "buron_curtis_2003"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子的自我调节与语言水平个别化调整(可配合红黄绿信号或视觉提示卡)。"
+  ],
+  "cast": "solo_child",
+  "page_visuals": {
+    "title": {
+      "visual_en": "a young boy in a cozy playroom with one calm hand raised in a gentle stop gesture, thoughtful and calm, close up upper body, one hand with exactly five fingers, big bright lively sparkling eyes with clear catchlight highlights",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "intro": {
+      "visual_en": "a young boy sitting calmly in the playroom with a thoughtful look, one finger on his chin thinking, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step1": {
+      "visual_en": "a young boy pausing with both hands lowered and a calm breath, a gentle stop pose, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step2": {
+      "visual_en": "a young boy thinking with one hand on his chin, looking up thoughtfully, calm, close up upper body, one hand with exactly five fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step3": {
+      "visual_en": "a young boy with a bright thoughtful look as an idea comes to him, gentle smile, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step4": {
+      "visual_en": "a young boy calmly and confidently starting his chosen action, content, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial1_prompt": {
+      "visual_en": "a young boy looking at a toy on the table that a friend is using, pausing to think, calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "trial1_answer": {
+      "visual_en": "a young boy pausing with a thoughtful calm face, one hand on his chin, close up upper body, one hand with exactly five fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial1_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial2_prompt": {
+      "visual_en": "a young boy near a doorway looking out, pausing to think before running, calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial2_answer": {
+      "visual_en": "a young boy standing still and thinking about safety with a calm thoughtful face, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial2_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial3_prompt": {
+      "visual_en": "a young boy with a thoughtful look as he considers a better idea, calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial3_answer": {
+      "visual_en": "a young boy with a bright idea and a gentle confident smile, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial3_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "choice": {
+      "visual_en": "a young boy beside some toppled building blocks, feeling a little upset but pausing to think, calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "choice_A": {
+      "visual_en": "a young boy taking a calm breath and beginning to rebuild the blocks, content, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "choice_B": {
+      "visual_en": "a young boy and a friend calmly building the blocks together, both content, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "review": {
+      "visual_en": "a happy calm young boy in the cozy playroom looking proud and thoughtful, big bright lively sparkling eyes with clear catchlight highlights, warm and cozy",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    }
+  }
+}

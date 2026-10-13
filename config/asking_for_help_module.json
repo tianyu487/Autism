@@ -1,0 +1,274 @@
+{
+  "title_zh": "需要帮忙时说“帮我”",
+  "title_en": "Asking for Help",
+  "learning_objective": "遇到打不开或太难的事时,孩子能主动发起一次求助:举手、递出“求助卡”或说“帮我一下”走向大人,而不是哭闹或放弃;提示≤2 次,5 次中≥4 次达成。",
+  "method_id": "naturalistic_intervention",
+  "cast": "solo_child",
+  "intro_zh": "有时候东西打不开、事情太难,我会有点着急。这时我不用哭,也不用放弃。我可以请大人帮忙——举手、拿出“求助卡”,或者说“帮我一下”,大人就会来帮我。",
+  "intro_en": "Sometimes a jar won't open or something is too hard, and I feel a little stuck. I don't need to cry or give up. I can ask a grown-up for help — I raise my hand, hold up my help card, or say help me, and a grown-up comes to help.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "遇到打不开、太难的事,我先停一停。",
+      "text_en": "When something won't open or is too hard, I stop for a moment.",
+      "narration_zh": "东西打不开、事情太难的时候,我先停一停,深呼吸一下,让自己不那么着急。",
+      "narration_en": "When something won't open or is too hard, I stop for a moment and take a gentle breath so I feel calmer.",
+      "visual_keyword": "先停一停",
+      "icon": "✋",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "我想到:我可以请人帮忙。",
+      "text_en": "I remember: I can ask for help.",
+      "narration_zh": "停下来以后,我想到一个好办法——我可以请人帮忙,不用自己一直硬撑。",
+      "narration_en": "After I stop, a good idea comes to me — I can ask someone for help instead of struggling on my own.",
+      "visual_keyword": "想到求助",
+      "icon": "💡",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "我举起手,或拿出“求助卡”,走向大人。",
+      "text_en": "I raise my hand or hold up my help card and go to a grown-up.",
+      "narration_zh": "我举起手,或者拿出我的“求助卡”,慢慢走向身边的大人。",
+      "narration_en": "I raise my hand, or I hold up my help card, and I walk over to a grown-up nearby.",
+      "visual_keyword": "举手求助卡",
+      "icon": "🙋",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 4,
+      "text_zh": "我温和地说“帮我一下”,大人就来帮我。",
+      "text_en": "I gently say help me, and the grown-up helps me.",
+      "narration_zh": "我温和地说“帮我一下”,大人听到了,就过来帮我，我们一起把它做好。",
+      "narration_en": "I gently say help me, the grown-up hears me and comes over, and together we make it work.",
+      "visual_keyword": "大人来帮我",
+      "icon": "🤝",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "你想打开一盒零食,可是盒盖太紧,怎么都打不开。轮到你,试试第一步怎么做。",
+      "prompt_en": "You want to open a snack box, but the lid is too tight and won't open. Your turn — try the first step.",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先停一停,想到:我可以请人帮忙。",
+      "answer_en": "I stop for a moment and remember: I can ask for help.",
+      "reinforce_zh": "你没有着急乱来,先停下来想办法,做得很好。",
+      "reinforce_en": "You didn't rush or get upset — you stopped and thought of a plan. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "你想到要请人帮忙了,接下来怎么让大人知道你需要帮忙?",
+      "prompt_en": "You decided to ask for help. How do you let the grown-up know you need help?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我举起手,拿出“求助卡”,走到大人身边,轻轻说“帮我一下”。",
+      "answer_en": "I raise my hand, hold up my help card, walk to the grown-up, and gently say help me.",
+      "reinforce_zh": "你主动走过去请人帮忙,把需要说清楚了,真棒。",
+      "reinforce_en": "You went over and asked for help all by yourself. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "你在拼拼图,有一块怎么也拼不上,你有点想哭。除了哭或放弃,你还可以怎么做?",
+      "prompt_en": "You're doing a puzzle and one piece just won't fit, and you feel like crying. Instead of crying or giving up, what else can you do?",
+      "pause_seconds": 5.0,
+      "answer_zh": "我用“求助卡”或说“帮我一下”,请大人帮忙,大人就来帮我。",
+      "answer_en": "I use my help card or say help me to a grown-up, and the grown-up comes to help me.",
+      "reinforce_zh": "你用求助代替了哭闹,把难题解决了,真了不起。",
+      "reinforce_en": "You asked for help instead of crying, and you solved the tricky part. That's wonderful.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "你想搭的积木一直往下倒,你有点着急……你可以怎么做?",
+    "scenario_en": "The blocks you're building keep falling over and you feel a little frustrated... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "拿出“求助卡”,递给身边的大人",
+        "label_en": "Hold up the help card and give it to a grown-up",
+        "outcome_zh": "大人看到卡片就明白了,过来帮你,你不用哭也把积木搭好了。",
+        "outcome_en": "The grown-up sees the card, understands, and comes to help — you build the blocks without crying.",
+        "icon": "🃏"
+      },
+      {
+        "label_zh": "走到大人身边,轻轻说“帮我一下”",
+        "label_en": "Go to a grown-up and gently say help me",
+        "outcome_zh": "你用话请人帮忙,大人过来陪你,你们一起把积木搭得又高又稳。",
+        "outcome_en": "You ask with your words, the grown-up joins you, and together you build the blocks tall and steady.",
+        "icon": "🗣️"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "求助四步",
+      "title_en": "Four steps to ask for help",
+      "caption_zh": "先停一停 → 想到求助 → 举手/求助卡 → 说“帮我一下”",
+      "caption_en": "Stop → Think of help → Raise hand / help card → Say help me",
+      "icon": "🙋"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "什么时候可以求助",
+      "title_en": "When I can ask for help",
+      "caption_zh": "打不开 · 太难了 · 找不到",
+      "caption_en": "Won't open · Too hard · Can't find it",
+      "icon": "💡"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "求助的顺序",
+      "title_en": "The order of asking",
+      "caption_zh": "停 → 想 → 走过去 → 帮我",
+      "caption_en": "Stop → Think → Go over → Help me",
+      "icon": "🔁"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "求助的感觉",
+      "title_en": "How asking feels",
+      "caption_zh": "请人帮忙,心里更轻松",
+      "caption_en": "Asking for help feels lighter",
+      "icon": "🙂"
+    }
+  ],
+  "review_zh": "我学会了需要帮忙时怎么做:先停一停,想到我可以请人帮忙,举起手或拿出“求助卡”走向大人,再温和地说“帮我一下”。东西打不开、事情太难的时候,我不用哭闹、也不用放弃,主动求助,大人就会来帮我。",
+  "review_en": "I learned what to do when I need help: I stop for a moment, remember I can ask for help, raise my hand or hold up my help card and go to a grown-up, and gently say help me. When something won't open or is too hard, I don't need to cry or give up — I ask for help, and a grown-up comes to help me.",
+  "citations_used": [
+    "koegel_odell_1987",
+    "bondy_frost_1994",
+    "steinbrenner_2020"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前须由特教老师/康复师按孩子的沟通水平(口语、举手或图片“求助卡”)与真实居家/游戏情境调整,并在多种真实困难情境中泛化训练。",
+    "本课引用含未核验锚点(bondy_frost_1994、steinbrenner_2020 为 verify:false),商用前须核对原文卷期/页码/DOI,勿据此承诺具体疗效。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting on the playroom floor holding a small closed jar he cannot open, calm and hopeful, holding up a small help picture-card in his other hand, close up upper body, hands with five fingers, natural hand anatomy, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in a cozy playroom holding a toy box with a lid that is hard to open, pausing calmly and looking hopeful, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy holding a small jar with a tight lid he cannot open, stopping calmly and taking a gentle breath, both hands resting still on the jar, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy with the closed jar in his lap, one hand gently resting on his chin as a bright idea comes to him, a small help picture-card lying on the floor beside him, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "visual_en": "a young boy raising one hand and holding up a small help picture-card, walking toward a kind gentle grown-up who turns warmly toward him in the playroom, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step4": {
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "visual_en": "a kind gentle grown-up kneeling beside a young boy and gently helping him open the jar together, both looking happy and warm, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy on the playroom floor trying to open a snack box with a tight lid that will not open, a little stuck but staying calm, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy setting the closed box down in his lap, stopping to take a calm breath with one hand resting on his chin as an idea comes to him, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy holding a small help picture-card and looking over toward a kind grown-up across the playroom, about to go over, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "visual_en": "a young boy holding up a small help picture-card and reaching toward a kind gentle grown-up who leans down warmly to help him, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy on the playroom floor with a puzzle piece that will not fit into the puzzle, feeling a little stuck but staying calm, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "visual_en": "a young boy holding up his small help picture-card toward a kind gentle grown-up who kneels beside him and gently helps him fit the puzzle piece, both content and warm, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy beside a small tower of blocks that has toppled over on the playroom floor, looking a little worried but calm, thinking about what to do, close up upper body, hands with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "visual_en": "a young boy holding out a small help picture-card to a kind gentle grown-up who takes it warmly and comes to help, close up upper body, hands with five fingers, natural hand anatomy, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "visual_en": "a young boy walking up to a kind gentle grown-up and reaching toward her for help, the grown-up leaning down warmly toward him, close up upper body, hands with five fingers, natural hand anatomy, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "review": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy in the playroom holding his small help picture-card, cheerful and confident, close up upper body, hands with five fingers, natural hand anatomy, big bright lively sparkling eyes with clear catchlight highlights"
+    }
+  }
+}

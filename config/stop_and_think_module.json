@@ -1,0 +1,268 @@
+{
+  "title_zh": "停一停,想一想",
+  "title_en": "Stop and Think",
+  "learning_objective": "在很想马上行动的冲动情境中,孩子能在不超过 1 处提示下,按 停一停→想一想这样做好不好→想一个更好的选择→再行动 完成一次自我监控(每周记录≥3 次)。",
+  "method_id": "cognitive_behavioral",
+  "cast": "solo_child",
+  "intro_zh": "有时候我很想马上去做一件事。今天我要练一个好办法:先停一停,再想一想,然后才行动。这样我就能把着急的心情和动作隔开,做出更好的选择。",
+  "intro_en": "Sometimes I really want to do something right away. Today I practice a good way: first I stop, then I think, and then I act. This helps me make a better choice.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "想马上去做一件事时,我先停一停。",
+      "text_en": "When I want to do something right away, I stop first.",
+      "narration_zh": "当我很想马上去做一件事,我先停一停,举起手做一个'停'的手势,让自己慢下来。",
+      "narration_en": "When I want to do something right away, I stop first and raise my hand in a stop gesture to slow myself down.",
+      "visual_keyword": "停一停",
+      "icon": "✋",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "我想一想:这样做好不好。",
+      "text_en": "I think about it: is this a good idea.",
+      "narration_zh": "停下来以后,我想一想:如果我现在这样做,好不好?会发生什么?",
+      "narration_en": "After I stop, I think about it: if I do this now, is it a good idea, and what might happen?",
+      "visual_keyword": "想一想",
+      "icon": "🤔",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "我想一个更好的选择。",
+      "text_en": "I think of a better choice.",
+      "narration_zh": "我再想一想,有没有更好的选择?我挑一个又安全又好的做法。",
+      "narration_en": "I think again about a better choice, and I pick one that is safe and kind.",
+      "visual_keyword": "更好的选择",
+      "icon": "💡",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 4,
+      "text_zh": "我再行动,做出好选择。",
+      "text_en": "Then I act and make a good choice.",
+      "narration_zh": "想好了,我再行动,平平静静地做出那个好选择。我为自己感到骄傲。",
+      "narration_en": "Now I act and calmly carry out the good choice. I feel proud of myself.",
+      "visual_keyword": "再行动",
+      "icon": "✅",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "你很想马上冲过去做一件事。轮到你,第一步做什么?",
+      "prompt_en": "You really want to rush over and do something. Your turn — what is the first step?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先停一停,举手做一个'停'的手势。",
+      "answer_en": "I stop first and raise my hand in a stop gesture.",
+      "reinforce_zh": "你记得先停一停,没有马上冲过去,做得很好。",
+      "reinforce_en": "You remembered to stop first instead of rushing. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "你已经停下来了,接下来做什么?",
+      "prompt_en": "You have already stopped. What do you do next?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我想一想这样做好不好,再想一个更好的选择。",
+      "answer_en": "I think about whether it is a good idea, then I think of a better choice.",
+      "reinforce_zh": "你先想一想再决定,真会动脑筋。",
+      "reinforce_en": "You thought it over before deciding. Great thinking.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "想好了一个更好的选择,最后一步是什么?",
+      "prompt_en": "You have thought of a better choice. What is the last step?",
+      "pause_seconds": 5.0,
+      "answer_zh": "我再行动,平平静静地做出好选择。",
+      "answer_en": "I act and calmly make the good choice.",
+      "reinforce_zh": "你把停一停、想一想、再行动三步都做到了,真棒。",
+      "reinforce_en": "You did all three steps — stop, think, and then act. Great job.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "你很想马上去做一件事,心里有点着急……你可以怎么做?",
+    "scenario_en": "You really want to do something right away and feel a little rushed... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "先停一停,想一想,再行动",
+        "label_en": "Stop first, think, then act",
+        "outcome_zh": "你把着急和动作隔开了,想清楚以后再做,更容易做出好选择。",
+        "outcome_en": "You put a space between the rush and the action, think it through, and it is easier to make a good choice.",
+        "icon": "😊"
+      },
+      {
+        "label_zh": "做一个'停'的手势提醒自己慢下来",
+        "label_en": "Make a stop gesture to remind myself to slow down",
+        "outcome_zh": "你用手势提醒自己慢下来,心里更有把握,也更平静。",
+        "outcome_en": "The gesture reminds you to slow down, and you feel calmer and more sure.",
+        "icon": "🙂"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "停—想—行动三步",
+      "title_en": "Stop, Think, Act",
+      "caption_zh": "停一停 → 想一想 → 再行动",
+      "caption_en": "Stop → Think → Act",
+      "icon": "✋"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "什么时候用这三步",
+      "title_en": "When to use these steps",
+      "caption_zh": "想马上去做时 · 心里着急时 · 拿不定主意时",
+      "caption_en": "When I want to act right away · When I feel rushed · When I am unsure",
+      "icon": "🕐"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "自我监控的顺序",
+      "title_en": "Self-monitoring order",
+      "caption_zh": "停 → 想 → 更好的选择 → 行动",
+      "caption_en": "Stop → Think → Better choice → Act",
+      "icon": "🔁"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "停一停想一想的感觉",
+      "title_en": "How stop and think feels",
+      "caption_zh": "停一停、想一想,心里更平静、更有把握",
+      "caption_en": "Stop and think — I feel calmer and more sure",
+      "icon": "🙂"
+    }
+  ],
+  "review_zh": "我学会了停一停,想一想:想马上去做一件事时,先停一停,再想一想这样做好不好,想一个更好的选择,然后才行动。把着急和动作隔开,我就能做出更好的选择。我为自己感到骄傲。",
+  "review_en": "I learned to stop and think: when I want to do something right away, I stop first, think about whether it is a good idea, pick a better choice, and then act. By putting a space between the rush and the action, I make better choices. I feel proud of myself.",
+  "citations_used": [
+    "lee_2007",
+    "kuypers_2011",
+    "buron_curtis_2003"
+  ],
+  "review_flags": [
+    "草稿:循证内容(引用 lee_2007 / kuypers_2011 / buron_curtis_2003 均为 verify:true,卷期/页码/DOI 商用前需专业人员终核原文),正式使用前请由特教老师或康复师审核。",
+    "草稿:需专业审核——请由专业人员按孩子实际的冲动情境、提示层级与自我监控水平调整停—想—行动三步的节奏与留白时长。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing calmly and confidently in the playroom, one hand gently raised in a soft calm stop gesture in front of himself, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing calmly in the cozy warm playroom, looking thoughtful and ready to learn, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pausing and holding one hand up in a gentle calm stop gesture in front of himself, standing still and composed, close up upper body, hand with five fingers, natural hand anatomy, fingers spread naturally, fingers not merged or overlapping, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in a thoughtful thinking pose, one hand resting gently on his chin and looking up as he considers his choices, calm and curious, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy still in a thinking pose with a gentle content smile as a good idea comes to him, one hand on his chin and looking up, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step4": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy calmly and happily carrying out his good choice, gently placing a small wooden toy onto a low shelf in a careful kind way, content and confident, close up upper body and hands, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, no extra fingers, hands and toy not passing through each other, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in the playroom feeling a strong urge to hurry toward something, leaning forward eagerly but just about to catch himself, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pausing and holding one hand up in a gentle calm stop gesture, standing still and composed, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing still after pausing, beginning to think about what to do next, a calm curious expression, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in a thoughtful thinking pose, one hand on his chin and looking up as he thinks of a better choice, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy looking calm and ready after thinking, about to act on his good choice, a gentle confident smile, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy calmly and happily carrying out his good choice, gently doing the activity in a careful kind way, content, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in the playroom feeling a strong urge to do something right away and a little rushed, pausing to decide how to handle it, thoughtful, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pausing with a gentle calm stop gesture and then thinking calmly before acting, composed and happy, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy making a soft calm stop gesture to remind himself to slow down, then thinking it over calmly, content, close up upper body, hand with five fingers, natural hand anatomy, fingers not merged or overlapping, no extra fingers, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "review": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy standing confidently in the playroom after making a good choice, cheerful and calm, big bright lively sparkling eyes with clear catchlight highlights"
+    }
+  }
+}

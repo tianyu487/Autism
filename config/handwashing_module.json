@@ -1,0 +1,269 @@
+{
+  "title_zh": "洗手六步",
+  "title_en": "Washing My Hands Step by Step",
+  "learning_objective": "孩子能在不超过 2 处提示下,按 卷袖→打湿→抹皂→搓洗→冲净→擦干 完成一次洗手。",
+  "method_id": "task_analysis",
+  "cast": "solo_bathroom",
+  "intro_zh": "吃饭前、上完厕所,我都要洗手。洗手有六个小步骤,我照着做,就能把手洗得干干净净。",
+  "intro_en": "Before eating and after the toilet, I wash my hands. There are six little steps, and I follow them to get my hands clean.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "卷起袖子,打开水把手打湿。",
+      "text_en": "Roll up my sleeves and wet my hands.",
+      "narration_zh": "我先卷起袖子,打开水龙头,把手打湿。",
+      "narration_en": "First I roll up my sleeves, turn on the tap, and wet my hands.",
+      "visual_keyword": "打湿",
+      "icon": "💧",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "抹上肥皂,好好搓一搓。",
+      "text_en": "Put on soap and rub well.",
+      "narration_zh": "我抹上肥皂,两只手好好搓一搓,搓出泡泡。",
+      "narration_en": "I put on soap and rub my hands well to make bubbles.",
+      "visual_keyword": "抹皂搓洗",
+      "icon": "🧼",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "手心手背都搓到,再用水冲干净。",
+      "text_en": "Scrub front and back, then rinse with water.",
+      "narration_zh": "手心、手背、手指缝都搓到,再用清水把泡泡冲干净。",
+      "narration_en": "I scrub the front, back, and between my fingers, then rinse the bubbles off with water.",
+      "visual_keyword": "冲净",
+      "icon": "🚰",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 4,
+      "text_zh": "用毛巾把手擦干。",
+      "text_en": "Dry my hands with a towel.",
+      "narration_zh": "最后,我用毛巾把手擦干,手就洗好啦。",
+      "narration_en": "Last, I dry my hands with a towel, and my hands are clean.",
+      "visual_keyword": "擦干",
+      "icon": "🧺",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "你刚上完厕所,准备洗手。轮到你,试试第一步怎么做。",
+      "prompt_en": "You just used the toilet and are ready to wash. Your turn — try the first step.",
+      "pause_seconds": 4.0,
+      "answer_zh": "我卷起袖子,把手打湿。",
+      "answer_en": "I roll up my sleeves and wet my hands.",
+      "reinforce_zh": "你记得先卷袖、打湿,做得很好。",
+      "reinforce_en": "You remembered to roll your sleeves and wet your hands. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "手打湿了,接下来做什么?",
+      "prompt_en": "Your hands are wet. What do you do next?",
+      "pause_seconds": 4.0,
+      "answer_zh": "抹上肥皂,好好搓一搓。",
+      "answer_en": "Put on soap and rub well.",
+      "reinforce_zh": "你把肥皂搓出泡泡,真棒。",
+      "reinforce_en": "You rubbed the soap into bubbles. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "搓干净、冲好水,最后一步是什么?",
+      "prompt_en": "After scrubbing and rinsing, what is the last step?",
+      "pause_seconds": 5.0,
+      "answer_zh": "用毛巾把手擦干。",
+      "answer_en": "Dry my hands with a towel.",
+      "reinforce_zh": "你把六步都做完了,手洗得真干净。",
+      "reinforce_en": "You finished all six steps — your hands are so clean. Well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "吃饭前,你的手脏脏的……你可以怎么做?",
+    "scenario_en": "Before eating, your hands are dirty... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "按六步好好洗手",
+        "label_en": "Wash with the six steps",
+        "outcome_zh": "你把手洗得干干净净,吃饭更安心,身体也更健康。",
+        "outcome_en": "You wash your hands clean, eat with peace of mind, and stay healthy.",
+        "icon": "😊"
+      },
+      {
+        "label_zh": "先卷起袖子再打湿",
+        "label_en": "Roll up sleeves first, then wet",
+        "outcome_zh": "你先卷好袖子,袖子不湿,洗手更顺利。",
+        "outcome_en": "You roll up your sleeves first so they stay dry, and washing goes smoothly.",
+        "icon": "🙂"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "洗手六步",
+      "title_en": "Six steps to wash",
+      "caption_zh": "卷袖 → 打湿 → 抹皂 → 搓洗 → 冲净 → 擦干",
+      "caption_en": "Roll → Wet → Soap → Scrub → Rinse → Dry",
+      "icon": "🧼"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "什么时候要洗手",
+      "title_en": "When to wash",
+      "caption_zh": "吃饭前 · 上厕所后 · 手脏了",
+      "caption_en": "Before eating · After the toilet · When hands are dirty",
+      "icon": "🕐"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "洗手的顺序",
+      "title_en": "Washing order",
+      "caption_zh": "湿 → 皂 → 搓 → 冲 → 干",
+      "caption_en": "Wet → Soap → Scrub → Rinse → Dry",
+      "icon": "🔁"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "洗干净的感觉",
+      "title_en": "How clean hands feel",
+      "caption_zh": "手干净了,心里也舒服",
+      "caption_en": "Clean hands feel good",
+      "icon": "🙂"
+    }
+  ],
+  "review_zh": "我学会了洗手六步:卷起袖子、打湿手、抹肥皂、好好搓、冲干净、擦干。吃饭前、上厕所后我都记得洗手,把手洗得干干净净,身体更健康。",
+  "review_en": "I learned the six steps to wash my hands: roll up sleeves, wet, soap, scrub, rinse, and dry. Before eating and after the toilet I remember to wash, keep my hands clean, and stay healthy.",
+  "citations_used": [
+    "bellini_akullian_2007",
+    "van_laarhoven_2010",
+    "cn_peizhi_2016"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子实际操作水平与真实卫生间环境调整。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing happily at a bathroom sink ready to wash his hands, cheerful, close up upper body, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy at a clean bright bathroom sink with sleeves ready, about to wash his hands, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy rolling up his sleeves and wetting his hands under the running tap at the sink, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy putting soap on his hands and rubbing them together into bubbles at the sink, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy at the bathroom sink, both soapy hands held together low in front of him over the sink, the flat open palm of his right hand sliding across the back of his left hand to scrub it, washing with soft white soap lather, both hands kept together and lowered near the sink, not raised, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, hands not passing through each other, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "seed": 1000
+    },
+    "step4": {
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": 1337,
+      "visual_en": "a young boy at the bathroom sink drying his hands with a soft pale light-blue towel, holding the light-blue towel and gently wiping both hands dry, both hands clearly visible each with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping wrongly, no extra fingers, hands and towel not passing through each other, close up on his upper body and hands, content happy expression, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing at the bathroom sink ready to start washing his hands, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy rolling up his sleeves and wetting his hands under the tap, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy with wet hands at the sink thinking about the next step, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy soaping and rubbing his hands into bubbles at the sink, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy with clean rinsed hands at the sink about to do the last step, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy drying his hands with a soft towel, content, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy with dirty hands before a meal deciding to wash them, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy washing his hands well at the sink, clean and happy, close up upper body, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy rolling up his sleeves first and then wetting his hands, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "review": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy young boy proudly showing his clean hands at the bathroom sink, cheerful, big bright lively sparkling eyes with clear catchlight highlights"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 密钥与本地配置
+.env
+
+# 生成产物
+output/
+*.mp4
+!videos/*.mp4
+*.mp3
+*.m4a
+*.wav
+
+# 旧配置备份
+config/_pre_page_visuals_bak/
+
+# 系统
+.DS_Store
+Thumbs.db

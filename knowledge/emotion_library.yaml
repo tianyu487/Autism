@@ -1,0 +1,621 @@
+# TODO_CITATIONS(状态更新 2026-07-13:以下三条已核验并编入 citations.yaml,本文件已通过对应 citation id 正式引用,不再 pending):
+#   - Ekman, P. (1992). An argument for basic emotions. Cognition & Emotion, 6(3-4), 169-200.
+#       用途:basic emotions(基本情绪清单)的理论依据。已编目为 id = ekman_1992,并在 evidence_note_zh 以 [[ekman_1992]] 正式引用。
+#   - Craig, A. D. (2002). How do you feel? Interoception: the sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655-666.
+#       用途:内感受的神经科学基础。已编目为 id = craig_2002,并在 evidence_note_zh / scenarios.body_signals 以 [[craig_2002]] 正式引用。
+#   - Mahler, K. J. (2015). Interoception: The Eighth Sensory System. AAPC Publishing.(部分书目标 2017 重印,原版年份待终核)
+#       用途:interoception(内感受)与情绪身体信号 body_signals 的应用依据(面向 ASD 群体)。已编目为 id = mahler_2015,并在 evidence_note_zh / scenarios.body_signals 以 [[mahler_2015]] 正式引用。
+#   注:以上三条卷期/页码/DOI/ISBN 仍以 citations.yaml 中 verify:true 标记为准,商用前须人工终核原文。
+#
+# =====================================================================
+# 情绪资源库 Emotion Library
+# 面向情绪类小游戏与情绪调节训练模块的机器可读资源:
+#   情绪(按发展层级分基础/复合) + 身体信号(内感受线索) + 匹配的平复策略 + 强度量表。
+# 拟消费方:情绪温度计、读脸游戏、冷静工具箱、身体侦探、心情打卡。
+# 已存在并被引用的 citation id:[[kuypers_2011]](Zones of Regulation)、[[buron_curtis_2003]](5 分量表)。
+# =====================================================================
+
+id: emotion_library
+name_zh: 情绪资源库
+name_en: Emotion Library
+one_line_zh: 把情绪、身体信号、平复策略与强度量表结构化,供情绪识别与调节类游戏和训练模块调用。
+
+evidence_note_zh: |
+  本库按公认框架组织,不发明新体系:
+  - 基础情绪清单参考 Ekman 的基本情绪研究(开心、难过、生气、害怕、惊讶等跨文化可识别的情绪),复合情绪(受挫、担心、尴尬、自豪等)属发展上更晚、更依赖情境与他人视角的情绪。见 [[ekman_1992]]
+  - 强度量表 intensity_scale 借鉴 The Incredible 5-Point Scale(把情绪/行为分 1–5 级并配对应对动作,专为 ASD 自我调节设计)。见 [[buron_curtis_2003]]
+  - 分区 zones 借鉴 Zones of Regulation 情绪调节区域(蓝/绿/黄/红四区;核心信息是所有区都 OK,重在觉察与工具箱)。见 [[kuypers_2011]]
+  - 身体信号 body_signals 借鉴内感受(interoception)与情绪的关系:觉察心跳、呼吸、肌肉紧绷等身体线索,有助于更早识别并调节情绪;内感受的神经科学基础见 [[craig_2002]],面向 ASD 群体的内感受干预实务见 [[mahler_2015]]。
+  低龄/低语言儿童宜先做"识别—命名"和具体可视的平复工具;认知重评类(如积极自我对话)更适合较大/语言较好的孩子。
+
+# --- 通用强度量表(1–5 级,平静→强烈)--------------------------------
+# 借鉴 The Incredible 5-Point Scale 的思路,做成通用调节量表,不针对特定行为。
+intensity_scale:
+  - level: 1
+    zh: 很平静
+    en: Calm and okay
+    color_zh: 绿色(平静)
+    guidance_zh: 身体放松,可以学习和玩耍;继续保持就好。
+  - level: 2
+    zh: 有一点点感觉
+    en: A little bit
+    color_zh: 黄绿色(轻微)
+    guidance_zh: 有一点小情绪,先觉察一下,做一次深呼吸也不错。
+  - level: 3
+    zh: 情绪变明显了
+    en: Getting bigger
+    color_zh: 黄色(升高)
+    guidance_zh: 情绪明显了,选一个平复工具用一用,比如深呼吸、喝水或数到十。
+  - level: 4
+    zh: 情绪很强烈
+    en: Really big
+    color_zh: 橙色(强烈)
+    guidance_zh: 情绪很强了,先暂停,去安静角,或者找信任的大人帮忙。
+  - level: 5
+    zh: 快要控制不住
+    en: Too big to handle
+    color_zh: 红色(最强)
+    guidance_zh: 非常强烈、很难控制;先保证安全,暂停下来,让信任的大人陪着一起慢慢平复。
+
+# --- 情绪调节区域(可选,框架为 Zones of Regulation,非临床指导)------
+zones:
+  attribution_zh: 框架来自 Zones of Regulation(Kuypers),此处为组织与本地化改写,不构成临床指导。见 [[kuypers_2011]]
+  levels:
+    - key: blue
+      zh: 蓝区
+      en: Blue Zone
+      meaning_zh: "低唤醒:难过、疲倦、无聊、生病、没力气"
+    - key: green
+      zh: 绿区
+      en: Green Zone
+      meaning_zh: "平静·可学习:开心、专注、放松、准备好了"
+    - key: yellow
+      zh: 黄区
+      en: Yellow Zone
+      meaning_zh: "升高:受挫、担心、兴奋、坐不住,还能被提醒着控制"
+    - key: red
+      zh: 红区
+      en: Red Zone
+      meaning_zh: "强烈:很生气、很害怕、失控,难以自己控制"
+
+# --- 情绪清单(先基础后复合)----------------------------------------
+emotions:
+  - id: happy
+    zh: 开心
+    en: happy
+    emoji: 😊
+    tier: basic
+    body_signals_zh:
+      - 脸上会笑、嘴角上扬
+      - 身体轻松、想蹦想跳
+      - 心里暖暖的、有能量
+    body_signals_en:
+      - smiling face
+      - relaxed body
+      - warm feeling inside
+    example_situations_zh:
+      - 和喜欢的人一起玩
+      - 得到表扬或鼓励
+      - 完成了想做的事
+    strategies: [use_words, positive_self_talk]
+
+  - id: sad
+    zh: 难过
+    en: sad
+    emoji: 😢
+    tier: basic
+    body_signals_zh:
+      - 眼睛想哭、嘴角向下
+      - 胸口闷闷的、没有力气
+      - 想一个人安静待着
+    body_signals_en:
+      - teary eyes
+      - heavy chest
+      - low energy
+    example_situations_zh:
+      - 心爱的玩具坏了
+      - 要和朋友或家人分开
+      - 想做的事被拒绝
+    strategies: [ask_for_help, use_words, positive_self_talk, quiet_corner]
+
+  - id: angry
+    zh: 生气
+    en: angry
+    emoji: 😠
+    tier: basic
+    body_signals_zh:
+      - 拳头握紧、身体发紧
+      - 脸发烫、心跳变快
+      - 想大喊或跺脚
+    body_signals_en:
+      - clenched fists
+      - hot face
+      - fast heartbeat
+    example_situations_zh:
+      - 东西被别人抢走
+      - 正在做的事被打断
+      - 觉得被不公平地对待
+    strategies: [deep_breathing, count_to_ten, take_a_break, squeeze_push, quiet_corner, use_words]
+
+  - id: scared
+    zh: 害怕
+    en: scared
+    emoji: 😨
+    tier: basic
+    body_signals_zh:
+      - 心跳很快、身体发抖
+      - 肚子紧紧的、想屏住呼吸
+      - 想躲起来或找人保护
+    body_signals_en:
+      - fast heartbeat
+      - shaking body
+      - wanting to hide
+    example_situations_zh:
+      - 听到突然的很大声音
+      - 在很黑的地方
+      - 遇到不熟悉的人或动物
+    strategies: [deep_breathing, ask_for_help, quiet_corner, use_words]
+
+  - id: surprised
+    zh: 惊讶
+    en: surprised
+    emoji: 😲
+    tier: basic
+    body_signals_zh:
+      - 眼睛睁大、嘴巴张开
+      - 身体一愣、动作停住
+      - 心跳突然加快
+    body_signals_en:
+      - wide eyes
+      - open mouth
+      - a quick jump inside
+    example_situations_zh:
+      - 收到意外的礼物
+      - 突然的巨响或惊喜
+      - 事情和原本想的不一样
+    strategies: [deep_breathing, use_words]
+
+  - id: calm
+    zh: 平静
+    en: calm
+    emoji: 😌
+    tier: basic
+    body_signals_zh:
+      - 呼吸慢而稳、肩膀松松的
+      - 身体放松、不紧不绷
+      - 心里安安静静
+    body_signals_en:
+      - slow steady breathing
+      - relaxed shoulders
+      - quiet inside
+    example_situations_zh:
+      - 听轻柔的音乐
+      - 被安全地抱着
+      - 做完几次深呼吸之后
+    strategies: [deep_breathing]
+
+  - id: tired
+    zh: 疲倦
+    en: tired
+    emoji: 😴
+    tier: basic
+    body_signals_zh:
+      - 眼皮沉重、打哈欠
+      - 身体软软的、不想动
+      - 注意力难集中
+    body_signals_en:
+      - heavy eyelids
+      - yawning
+      - hard to focus
+    example_situations_zh:
+      - 玩了或活动了很久
+      - 前一晚睡得晚
+      - 上了一整天课
+    strategies: [take_a_break, drink_water, quiet_corner]
+
+  - id: frustrated
+    zh: 受挫
+    en: frustrated
+    emoji: 😣
+    tier: complex
+    body_signals_zh:
+      - 眉头皱起、身体发紧
+      - 喉咙紧紧的、想跺脚
+      - 又想放弃又想再试
+    body_signals_en:
+      - furrowed brow
+      - tense body
+      - wanting to give up
+    example_situations_zh:
+      - 拼图总是拼不上
+      - 鞋带反复系不好
+      - 试了很多次还是做不到
+    strategies: [deep_breathing, count_to_ten, take_a_break, squeeze_push, ask_for_help, use_words]
+
+  - id: worried
+    zh: 担心
+    en: worried
+    emoji: 😟
+    tier: complex
+    body_signals_zh:
+      - 肚子打结、手心出汗
+      - 心里七上八下
+      - 反复想同一件事
+    body_signals_en:
+      - knotted tummy
+      - sweaty palms
+      - racing thoughts
+    example_situations_zh:
+      - 明天要考试或表演
+      - 要去一个新的地方
+      - 担心事情会出错
+    strategies: [deep_breathing, ask_for_help, positive_self_talk, quiet_corner, use_words]
+
+  - id: embarrassed
+    zh: 尴尬
+    en: embarrassed
+    emoji: 😳
+    tier: complex
+    body_signals_zh:
+      - 脸发红发烫
+      - 想低头、想躲起来
+      - 身体缩起来、不敢看人
+    body_signals_en:
+      - hot red face
+      - wanting to hide
+      - shrinking down
+    example_situations_zh:
+      - 当众说错了话
+      - 摔倒被很多人看到
+      - 突然被大家注意到
+    strategies: [deep_breathing, positive_self_talk, quiet_corner, use_words]
+
+  - id: excited
+    zh: 兴奋
+    en: excited
+    emoji: 🤩
+    tier: complex
+    body_signals_zh:
+      - 心跳很快、坐不住
+      - 声音变大、动作变多
+      - 身体充满能量、想又叫又跳
+    body_signals_en:
+      - fast heartbeat
+      - hard to sit still
+      - lots of energy
+    example_situations_zh:
+      - 快要去游乐园
+      - 自己的生日会
+      - 期待已久的事就要发生
+    strategies: [deep_breathing, count_to_ten, take_a_break, squeeze_push]
+
+  - id: disappointed
+    zh: 失望
+    en: disappointed
+    emoji: 😞
+    tier: complex
+    body_signals_zh:
+      - 心里沉沉的
+      - 肩膀垂下、提不起劲
+      - 有点想哭
+    body_signals_en:
+      - heavy heart
+      - drooping shoulders
+      - low energy
+    example_situations_zh:
+      - 计划突然取消了
+      - 结果不如自己期待
+      - 想要的东西没得到
+    strategies: [ask_for_help, positive_self_talk, use_words]
+
+  - id: proud
+    zh: 自豪
+    en: proud
+    emoji: 🏆
+    tier: complex
+    body_signals_zh:
+      - 胸口挺起、抬起头
+      - 脸上带笑、身体轻快
+      - 心里满满的
+    body_signals_en:
+      - chest up
+      - smiling
+      - a full, light feeling
+    example_situations_zh:
+      - 学会了一项新技能
+      - 帮助了别人
+      - 完成了一件很难的任务
+    strategies: [use_words, positive_self_talk]
+
+  - id: jealous
+    zh: 羡慕嫉妒
+    en: jealous
+    emoji: 😒
+    tier: complex
+    body_signals_zh:
+      - 胸口酸酸的、心里不舒服
+      - 盯着别人的东西看
+      - 又有点生气又有点难过
+    body_signals_en:
+      - sour feeling in the chest
+      - uneasy inside
+      - mix of angry and sad
+    example_situations_zh:
+      - 别人有我想要的东西
+      - 好朋友和别人一起玩
+      - 别人被表扬而我没有
+    strategies: [count_to_ten, positive_self_talk, use_words]
+
+# --- 平复/调节策略清单 ----------------------------------------------
+strategies:
+  - id: deep_breathing
+    zh: 深呼吸
+    en: deep breathing
+    emoji: 🌬️
+    how_zh: 慢慢用鼻子吸气,让肚子像气球一样鼓起来,再慢慢用嘴巴把气吹出去;可以数着做,吸气数到 4、屏住数到 7、呼气数到 8,重复 3 到 5 次。
+    good_for: [angry, scared, surprised, calm, frustrated, worried, embarrassed, excited]
+
+  - id: count_to_ten
+    zh: 数到十
+    en: count to ten
+    emoji: 🔟
+    how_zh: 在心里或小声地从 1 慢慢数到 10,一边数一边慢慢呼吸,给自己一点点时间,再决定怎么做。
+    good_for: [angry, frustrated, excited, jealous]
+
+  - id: ask_for_help
+    zh: 寻求帮助
+    en: ask for help
+    emoji: 🙋
+    how_zh: 找一个信任的大人或朋友,用语言或图片卡说出"我需要帮助",再告诉他们发生了什么、你需要什么。
+    good_for: [sad, scared, frustrated, worried, disappointed]
+
+  - id: take_a_break
+    zh: 暂停休息
+    en: take a break
+    emoji: ⏸️
+    how_zh: 先离开让你难受的地方或活动,到一个舒服的地方待一会儿,等身体平静下来再回去。
+    good_for: [angry, tired, frustrated, excited]
+
+  - id: drink_water
+    zh: 喝水
+    en: drink water
+    emoji: 💧
+    how_zh: 慢慢喝几口水,感受水从喉咙滑下去,让身体和心情都缓一缓。
+    good_for: [angry, tired, frustrated]
+
+  - id: squeeze_push
+    zh: 用力挤一挤或推墙
+    en: heavy work (squeeze or push)
+    emoji: 💪
+    how_zh: 用力挤压软球、抱紧枕头,或者双手推墙保持几秒再放松,重复几次,让紧绷的身体把力气释放出来。
+    good_for: [angry, frustrated, excited]
+
+  - id: quiet_corner
+    zh: 安静角
+    en: quiet corner
+    emoji: 🧸
+    how_zh: 去布置好的安静角落,那里有柔软的靠垫和喜欢的东西、灯光柔和,可以一直待到自己觉得好一些。
+    good_for: [sad, angry, scared, tired, worried, embarrassed]
+
+  - id: use_words
+    zh: 用语言表达
+    en: use words
+    emoji: 💬
+    how_zh: 用简单的话或情绪卡说出此刻的感受和需要,例如"我现在很生气,我想休息一下"。
+    good_for: [happy, sad, angry, scared, surprised, frustrated, worried, embarrassed, disappointed, proud, jealous]
+
+  - id: positive_self_talk
+    zh: 积极自我对话
+    en: positive self-talk
+    emoji: 💭
+    how_zh: 在心里对自己说一句鼓励的话,例如"这有点难,但我可以慢慢试""没关系,我会好起来的"。
+    good_for: [happy, sad, worried, embarrassed, disappointed, proud, jealous]
+
+# --- 具体生活情境库(供 读脸/如果怎么办/社交侦探/心情打卡/身体侦探 等玩法调用)----
+# 每个情境映射到已存在的 emotions.id 与 strategies.id,不新增情绪或策略;typical_intensity 对应 intensity_scale 的 1–5 级。
+# body_signals_zh 为内感受线索,理论依据见 [[craig_2002]] 与 [[mahler_2015]];情境覆盖愉快与困难情绪、覆盖 1–5 强度。
+scenarios:
+  - id: toy_broke
+    situation_zh: 我心爱的玩具突然坏掉了。
+    situation_en: "My favorite toy suddenly broke."
+    typical_intensity: 3
+    likely_emotions: [sad, disappointed]
+    body_signals_zh:
+      - 眼睛想哭、嘴角向下
+      - 胸口闷闷的、没有力气
+    suggested_strategies: [use_words, ask_for_help, positive_self_talk]
+    gentle_note_zh: 喜欢的东西坏了,难过是很正常的;先说出你的感受,我们再一起看看能不能修好或想别的办法。
+
+  - id: lost_game
+    situation_zh: 我玩游戏输了。
+    situation_en: "I lost the game."
+    typical_intensity: 3
+    likely_emotions: [disappointed, frustrated, sad]
+    body_signals_zh:
+      - 心里沉沉的、肩膀垂下
+      - 眉头皱起、喉咙紧紧的
+    suggested_strategies: [deep_breathing, positive_self_talk, use_words]
+    gentle_note_zh: 输了会有点失望,这很正常;先做个深呼吸,输和赢都是游戏的一部分,下次还能再试。
+
+  - id: friend_said_no
+    situation_zh: 我想一起玩,朋友说不要。
+    situation_en: "I wanted to play, but my friend said no."
+    typical_intensity: 2
+    likely_emotions: [sad, disappointed]
+    body_signals_zh:
+      - 胸口闷闷的、有点想哭
+      - 身体没什么力气
+    suggested_strategies: [use_words, positive_self_talk, ask_for_help]
+    gentle_note_zh: 朋友这次说不要,不代表你不好;可以用语言问问原因,也可以先去做别的喜欢的事。
+
+  - id: loud_assembly
+    situation_zh: 集会的礼堂里又吵又大声。
+    situation_en: "The assembly hall is very loud and noisy."
+    typical_intensity: 4
+    likely_emotions: [scared, worried]
+    body_signals_zh:
+      - 心跳很快、想捂住耳朵
+      - 肚子紧紧的、想躲起来
+    suggested_strategies: [deep_breathing, quiet_corner, ask_for_help]
+    gentle_note_zh: 声音太大让身体不舒服是真实的感觉;可以捂住耳朵、慢慢深呼吸,或告诉大人你需要安静一下。
+
+  - id: waiting_turn
+    situation_zh: 我要排队等着轮到自己。
+    situation_en: "I have to wait in line for my turn."
+    typical_intensity: 2
+    likely_emotions: [frustrated, excited]
+    body_signals_zh:
+      - 身体发紧、坐不住
+      - 心里有点急
+    suggested_strategies: [count_to_ten, deep_breathing, use_words]
+    gentle_note_zh: 等待的时候着急很正常;一边数到十一边慢慢呼吸,轮到你的时候就快到了。
+
+  - id: plan_changed
+    situation_zh: 本来说好的计划突然改变了。
+    situation_en: "The plan we agreed on suddenly changed."
+    typical_intensity: 3
+    likely_emotions: [disappointed, worried, frustrated]
+    body_signals_zh:
+      - 心里沉沉的、肚子打结
+      - 反复想着原来的安排
+    suggested_strategies: [deep_breathing, positive_self_talk, use_words]
+    gentle_note_zh: 计划突然变了会让人措手不及;先深呼吸,我们一起看看新的安排,你的心情会慢慢缓过来。
+
+  - id: won_prize
+    situation_zh: 我在比赛里赢得了奖品。
+    situation_en: "I won a prize in the contest."
+    typical_intensity: 3
+    likely_emotions: [happy, excited, proud]
+    body_signals_zh:
+      - 心跳很快、想蹦想跳
+      - 脸上带笑、身体充满能量
+    suggested_strategies: [deep_breathing, use_words]
+    gentle_note_zh: 赢了真让人开心又兴奋;可以先深呼吸让身体稳一稳,再用语言和大家分享你的高兴。
+
+  - id: got_lost_in_store
+    situation_zh: 我在商店里和大人走散了。
+    situation_en: "I got separated from my grown-up in the store."
+    typical_intensity: 5
+    likely_emotions: [scared, worried]
+    body_signals_zh:
+      - 心跳很快、身体发抖
+      - 肚子紧紧的、想哭
+    suggested_strategies: [deep_breathing, ask_for_help]
+    gentle_note_zh: 和大人走散会很害怕,你没有做错什么;站在原地,慢慢深呼吸,找穿制服的工作人员帮忙找到大人。
+
+  - id: finished_hard_puzzle
+    situation_zh: 我拼好了一个很难的拼图。
+    situation_en: "I finished a really hard puzzle."
+    typical_intensity: 2
+    likely_emotions: [proud, happy]
+    body_signals_zh:
+      - 胸口挺起、抬起头
+      - 脸上带笑、心里满满的
+    suggested_strategies: [use_words, positive_self_talk]
+    gentle_note_zh: 这么难的拼图你拼出来了,值得为自己骄傲;可以大声说出"我做到了",记住这种满满的感觉。
+
+  - id: someone_took_toy
+    situation_zh: 别人把我的玩具抢走了。
+    situation_en: "Someone took my toy away."
+    typical_intensity: 4
+    likely_emotions: [angry, frustrated]
+    body_signals_zh:
+      - 拳头握紧、脸发烫
+      - 心跳变快、想大喊
+    suggested_strategies: [deep_breathing, count_to_ten, squeeze_push, use_words]
+    gentle_note_zh: 玩具被抢走会让人很生气,生气没有错;先握拳深呼吸或数到十,再用语言说"这是我的,请还给我"。
+
+  - id: birthday_surprise
+    situation_zh: 大家给我准备了生日惊喜。
+    situation_en: "Everyone prepared a birthday surprise for me."
+    typical_intensity: 3
+    likely_emotions: [surprised, excited, happy]
+    body_signals_zh:
+      - 眼睛睁大、嘴巴张开
+      - 心跳突然加快、坐不住
+    suggested_strategies: [deep_breathing, use_words]
+    gentle_note_zh: 惊喜来得又快又大,愣住或又叫又跳都可以;先深呼吸一下,再用语言告诉大家你有多开心。
+
+  - id: homework_hard
+    situation_zh: 作业太难了,我做不出来。
+    situation_en: "The homework is too hard and I can't do it."
+    typical_intensity: 3
+    likely_emotions: [frustrated, worried]
+    body_signals_zh:
+      - 眉头皱起、喉咙紧紧的
+      - 又想放弃又想再试
+    suggested_strategies: [take_a_break, deep_breathing, ask_for_help, use_words]
+    gentle_note_zh: 作业很难、想放弃的感觉很多人都有;先休息一下、深呼吸,再一小步一小步来,需要时可以找人帮忙。
+
+  - id: sharing_snack
+    situation_zh: 我和朋友一起分享零食。
+    situation_en: "I am sharing my snack with a friend."
+    typical_intensity: 1
+    likely_emotions: [happy, calm]
+    body_signals_zh:
+      - 身体轻松、心里暖暖的
+      - 呼吸慢而稳、肩膀松松的
+    suggested_strategies: [use_words, positive_self_talk]
+    gentle_note_zh: 和朋友一起分享零食,心里暖暖的真好;可以用语言告诉朋友你愿意分享,这份友好会让彼此都开心。
+
+  - id: new_classroom
+    situation_zh: 我要去一个新的教室。
+    situation_en: "I am going to a brand-new classroom."
+    typical_intensity: 3
+    likely_emotions: [worried, scared]
+    body_signals_zh:
+      - 肚子打结、手心出汗
+      - 心里七上八下
+    suggested_strategies: [deep_breathing, positive_self_talk, ask_for_help, quiet_corner]
+    gentle_note_zh: 到新教室会有点担心,陌生的地方让人紧张很正常;深呼吸,对自己说"我可以慢慢熟悉",需要时找老师帮忙。
+
+  - id: hurt_knee
+    situation_zh: 我摔倒了,膝盖很疼。
+    situation_en: "I fell down and my knee hurts."
+    typical_intensity: 4
+    likely_emotions: [sad, scared]
+    body_signals_zh:
+      - 眼睛想哭、身体发抖
+      - 心跳很快、膝盖火辣辣的
+    suggested_strategies: [ask_for_help, deep_breathing, use_words]
+    gentle_note_zh: 摔疼了又痛又怕,想哭也没关系;先找大人帮忙看看伤口,一起深呼吸,痛会慢慢好起来。
+
+  - id: praised_by_teacher
+    situation_zh: 老师当着大家表扬了我。
+    situation_en: "The teacher praised me in front of everyone."
+    typical_intensity: 2
+    likely_emotions: [proud, happy, embarrassed]
+    body_signals_zh:
+      - 胸口挺起、脸上带笑
+      - 脸有点发红发烫
+    suggested_strategies: [use_words, positive_self_talk]
+    gentle_note_zh: 被老师表扬会开心,也可能有点不好意思,两种感觉都可以有;可以微笑着用语言说声谢谢。
+
+  - id: tired_end_of_day
+    situation_zh: 上了一整天课,我很累了。
+    situation_en: "After a whole day of class, I am very tired."
+    typical_intensity: 2
+    likely_emotions: [tired]
+    body_signals_zh:
+      - 眼皮沉重、打哈欠
+      - 身体软软的、注意力难集中
+    suggested_strategies: [take_a_break, drink_water, quiet_corner]
+    gentle_note_zh: 上了一整天,身体累了是它在提醒你需要休息;可以喝口水、找个安静角歇一歇,慢慢补充力气。
+
+  - id: friend_has_new_toy
+    situation_zh: 朋友有一个我很想要的新玩具。
+    situation_en: "My friend has a new toy that I really want."
+    typical_intensity: 2
+    likely_emotions: [jealous, sad]
+    body_signals_zh:
+      - 胸口酸酸的、心里不舒服
+      - 一直盯着别人的东西看
+    suggested_strategies: [count_to_ten, positive_self_talk, use_words]
+    gentle_note_zh: 看到别人有你想要的东西,心里酸酸的很正常;先数到十,对自己说"我也有我喜欢的东西",也可以用语言表达你的心情。
+
+notes_zh:
+  - 本资源为教育与辅助用途,支持而非替代专业评估与临床判断;所有产出均为需专业审核的草稿。
+  - Zones of Regulation 与 The Incredible 5-Point Scale 为公认框架,此处为组织与本地化改写,不构成临床指导。
+  - 情绪没有好坏之分,所有情绪都被接纳;调节的目标是觉察与应对,而不是压抑或消除情绪。
+  - 身体信号(内感受)因人而异,同一情绪在不同孩子身上表现可能不同,需个别化观察。
+  - 强度量表与分区仅为帮助觉察的通用工具,不用于诊断;升级或降级请结合孩子的实际反应灵活使用。

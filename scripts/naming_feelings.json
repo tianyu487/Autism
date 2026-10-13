@@ -1,0 +1,288 @@
+{
+  "title_zh": "我的心情叫什么名字",
+  "title_en": "Naming My Feelings",
+  "learning_objective": "看四种基本情绪(开心/难过/生气/害怕)的表情图,孩子能正确命名至少 3 种;并在日常情境中提示下用情绪词说出自己当下的心情(连续 2 次达成)。",
+  "method_id": "visual_supports",
+  "intro_zh": "每个人都有心情。我的心情有名字:开心、难过、生气、害怕。看看一张脸,或者想想我自己,我就能说出这是什么心情。",
+  "intro_en": "Everyone has feelings. My feelings have names: happy, sad, angry, and scared. When I look at a face or notice myself, I can name the feeling.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "嘴角弯弯往上翘,这是开心。",
+      "text_en": "When the mouth curves up, that is happy.",
+      "narration_zh": "嘴角弯弯地往上翘,眼睛亮亮的,这是开心。",
+      "narration_en": "When the mouth curves up and the eyes are bright, that feeling is happy.",
+      "visual_keyword": "开心的脸",
+      "icon": "😊",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 2,
+      "text_zh": "嘴角往下,眼睛低低的,这是难过。",
+      "text_en": "When the mouth turns down, that is sad.",
+      "narration_zh": "嘴角往下,眼睛看着下面,这是难过。",
+      "narration_en": "When the mouth turns down and the eyes look low, that feeling is sad.",
+      "visual_keyword": "难过的脸",
+      "icon": "😢",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 3,
+      "text_zh": "眉毛皱皱的,这是生气。",
+      "text_en": "When the eyebrows scrunch, that is angry.",
+      "narration_zh": "眉毛皱皱地往中间靠,这是生气。",
+      "narration_en": "When the eyebrows scrunch together, that feeling is angry.",
+      "visual_keyword": "生气的脸",
+      "icon": "😠",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 4,
+      "text_zh": "眼睛睁得大大的,这是害怕。",
+      "text_en": "When the eyes open wide, that is scared.",
+      "narration_zh": "眼睛睁得大大的,身体缩一缩,这是害怕。",
+      "narration_en": "When the eyes open wide, that feeling is scared.",
+      "visual_keyword": "害怕的脸",
+      "icon": "😨",
+      "duration_hint": 6.5
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "看这张脸,嘴角弯弯往上翘。轮到你,这是什么心情?",
+      "prompt_en": "Look at this face with the mouth curved up. Your turn — what feeling is this?",
+      "pause_seconds": 4.0,
+      "answer_zh": "这是开心。",
+      "answer_en": "This is happy.",
+      "reinforce_zh": "你认出了开心,真棒。",
+      "reinforce_en": "You named happy. Great job.",
+      "icon": "😊"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "这张脸嘴角往下、眼睛低低的。轮到你,这是什么心情?",
+      "prompt_en": "This face has a downturned mouth and low eyes. Your turn — what feeling is this?",
+      "pause_seconds": 4.0,
+      "answer_zh": "这是难过。",
+      "answer_en": "This is sad.",
+      "reinforce_zh": "你认出了难过,做得好。",
+      "reinforce_en": "You named sad. Well done.",
+      "icon": "😢"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "现在换你自己。你现在的心情是什么?可以用一个词说出来。",
+      "prompt_en": "Now it is about you. What is your feeling right now? You can name it with one word.",
+      "pause_seconds": 5.0,
+      "answer_zh": "我现在有点开心。",
+      "answer_en": "Right now I feel a little happy.",
+      "reinforce_zh": "你说出了自己的心情,很了不起。",
+      "reinforce_en": "You named your own feeling. Wonderful.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "你的玩具被朋友不小心碰坏了,你心里有点难过……你可以怎么做?",
+    "scenario_en": "A friend accidentally broke your toy and you feel a little sad... what can you do?",
+    "options": [
+      {
+        "label_zh": "说出我的心情",
+        "label_en": "Name my feeling",
+        "outcome_zh": "你让大人知道你有点难过,大人明白了,过来陪你、一起想办法。",
+        "outcome_en": "You let a grown-up know you feel sad, they understand and come to help you.",
+        "icon": "🗣️"
+      },
+      {
+        "label_zh": "用情绪卡指一指",
+        "label_en": "Point to a feelings card",
+        "outcome_zh": "你指着难过的情绪卡,大人一下就明白了,过来轻轻抱抱你。",
+        "outcome_en": "You point to the sad card, a grown-up understands right away and gives you a gentle hug.",
+        "icon": "🃏"
+      }
+    ],
+    "icon": "🤝"
+  },
+  "visual_cards": [
+    {
+      "kind": "emotion",
+      "title_zh": "四种基本心情",
+      "title_en": "Four basic feelings",
+      "caption_zh": "开心 😊 · 难过 😢 · 生气 😠 · 害怕 😨",
+      "caption_en": "Happy, Sad, Angry, Scared",
+      "icon": "🎭"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以说的话",
+      "title_en": "What I can say",
+      "caption_zh": "我现在觉得……开心 / 难过 / 生气 / 害怕。",
+      "caption_en": "Right now I feel... happy / sad / angry / scared.",
+      "icon": "🗣️"
+    },
+    {
+      "kind": "step",
+      "title_zh": "看脸认心情",
+      "title_en": "Read the face",
+      "caption_zh": "看嘴巴、看眼睛、看眉毛,再说出名字。",
+      "caption_en": "Look at the mouth, eyes, and eyebrows, then name it.",
+      "icon": "👀"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "说出心情三步",
+      "title_en": "Three steps to name a feeling",
+      "caption_zh": "停一停 → 看脸或想想自己 → 说出名字。",
+      "caption_en": "Stop, look or notice, then name it.",
+      "icon": "🔁"
+    }
+  ],
+  "review_zh": "我学会了给心情起名字:开心、难过、生气、害怕。看看一张脸,或者想想我自己,我就能说出现在的心情。说出来以后,大人更懂我,我也更舒服。",
+  "review_en": "I learned to name my feelings: happy, sad, angry, and scared. When I look at a face or notice myself, I can name the feeling. When I name it, grown-ups understand me and I feel better.",
+  "citations_used": [
+    "ekman_1992",
+    "buron_curtis_2003",
+    "golan_2010"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子的语言与情绪认知水平个别化调整。"
+  ],
+  "cast": "solo_child",
+  "page_visuals": {
+    "title": {
+      "visual_en": "a young boy sitting happily in a cozy playroom with a few emotion picture cards on the low table, cheerful, close up upper body, big bright lively sparkling eyes with clear catchlight highlights",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "intro": {
+      "visual_en": "a young boy in a cozy playroom looking at four emotion picture cards on the low table, curious and calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step1": {
+      "visual_en": "a young boy with a big happy smile and lifted cheeks, a clearly joyful face, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step2": {
+      "visual_en": "a young boy with a gentle sad face, inner eyebrows raised, a soft downturned mouth, looking a little down but calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step3": {
+      "visual_en": "a young boy with a mildly angry face, eyebrows gently scrunched together, a small frown, calm and safe, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "step4": {
+      "visual_en": "a young boy with a surprised scared expression, wide open round eyes and slightly raised shoulders, calm and safe, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial1_prompt": {
+      "visual_en": "a young boy looking at a happy face picture card in his hands, thoughtful, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial1_answer": {
+      "visual_en": "a young boy holding up a happy face card with a matching happy smile, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial1_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial2_prompt": {
+      "visual_en": "a young boy looking at a sad face picture card in his hands, thoughtful and gentle, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial2_answer": {
+      "visual_en": "a young boy holding a sad face card and pointing to it calmly, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial2_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial3_prompt": {
+      "visual_en": "a young boy gently placing a hand on his chest and noticing his own feeling, thoughtful, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial3_answer": {
+      "visual_en": "a young boy calmly naming his own feeling with a gentle smile, one hand on his chest, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial3_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "choice": {
+      "visual_en": "a young boy sitting by a slightly broken small toy, feeling a little sad but calm, deciding what to do, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "choice_A": {
+      "visual_en": "a young boy standing beside a kind gentle grown-up who leans down warmly, the boy calm and relieved, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "seed": null
+    },
+    "choice_B": {
+      "visual_en": "a young boy pointing to a sad feeling picture card while a kind grown-up looks and understands, gentle and warm, close up upper body, each hand with exactly five fingers, correct natural hand anatomy, fingers not merged or overlapping, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "seed": null
+    },
+    "review": {
+      "visual_en": "a happy content young boy in the cozy playroom with the four emotion cards nearby, proud and calm, big bright lively sparkling eyes with clear catchlight highlights, warm and cozy",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    }
+  }
+}

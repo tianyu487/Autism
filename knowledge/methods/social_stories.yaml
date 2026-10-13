@@ -1,0 +1,89 @@
+# =====================================================================
+# 循证方法条目:社交故事 Social Stories™
+# 这是"骨架 / 硬约束"—— 生成脚本时会把这些规则注入 Prompt,
+# 并在 validate.py 中对生成结果做机器校验。
+# 规则依据 Carol Gray 的 Social Stories 10.2/10.3 标准及相关循证综述。
+# =====================================================================
+
+id: social_stories
+name_zh: 社交故事
+name_en: Social Stories™
+originator: Carol Gray
+evidence_level: established        # 参见 National Standards Project / Wong et al. 2015
+one_line_zh: 用第一人称、正向、具体的短故事,提前把一个社交情境"讲清楚",降低焦虑、建立预期。
+one_line_en: A short, first-person, positive, literal story that describes a social situation to build understanding and predictability.
+
+# --- 适用与目标 ---
+use_for_zh:
+  - 面对新的或会引发焦虑的情境(如看牙医、第一天上学、理发)
+  - 理解一个日常流程的先后步骤
+  - 学习某个具体场景中"可以怎么做"
+target_audience_zh: 有一定语言/图片理解能力的自闭症儿童;由家长、特教老师或康复师陪同使用。
+
+# --- 句型系统(Carol Gray 的核心)---
+# 生成的每一句都必须标注 sentence_type,便于校验"句型配比"。
+sentence_types:
+  descriptive:
+    zh: 描述句
+    desc_zh: 客观、真实地描述情境中会发生什么、在哪里、有谁、通常怎样。这是故事的主体。
+    example_zh: 看牙医的时候,我会坐在一把可以往后躺的椅子上。
+  perspective:
+    zh: 观点句
+    desc_zh: 描述他人或自己的内在状态:想法、感受、情绪(帮助理解为什么)。
+    example_zh: 牙医阿姨想帮我把牙齿照顾得很健康。
+  affirmative:
+    zh: 肯定句
+    desc_zh: 强调一条共同价值或让人安心的事实,常紧跟前一句。
+    example_zh: 检查牙齿是安全的,这很好。
+  directive:
+    zh: 指导句
+    desc_zh: 温和地提示"我可以怎么做"的一种回应。要少而正向,避免命令口吻。
+    example_zh: 我可以试着张大嘴巴,像小恐龙打哈欠一样。
+
+# --- 句型配比(Sentence Ratio,可机器校验)---
+# 经典基本句比:每 1 个指导句,至少配 2 个描述/观点/肯定句。
+sentence_ratio:
+  descriptive_group: [descriptive, perspective, affirmative]
+  directive_group: [directive]
+  min_descriptive_per_directive: 2      # (描述+观点+肯定) / 指导 >= 2
+  note_zh: 目的是"描述为主、指导为辅",让故事是在"分享信息"而非"下命令"。
+
+# --- 写作硬规则(注入 Prompt + 部分可机器校验)---
+writing_rules_zh:
+  - 用第一人称("我"),从孩子的视角讲述。
+  - 全程正向、令人安心;描述"会发生什么"和"我可以怎么做",不描述"不许做什么"、不用恐吓。
+  - 语言具体、字面化,避免比喻、反语、夸张和抽象概念(可用孩子的兴趣做贴切、写实的类比)。
+  - 用词和句子长度匹配孩子的年龄与阅读水平;一屏一个要点。
+  - 指导句要留有弹性(如"我可以试着…"),避免绝对化("我必须…每次都…")。
+  - 结构:开头点题 → 中间按真实顺序分步描述 → 结尾用肯定/安心的话赋能收束。
+
+# --- 结构模板(用于分场景/分屏)---
+structure:
+  - stage: title
+    zh: 标题页
+    role_zh: 点明主题,给出温和的预告。
+  - stage: introduction
+    zh: 引入
+    role_zh: 说明这个故事讲的是什么情境,以及它是安全、平常的。
+  - stage: body
+    zh: 过程(多屏)
+    role_zh: 按真实先后顺序,一步一屏地描述会发生什么、我可以怎么做。
+  - stage: closing
+    zh: 结尾
+    role_zh: 用肯定与安心的话收束,让孩子带着掌控感离开。
+
+# --- 每屏建议 ---
+per_scene_guidance_zh:
+  min_scenes: 5
+  max_scenes: 10
+  words_per_scene_zh: 每屏中文 1–3 句,英文对应翻译;句子短、清楚。
+
+# --- 引用(详见 knowledge/citations.yaml)---
+citations:
+  - gray_garand_1993
+  - gray_2015_newbook
+  - kokina_kern_2010
+  - karkhaneh_2010
+  - test_2011
+  - wong_2015
+  - nac_2015

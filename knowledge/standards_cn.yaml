@@ -1,0 +1,89 @@
+# =====================================================================
+# 中国孤独症康复:指南 / 标准 / 政策(本土语境与合规对齐)
+# 供生成器:①在中文语境下引用权威依据;②对齐本土原则(个体化、家庭参与、康教结合);
+#          ③按国标的训练领域给内容归类。详细引用见 citations.yaml 的 cn_* 条目。
+# 核实状态见各条 verify(与 citations.yaml 一致):verify:true 者商用前须核对原文。
+# =====================================================================
+
+principles_zh:
+  # 源自《儿童孤独症诊疗康复指南》(2010)的干预原则,已核实。
+  - key: early_long
+    zh: 早期长程 —— 尽早开始、足量足时。
+  - key: scientific
+    zh: 科学系统 —— 以循证方法为主,系统安排。
+  - key: individualized
+    zh: 个体化 —— 依评估与孩子实际情况定目标、调内容。
+  - key: family
+    zh: 家庭参与 —— 以家庭为中心,家长共同实施。
+  - key: edu_rehab
+    zh: 康教结合 —— 康复与教育融合(见 GB/T 47041-2026、关爱行动方案)。
+
+# 国标 GB/T 47041-2026 参考的七大训练领域(可用于给生成内容归类)
+training_domains_gbt:
+  - social            # 社会交往
+  - communication     # 沟通/语言
+  - emotion_behavior  # 情绪与行为
+  - daily_living      # 生活自理
+  - senso_motor       # 感知运动
+  - cognition         # 认知学习
+  - play_leisure      # 游戏与休闲
+
+documents:
+  - id: cn_guideline_2010
+    name_zh: 儿童孤独症诊疗康复指南
+    issuer_zh: 卫生部办公厅(卫办医政发〔2010〕123号)
+    year: 2010
+    covers_zh: 定义、早期发现、诊断、鉴别诊断、康复训练;确立四项干预原则与 ABA 等方法。
+    relevance_zh: 中文语境下最基础的诊疗康复依据;干预原则应贯穿一切产出。
+    citation: cn_guideline_2010
+    verify: false
+
+  - id: cn_screening_2022
+    name_zh: 0～6岁儿童孤独症筛查干预服务规范(试行)
+    issuer_zh: 国家卫生健康委办公厅(国卫办妇幼发〔2022〕12号)
+    year: 2022
+    covers_zh: 健康教育、筛查、诊断、干预康复四环;分级转诊路径。
+    relevance_zh: 早期(0–6岁)服务路径;支持"早期长程"原则与家庭健康教育内容。
+    citation: cn_screening_2022
+    verify: false
+
+  - id: cn_gbt_47041_2026
+    name_zh: GB/T 47041-2026 孤独症儿童康复机构服务质量及评价规范
+    issuer_zh: 国家市场监督管理总局、国家标准化管理委员会
+    year: 2026
+    covers_zh: 首个孤独症康复机构服务国标(0–14岁);服务条件/规范/效果三级评价;个别化、康教结合;七大训练领域。
+    relevance_zh: 机构服务质量基准;生成内容可按其七大领域归类,并强调个别化与康教结合。
+    citation: cn_gbt_47041_2026
+    verify: false
+
+  - id: cn_cdpf_group_2020
+    name_zh: 孤独症儿童康复服务(团体标准)
+    issuer_zh: 中国残疾人康复协会
+    year: 2020
+    covers_zh: 场地功能分区、专业团队、干预人员配比;纳入 VB-MAPP 等评估工具。
+    relevance_zh: 行业实践基准;支持"以评估定目标"(VB-MAPP 等)与技能分级。
+    citation: cn_cdpf_group_2020
+    verify: true
+
+  - id: cn_care_action_2024
+    name_zh: 孤独症儿童关爱促进行动实施方案(2024—2028年)
+    issuer_zh: 中国残联等七部门
+    year: 2024
+    covers_zh: 康复服务提升、教康融合、家庭暖心三大行动;以家庭为中心的早期干预与家长培训。
+    relevance_zh: 政策方向;支持家庭参与、家长培训类内容与康教融合定位。
+    citation: cn_care_action_2024
+    verify: false
+
+  - id: cn_peizhi_2016
+    name_zh: 培智学校义务教育课程标准(2016)·生活适应课程标准
+    issuer_zh: 教育部
+    year: 2016
+    covers_zh: 特殊教育课标;《生活适应》心理健康部分含表达情绪、分享合作、调控情绪等。
+    relevance_zh: 学校情境的社交/情绪教学锚点;可与情绪/社交技能库对齐。
+    citation: cn_peizhi_2016
+    verify: false
+
+notes_zh:
+  - 没有单独的"国家孤独症课程标准";学校情境的社交/情绪教学以培智课标 + 个别化教育计划(IEP)为准。
+  - GB/T 47041-2026 的人员配比等具体数字以原文/官方解读为准(勿用二手异文)。
+  - 中西结合:以国际循证(见 methods/_registry.yaml)为方法骨架,以本文件对齐中国语境与合规。

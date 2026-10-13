@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://autismcare/content_schema_v2.json",
+  "title": "autismcare Content Model v2",
+  "description": "Beat-keyed, language-keyed content contract. Single source of truth; a legacy exporter regenerates flat module.json for the current pipeline.",
+  "type": "object",
+  "required": ["schema_version", "method_id", "title", "intro", "review", "steps", "practice_trials", "visual_cards"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "const": 2 },
+    "id": { "type": ["string", "null"], "description": "课程 slug/唯一标识" },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["zh", "yue", "en"] },
+      "description": "已填充的语言集合;粤语(yue)二期加入"
+    },
+    "method_id": { "type": "string", "description": "循证方法 id,须有 knowledge/methods/<id>.yaml" },
+    "cast": { "type": ["string", "null"], "description": "视觉阵容(cast.py 的键)" },
+    "learning_objective": { "$ref": "#/definitions/i18n", "description": "可观察可测量的训练目标;付费版多语言家长/教师指南会用到,故本地化" },
+    "title":  { "$ref": "#/definitions/i18n" },
+    "intro":  { "$ref": "#/definitions/i18n" },
+    "review": { "$ref": "#/definitions/i18n" },
+    "steps": {
+      "type": "array", "minItems": 3, "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["id", "index", "text", "narration"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^step[0-9]+$", "description": "稳定 beat id" },
+          "index": { "type": "integer", "minimum": 1 },
+          "text":      { "$ref": "#/definitions/i18n", "description": "屏幕字幕" },
+          "narration": { "$ref": "#/definitions/i18n", "description": "旁白稿(可与字幕不同,尤其粤语)" },
+          "visual_keyword": { "type": ["string", "null"] },
+          "icon": { "type": ["string", "null"] },
+          "min_seconds": { "type": ["number", "null"], "description": "建议停留下限;真实时长在装配时按音频定" }
+        }
+      }
+    },
+    "practice_trials": {
+      "type": "array", "minItems": 2, "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["id", "index", "prompt", "answer", "reinforce"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^trial[0-9]+$" },
+          "index": { "type": "integer", "minimum": 1 },
+          "prompt":    { "$ref": "#/definitions/i18n" },
+          "answer":    { "$ref": "#/definitions/i18n" },
+          "reinforce": { "$ref": "#/definitions/i18n" },
+          "pause_seconds": { "type": ["number", "null"], "minimum": 0, "description": "“轮到你”留白下限" },
+          "icon": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "social_choice": {
+      "type": ["object", "null"],
+      "required": ["id", "scenario", "options"],
+      "properties": {
+        "id": { "const": "choice" },
+        "scenario": { "$ref": "#/definitions/i18n" },
+        "icon": { "type": ["string", "null"] },
+        "options": {
+          "type": "array", "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "outcome"],
+            "properties": {
+              "id": { "type": "string", "description": "选项 id(A/B/…),派生 beat = choice_<id>" },
+              "label":   { "$ref": "#/definitions/i18n" },
+              "outcome": { "$ref": "#/definitions/i18n" },
+              "icon": { "type": ["string", "null"] },
+              "goto": { "type": ["string", "null"], "description": "互动分支目标 beat-id;null=线性继续(二期用)" }
+            }
+          }
+        }
+      }
+    },
+    "visual_cards": {
+      "type": "array", "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["kind", "title", "caption"],
+        "properties": {
+          "kind": { "type": "string", "enum": ["step", "reminder", "emotion", "schedule"] },
+          "title":   { "$ref": "#/definitions/i18n" },
+          "caption": { "$ref": "#/definitions/i18n" },
+          "icon": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "citations_used": { "type": "array", "items": { "type": "string" }, "description": "引用 id,语言中性,不本地化" },
+    "review_flags": { "type": "array", "items": { "$ref": "#/definitions/i18n" }, "description": "草稿/复核提示,会写进多语言指南,故本地化" },
+    "page_visuals": {
+      "type": "object",
+      "description": "按 beat-id 的逐页画面覆盖;画面提示为英文,不本地化",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "visual_en": { "type": "string" },
+          "roles": { "type": ["array", "null"], "items": { "type": "string" } },
+          "seed": { "type": ["integer", "null"] }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "i18n": {
+      "type": "object",
+      "description": "一个可本地化文本:语言 -> 文本。zh 必填;en/yue 可为 null(未提供)。",
+      "required": ["zh"],
+      "properties": {
+        "zh":  { "type": ["string", "null"] },
+        "en":  { "type": ["string", "null"] },
+        "yue": { "type": ["string", "null"], "description": "粤语;二期填入(配置2:此处放粤语字幕=書面中文,旁白脚本另存)" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

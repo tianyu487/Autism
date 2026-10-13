@@ -1,0 +1,302 @@
+{
+  "title_zh": "说“你好”和“再见”",
+  "title_en": "Saying Hello and Goodbye",
+  "learning_objective": "到达或离开时,孩子能主动完成问候或告别(说“你好”/“再见,明天见”),3 次中≥2 次达成。",
+  "method_id": "video_modeling",
+  "intro_zh": "见到人的时候,我可以先看看他、笑一笑,说“你好”;要离开的时候,我挥挥手说“再见,明天见”。这样大家都会觉得很友好、很开心。",
+  "intro_en": "When I see someone, I can look, smile, and say hello. When I leave, I wave and say goodbye, see you tomorrow. This makes everyone feel friendly and happy.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "见到人,我先看看他,笑一笑。",
+      "text_en": "When I see someone, I look at them and smile.",
+      "narration_zh": "见到老师或朋友,我先看看他,对他笑一笑。",
+      "narration_en": "When I see a teacher or a friend, I look at them and give a smile.",
+      "visual_keyword": "微笑看人",
+      "icon": "🙂",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 2,
+      "text_zh": "我挥挥手,说“你好”。",
+      "text_en": "I wave my hand and say hello.",
+      "narration_zh": "我挥挥手,用温和的声音说“你好”。",
+      "narration_en": "I wave my hand and say hello in a friendly voice.",
+      "visual_keyword": "挥手你好",
+      "icon": "👋",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 3,
+      "text_zh": "要走了,我说“再见,明天见”。",
+      "text_en": "When I leave, I say goodbye, see you tomorrow.",
+      "narration_zh": "要走的时候,我挥挥手,说“再见,明天见”。",
+      "narration_en": "When I leave, I wave and say goodbye, see you tomorrow.",
+      "visual_keyword": "挥手再见",
+      "icon": "👋",
+      "duration_hint": 6.5
+    },
+    {
+      "index": 4,
+      "text_zh": "打完招呼,朋友也对我笑,我们都很开心。",
+      "text_en": "After we greet, my friend smiles back and we feel happy.",
+      "narration_zh": "打完招呼,朋友也对我笑一笑,我们都觉得很开心、很友好。",
+      "narration_en": "After we greet each other, my friend smiles back and we both feel happy.",
+      "visual_keyword": "一起开心",
+      "icon": "😊",
+      "duration_hint": 6.5
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "你的好朋友刚走进来。轮到你,你可以怎么跟他打招呼?",
+      "prompt_en": "Your friend just came in. Your turn — how can you greet them?",
+      "pause_seconds": 4.0,
+      "answer_zh": "你好!我挥挥手笑一笑。",
+      "answer_en": "Hello! I wave and smile.",
+      "reinforce_zh": "你主动打招呼,真友好。",
+      "reinforce_en": "You greeted first. So friendly.",
+      "icon": "👋"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "玩的时间到了,你要回家了。轮到你,你可以怎么说再见?",
+      "prompt_en": "Playtime is over and you are going home. Your turn — how can you say goodbye?",
+      "pause_seconds": 4.0,
+      "answer_zh": "再见,明天见!",
+      "answer_en": "Goodbye, see you tomorrow!",
+      "reinforce_zh": "你好好地说了再见,做得好。",
+      "reinforce_en": "You said a nice goodbye. Well done.",
+      "icon": "👋"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "老师看着你,向你问早上好。轮到你,你可以怎么回应老师?",
+      "prompt_en": "Your teacher looks at you and greets you good morning. Your turn — how can you answer?",
+      "pause_seconds": 5.0,
+      "answer_zh": "老师早上好!",
+      "answer_en": "Good morning, teacher!",
+      "reinforce_zh": "你回应了老师,很有礼貌。",
+      "reinforce_en": "You answered your teacher. Very polite.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "早上你走进教室,看到老师和小朋友……你可以怎么做?",
+    "scenario_en": "In the morning you walk into the room and see your teacher and friends... what can you do?",
+    "options": [
+      {
+        "label_zh": "笑着说“你好”",
+        "label_en": "Smile and say hello",
+        "outcome_zh": "你笑着打招呼,大家也笑着回应你,一天有个开心的开始。",
+        "outcome_en": "You greet with a smile, everyone smiles back, and the day starts happily.",
+        "icon": "🙂"
+      },
+      {
+        "label_zh": "挥挥手",
+        "label_en": "Give a wave",
+        "outcome_zh": "你挥挥手,朋友也向你挥手,你们很快就一起玩了。",
+        "outcome_en": "You wave, your friend waves back, and soon you play together.",
+        "icon": "👋"
+      }
+    ],
+    "icon": "🤝"
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "打招呼三步",
+      "title_en": "Three steps to greet",
+      "caption_zh": "看看他 → 笑一笑 → 说“你好”。",
+      "caption_en": "Look, smile, say hello.",
+      "icon": "👋"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以说的话",
+      "title_en": "What I can say",
+      "caption_zh": "你好 / 早上好 / 再见,明天见。",
+      "caption_en": "Hello / Good morning / Goodbye, see you tomorrow.",
+      "icon": "🗣️"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "打招呼的心情",
+      "title_en": "How greeting feels",
+      "caption_zh": "打招呼让大家觉得友好、开心。",
+      "caption_en": "Greeting makes everyone feel friendly and happy.",
+      "icon": "😊"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "什么时候打招呼",
+      "title_en": "When to greet",
+      "caption_zh": "到了说“你好” → 走了说“再见”。",
+      "caption_en": "Arrive: say hello. Leave: say goodbye.",
+      "icon": "🔁"
+    }
+  ],
+  "review_zh": "我学会了打招呼和再见:见到人先看看他、笑一笑,说“你好”;要走了挥挥手说“再见,明天见”。这样大家都觉得友好,我也交到更多朋友。",
+  "review_en": "I learned to say hello and goodbye: I look, smile, and say hello when I see someone, and I wave and say goodbye when I leave. Everyone feels friendly and I make more friends.",
+  "citations_used": [
+    "krantz_mcclannahan_1993",
+    "chan_2009",
+    "nac_2015"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子的语言水平与真实校园/家庭情境调整。"
+  ],
+  "cast": "peer_play",
+  "page_visuals": {
+    "title": {
+      "visual_en": "two young children smiling and waving hello to each other in a cozy playroom, cheerful, close up upper body, big bright lively sparkling eyes with clear catchlight highlights",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "intro": {
+      "visual_en": "a young boy smiling and waving hello to a friend in a cozy playroom, warm and friendly, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "step1": {
+      "visual_en": "a young boy looking at his friend with a warm gentle smile in the playroom, friendly, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "step2": {
+      "visual_en": "a young boy waving hello with a raised open hand and a friendly smile toward his friend, close up upper body, one raised hand with exactly five fingers, correct natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "step3": {
+      "visual_en": "a young boy waving goodbye with a raised open hand to his friend as he gets ready to leave the playroom, close up upper body, one raised hand with exactly five fingers, correct natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "step4": {
+      "visual_en": "a young boy and his friend smiling warmly at each other after greeting, both happy, in the playroom, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "trial1_prompt": {
+      "visual_en": "a young boy noticing his friend arriving in the playroom, ready to greet, thoughtful and friendly, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "trial1_answer": {
+      "visual_en": "a young boy waving hello with a bright smile to his friend, close up upper body, one raised hand with exactly five fingers, correct natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "trial1_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial2_prompt": {
+      "visual_en": "a young boy holding a small bag ready to go home, turning to wave to his friend, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "trial2_answer": {
+      "visual_en": "a young boy waving goodbye warmly to his friend, close up upper body, one raised hand with exactly five fingers, correct natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "trial2_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "trial3_prompt": {
+      "visual_en": "a young boy looking up at a warm friendly teacher who is greeting him, attentive and polite, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "seed": null
+    },
+    "trial3_answer": {
+      "visual_en": "a young boy smiling and looking up at the friendly teacher, greeting back politely, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "teacher"
+      ],
+      "seed": null
+    },
+    "trial3_reinforce": {
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement",
+      "roles": [
+        "boy_ming"
+      ],
+      "seed": null
+    },
+    "choice": {
+      "visual_en": "a young boy walking into the room in the morning, seeing his friend, deciding how to greet, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "choice_A": {
+      "visual_en": "a young boy greeting with a warm smile while his friend smiles back, cheerful, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "choice_B": {
+      "visual_en": "a young boy waving to his friend who waves back, happy, close up upper body, one raised hand with exactly five fingers, correct natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    },
+    "review": {
+      "visual_en": "a young boy and his friend smiling and waving happily together in the cozy playroom, warm and friendly, big bright lively sparkling eyes with clear catchlight highlights",
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "seed": null
+    }
+  }
+}

@@ -1,0 +1,238 @@
+# =====================================================================
+# 技能领域库:沟通与语言 Communication & Language
+# 每个目标标注:发展层级 level、中英描述、循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 支持口语与图片/辅助沟通(AAC)。生成时这些一并注入。
+# =====================================================================
+
+id: communication_language
+name_zh: 沟通与语言
+name_en: Communication & Language
+one_line_zh: 从功能性请求到对话的沟通技能发展序列;支持口语与图片/辅助沟通(AAC)。
+
+evidence_note_zh: |
+  语言行为常按"语言操作"理解:请求(mand)、命名(tact)、仿说(echoic)、对话(intraverbal)。
+  实务上先教"请求"——有动机、见效快;无口语或口语少的孩子先建功能性沟通(可用图片/AAC)。
+  用功能性沟通替代问题行为(如教"帮我/休息")是重要方向。
+
+developmental_levels:
+  - key: preverbal
+    zh: 前语言(手势/发声/眼神)
+    en: Preverbal
+  - key: request
+    zh: 请求
+    en: Requesting
+  - key: label
+    zh: 命名与听者反应
+    en: Labeling & receptive
+  - key: converse
+    zh: 对话
+    en: Conversation
+
+frameworks_zh:
+  - "VB-MAPP 语言操作里程碑(请求/命名/仿说/对话),常作沟通技能分级骨架。见 [[sundberg_2008]]"
+  - "PECS 图片交换分阶段建立功能性请求与沟通。见 [[bondy_frost_1994]]"
+  - "自然情境/NDBI:在游戏与日常里顺动机教沟通。见 [[schreibman_2015]]"
+
+skill_areas:
+  - id: preverbal_communication
+    name_zh: 前语言沟通
+    name_en: Preverbal Communication
+    targets:
+      - level: preverbal
+        zh: 用眼神/手势/发声主动表达意图(看、指、拉手、发声)
+        en: Uses gaze, gesture, or vocalization to communicate intent
+        methods: [naturalistic_intervention, prompting, reinforcement]
+        prereq_zh: 有眼神接触
+        examples_zh:
+          - 想要够不到的东西时看向大人并伸手
+          - 用手指指向想要的物品
+        indicator_zh: 每节课能用手势或发声主动表达意图≥3 次
+      - level: preverbal
+        zh: 回应并发起共同注意(跟随他人指点/目光,主动展示或指给大人看以分享)
+        en: Responds to and initiates joint attention (follows and shows to share)
+        methods: [naturalistic_intervention, jasper, modeling, prompting]
+        prereq_zh: 有眼神接触、能注意大人
+        examples_zh:
+          - 大人指窗外的狗,孩子顺着看过去
+          - 看到有趣的东西,主动指给大人看并回看大人
+        indicator_zh: 一次游戏中能主动发起共同注意(指或展示并回看)≥2 次
+      - level: preverbal
+        zh: 回应他人的沟通发起(听到名字看过来、跟随简单手势或指令线索)
+        en: Responds to others' communicative bids (name, gestures, simple cues)
+        methods: [naturalistic_intervention, prompting, reinforcement, time_delay]
+        prereq_zh: 能短暂注视、对声音有反应
+        examples_zh:
+          - 大人叫名字时能停下并看向对方
+          - 大人张开双手说“来抱抱”,孩子走过去
+        indicator_zh: 叫名字后 3 秒内看向对方(5 次中≥3)
+    citations: [schreibman_2015, sundberg_2008, kasari_2006, steinbrenner_2020]
+
+  - id: requesting
+    name_zh: 请求(mand)
+    name_en: Requesting
+    targets:
+      - level: request
+        zh: 主动请求想要的物品/活动(口语或图片)
+        en: Requests a desired item or activity (speech or picture)
+        methods: [aac_pecs, naturalistic_intervention, time_delay, reinforcement]
+        prereq_zh: 有明确偏好物、有基本沟通方式
+        examples_zh:
+          - 说或用图片表达“我要泡泡”
+          - 想继续时请求“再来一次”
+        indicator_zh: 出现动机时能主动发起请求(3 次中≥2)
+      - level: request
+        zh: 请求帮助或休息(用沟通替代哭闹/抢夺)
+        en: Requests help or a break (communication instead of challenging behavior)
+        methods: [aac_pecs, naturalistic_intervention, prompting]
+        prereq_zh: 能请求物品
+        examples_zh:
+          - 任务太难时说或指“帮我”
+          - 累了时表达“我要休息”
+        indicator_zh: 遇困难时能用沟通(而非哭闹)发起 1 次请求
+      - level: request
+        zh: 请求动作或他人协助完成动作(要大人“开”“抱”“再来”),并跨方式(手势/图片/口语/AAC)表达
+        en: Requests actions or an adult to act (open, up, more), across modalities
+        methods: [aac_pecs, naturalistic_intervention, time_delay, pivotal_response_training]
+        prereq_zh: 能请求物品、有明确动机
+        examples_zh:
+          - 想让大人打开瓶盖时说或示意“开”
+          - 荡秋千停下时请求“推”或“再来”
+        indicator_zh: 出现动机时能主动请求动作(3 次中≥2)
+    citations: [bondy_frost_1994, schreibman_2015, koegel_odell_1987, steinbrenner_2020]
+
+  - id: labeling_receptive
+    name_zh: 命名与听者反应
+    name_en: Labeling & Receptive
+    targets:
+      - level: label
+        zh: 命名常见物品/动作/人(tact)
+        en: Labels common objects, actions, people (tact)
+        methods: [naturalistic_intervention, discrete_trial_training, prompting]
+        prereq_zh: 能仿说或有稳定表达方式
+        examples_zh:
+          - 看到狗说“狗”
+          - 说出正在做的动作“喝水”
+        indicator_zh: 能命名 10 个常见物品
+      - level: label
+        zh: 听懂并执行简单的一步指令(receptive)
+        en: Understands and follows simple one-step directions
+        methods: [discrete_trial_training, prompting, time_delay]
+        prereq_zh: 能注视、能听从名字
+        examples_zh:
+          - 听到“把杯子给我”能照做
+          - 听到“指一指鞋子”能指
+        indicator_zh: 能执行 5 个常见的一步指令
+      - level: label
+        zh: 主动评论/分享观察(看到、听到、注意到什么就说出来,而非仅被问才命名)
+        en: Comments and shares observations spontaneously (not only when asked)
+        methods: [naturalistic_intervention, modeling, time_delay]
+        prereq_zh: 能命名常见物品、有分享动机
+        examples_zh:
+          - 看到大车主动说“好大的车”
+          - 听到声音说“下雨了”
+        indicator_zh: 一次活动中能主动发起评论≥3 次
+      - level: label
+        zh: 听懂并执行两步以上指令,理解常见核心词汇(动词、方位、属性)
+        en: Follows two-step directions and understands core vocabulary
+        methods: [discrete_trial_training, prompting, task_analysis, time_delay]
+        prereq_zh: 能执行一步指令
+        examples_zh:
+          - 听到“先拿书,再坐下”能依序完成
+          - 听到“把小的球放进盒子里”能照做
+        indicator_zh: 能执行 5 个常见的两步指令(独立)
+    citations: [sundberg_2008, steinbrenner_2020, schreibman_2015, cooper_2007]
+
+  - id: conversation
+    name_zh: 对话(intraverbal)
+    name_en: Conversation
+    targets:
+      - level: converse
+        zh: 回答简单社交问题、你问我答
+        en: Answers simple social questions; back-and-forth Q&A
+        methods: [scripting, discrete_trial_training, video_modeling]
+        prereq_zh: 有一定表达与听者技能
+        examples_zh:
+          - 问“你叫什么名字”能回答
+          - 填空“天上的小星星……”
+        indicator_zh: 能回答 3 类常见社交问题
+      - level: converse
+        zh: 就一个话题维持 2–3 轮来回对话
+        en: Maintains a 2–3 turn conversation on a topic
+        methods: [scripting, video_modeling, social_skills_training]
+        prereq_zh: 能回答简单问题
+        examples_zh:
+          - 就“今天玩了什么”你一句我一句
+          - 主动补一句相关的话
+        indicator_zh: 能维持 3 轮以上的对话来回
+      - level: converse
+        zh: 主动提问获取信息(先问“什么/哪里/谁”,再到“为什么/怎么”)
+        en: Asks questions to get information (what/where/who then why/how)
+        methods: [scripting, naturalistic_intervention, modeling, time_delay]
+        prereq_zh: 能回答简单问题、有一定表达
+        examples_zh:
+          - 找不到玩具时问“球在哪里”
+          - 看到新事物问“这是什么”
+        indicator_zh: 能在合适情境主动提出 3 类不同的问题
+      - level: converse
+        zh: 回答是非问句并做对话填空(仿说式对话→独立接话)
+        en: Answers yes/no questions and completes conversational fill-ins (intraverbal)
+        methods: [discrete_trial_training, scripting, prompting, time_delay]
+        prereq_zh: 能命名、能仿说或有稳定表达
+        examples_zh:
+          - 问“你要不要饼干”能答“要/不要”
+          - 大人说“我们去……”,孩子接“公园”
+        indicator_zh: 能正确回答 5 个是非问句,并完成 5 个对话填空
+    citations: [sundberg_2008, nac_2015, krantz_mcclannahan_1993, schreibman_2015]
+
+  - id: aac_picture
+    name_zh: 图片/辅助沟通(AAC)
+    name_en: Picture / Augmentative Communication
+    targets:
+      - level: request
+        zh: 用图片交换或沟通板表达需求
+        en: Communicates using picture exchange or a communication board
+        methods: [aac_pecs, prompting, time_delay]
+        prereq_zh: 能分辨图片、有动机
+        examples_zh:
+          - 递出“饼干”图片来换饼干
+          - 在沟通板上组合“我要 + 球”
+        indicator_zh: 能独立用图片发起一次请求
+      - level: label
+        zh: 用图片/沟通设备表达多种功能(评论、打招呼、拒绝、回答),不止请求
+        en: Uses pictures or a device for many functions (comment, greet, reject, answer)
+        methods: [aac_pecs, modeling, naturalistic_intervention, time_delay]
+        prereq_zh: 能用图片发起请求、能分辨多张图片
+        examples_zh:
+          - 用图片说“你好”和大人打招呼
+          - 不想要时递出“不要”图片而非推开
+        indicator_zh: 能用 AAC 表达请求以外的≥2 种沟通功能
+    citations: [bondy_frost_1994, steinbrenner_2020, prizant_2006]
+
+  - id: narration_recount
+    name_zh: 叙述与复述
+    name_en: Narration & Recount
+    targets:
+      - level: converse
+        zh: 复述刚发生的简单事件(说出 2–3 个要素:谁、做了什么)
+        en: Recounts a simple event that just happened (2–3 elements)
+        methods: [scripting, video_modeling, visual_supports, time_delay]
+        prereq_zh: 能命名动作、能回答简单问题
+        examples_zh:
+          - 玩完后说“我 玩 积木”
+          - 用图片顺序说出刚做的两三件事
+        indicator_zh: 能说出刚发生事件的 2 个以上要素
+      - level: converse
+        zh: 按顺序讲述一件事或简单故事(先…然后…最后…)
+        en: Sequences and tells a short event or story in order
+        methods: [scripting, visual_supports, task_analysis, video_modeling]
+        prereq_zh: 能复述简单事件、理解先后顺序
+        examples_zh:
+          - 用“先、然后、最后”讲今天在公园做了什么
+          - 看三格图片按顺序讲成一个小故事
+        indicator_zh: 能按顺序讲出含 3 个步骤的事件(独立或少量提示)
+    citations: [prizant_2006, sundberg_2008, steinbrenner_2020, bellini_akullian_2007]
+
+notes_zh:
+  - 无口语/口语少的孩子先建功能性沟通(图片/AAC 不会阻碍口语,常促进);先请求再命名。
+  - 目标须依据评估的当前水平个别化选取;产出仍为需专业审核的草稿。

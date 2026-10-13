@@ -1,0 +1,268 @@
+{
+  "title_zh": "我会自己刷牙",
+  "title_en": "Brushing My Teeth",
+  "learning_objective": "孩子能在不超过 2 处提示下,按 挤牙膏→上下刷→漱口→擦嘴 完成一次刷牙。",
+  "method_id": "video_modeling",
+  "cast": "solo_bathroom",
+  "intro_zh": "早上起床、晚上睡觉前,我都要刷牙。刷牙有四个小步骤,我照着做,就能把牙齿刷得干干净净。",
+  "intro_en": "In the morning and before bed, I brush my teeth. There are four little steps, and I follow them to get my teeth clean.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "挤一点牙膏在牙刷上。",
+      "text_en": "Squeeze a little toothpaste onto my toothbrush.",
+      "narration_zh": "我先拿起牙刷,挤一点点牙膏在上面。",
+      "narration_en": "First I pick up my toothbrush and squeeze a little toothpaste on it.",
+      "visual_keyword": "挤牙膏",
+      "icon": "🪥",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "上上下下、里里外外好好刷。",
+      "text_en": "Brush up and down, inside and out.",
+      "narration_zh": "我上上下下、里里外外,把牙齿都好好刷一刷。",
+      "narration_en": "I brush up and down, inside and out, cleaning all my teeth well.",
+      "visual_keyword": "上下刷",
+      "icon": "🦷",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "用水漱口,再吐掉。",
+      "text_en": "Rinse my mouth with water and spit it out.",
+      "narration_zh": "我端起杯子,喝一口水漱漱口,再吐掉。",
+      "narration_en": "I pick up my cup, take a sip of water to rinse, and spit it out.",
+      "visual_keyword": "漱口",
+      "icon": "💧",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 4,
+      "text_zh": "擦擦嘴,刷好了。",
+      "text_en": "Wipe my mouth, all done.",
+      "narration_zh": "最后我用毛巾擦擦嘴,牙就刷好啦。",
+      "narration_en": "Last I wipe my mouth with a towel, and my teeth are all clean.",
+      "visual_keyword": "擦嘴",
+      "icon": "🧺",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "该刷牙啦。轮到你,试试第一步怎么做。",
+      "prompt_en": "It is time to brush. Your turn — try the first step.",
+      "pause_seconds": 4.0,
+      "answer_zh": "我挤一点牙膏在牙刷上。",
+      "answer_en": "I squeeze a little toothpaste onto my toothbrush.",
+      "reinforce_zh": "你挤的牙膏刚刚好,做得很好。",
+      "reinforce_en": "You squeezed just the right amount. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "牙膏挤好了,接下来怎么刷?",
+      "prompt_en": "The toothpaste is ready. How do you brush next?",
+      "pause_seconds": 4.0,
+      "answer_zh": "上上下下、里里外外好好刷。",
+      "answer_en": "Brush up and down, inside and out.",
+      "reinforce_zh": "你把每颗牙都刷到了,真棒。",
+      "reinforce_en": "You brushed every tooth. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "牙刷干净了,最后两步是什么?",
+      "prompt_en": "Your teeth are clean. What are the last steps?",
+      "pause_seconds": 5.0,
+      "answer_zh": "用水漱口吐掉,再擦擦嘴。",
+      "answer_en": "Rinse with water and spit, then wipe my mouth.",
+      "reinforce_zh": "你从头到尾都刷好了,牙齿真干净。",
+      "reinforce_en": "You finished the whole routine — your teeth are so clean. Well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "晚上睡觉前,你想早点上床……你可以怎么做?",
+    "scenario_en": "Before bed at night, you want to get to bed soon... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "先好好刷牙再睡",
+        "label_en": "Brush my teeth first, then sleep",
+        "outcome_zh": "你把牙刷得干干净净,嘴里清清爽爽,睡得也香。",
+        "outcome_en": "You brush your teeth clean, your mouth feels fresh, and you sleep well.",
+        "icon": "😊"
+      },
+      {
+        "label_zh": "先挤好牙膏,一步一步来",
+        "label_en": "Squeeze the toothpaste first and go step by step",
+        "outcome_zh": "你一步一步慢慢来,刷得又顺又干净。",
+        "outcome_en": "You go step by step, and brushing is smooth and clean.",
+        "icon": "🙂"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "刷牙四步",
+      "title_en": "Four steps to brush",
+      "caption_zh": "挤牙膏 → 上下刷 → 漱口 → 擦嘴",
+      "caption_en": "Toothpaste → Brush → Rinse → Wipe",
+      "icon": "🪥"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "什么时候要刷牙",
+      "title_en": "When to brush",
+      "caption_zh": "早上起床后 · 晚上睡觉前",
+      "caption_en": "After waking up · Before bed",
+      "icon": "🕐"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "刷牙的顺序",
+      "title_en": "Brushing order",
+      "caption_zh": "膏 → 刷 → 漱 → 擦",
+      "caption_en": "Paste → Brush → Rinse → Wipe",
+      "icon": "🔁"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "刷干净的感觉",
+      "title_en": "How clean teeth feel",
+      "caption_zh": "牙齿干净,嘴里清爽",
+      "caption_en": "Clean teeth feel fresh",
+      "icon": "🙂"
+    }
+  ],
+  "review_zh": "我学会了刷牙四步:挤一点牙膏、上上下下里里外外好好刷、用水漱口吐掉、擦擦嘴。早上起床后、晚上睡觉前我都记得刷牙,把牙齿刷得干干净净,笑起来更好看。",
+  "review_en": "I learned the four steps to brush my teeth: squeeze a little toothpaste, brush up and down inside and out, rinse with water and spit, and wipe my mouth. In the morning and before bed I remember to brush, keep my teeth clean, and smile brightly.",
+  "citations_used": [
+    "bellini_akullian_2007",
+    "van_laarhoven_2010",
+    "steinbrenner_2020"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子实际操作水平与真实卫生间环境调整。",
+    "引用 steinbrenner_2020(NCAEP 2020)为通用循证锚点(verify:false),商用前须核对原文来源/卷期与本课刷牙技能的匹配度。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing happily at a bathroom sink holding his toothbrush ready to brush his teeth, a cup and a tube of toothpaste on the sink, cheerful, close up upper body, hand with five fingers, natural hand anatomy, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy at a clean bright bathroom sink in front of the mirror, a toothbrush cup and a tube of toothpaste on the sink, about to brush his teeth, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy squeezing a little toothpaste from the tube onto the bristles of his toothbrush at the bathroom sink, holding the toothbrush in one hand and the toothpaste tube in the other, close up on his upper body and hands, each hand with exactly five fingers, natural hand anatomy, fingers not merged, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy brushing his teeth with the toothbrush in his mouth, moving it up and down over his teeth, standing in front of the bathroom mirror, close up upper body, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy rinsing his mouth with water from a small cup at the bathroom sink, holding the cup near his lips with both hands, close up on his upper body and hands, each hand with exactly five fingers, natural hand anatomy, fingers not merged, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step4": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy wiping his mouth with a soft pale light-blue towel at the bathroom sink, gently holding the towel to his lips, content happy expression, close up on his upper body and hands, each hand with exactly five fingers, natural hand anatomy, fingers not merged, no extra fingers, hands and towel not passing through each other, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing at the bathroom sink holding his toothbrush ready to start brushing, a cup and a tube of toothpaste nearby, close up upper body, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy squeezing a little toothpaste onto his toothbrush at the bathroom sink, close up on his upper body and hands, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly holding his toothbrush at the sink, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy at the bathroom sink with toothpaste ready on his toothbrush thinking about how to brush next, close up upper body, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy brushing his teeth up and down with the toothbrush in his mouth in front of the bathroom mirror, close up upper body, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy who has finished brushing standing at the bathroom sink holding his cup about to do the last steps, close up on his upper body and hands, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy rinsing his mouth with water from a cup and then wiping his mouth with a soft towel at the bathroom sink, close up on his upper body and hands, each hand with exactly five fingers, natural hand anatomy, fingers not merged, no extra fingers, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly with clean fresh teeth, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy in soft pajamas at the bathroom sink before bed deciding to brush his teeth, holding his toothbrush, close up upper body, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy brushing his teeth well at the bathroom sink before bed, clean and happy, close up upper body, hand with five fingers, natural hand anatomy, big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy squeezing toothpaste onto his toothbrush first and then getting ready to brush step by step at the sink, close up on his upper body and hands, hand with five fingers, natural hand anatomy, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "review": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy young boy proudly showing his clean bright teeth with a big smile at the bathroom sink, holding his toothbrush, cheerful, hand with five fingers, natural hand anatomy, big bright lively sparkling eyes with clear catchlight highlights"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+# =====================================================================
+# 技能领域库:生活自理与行为 Daily Living & Behavior
+# 每个目标标注:发展层级 level(按独立程度)、中英描述、循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 以任务分析 + 视觉支持 + 视频示范 + 提示褪除为主;本土可对齐《培智·生活适应》。
+# =====================================================================
+
+id: daily_living_behavior
+name_zh: 生活自理与行为
+name_en: Daily Living & Behavior
+one_line_zh: 从自理步骤到日常流程与过渡的技能序列,支持孩子更独立、更可预期地完成日常。
+
+evidence_note_zh: |
+  自理技能宜用"任务分析"拆成小步,配"视觉支持 + 视频示范",并系统性地由多到少褪除提示。
+  日常流程与过渡用"视觉日程 / 流程卡 / 计时预告"增强可预期性,减少过渡焦虑。
+  发展层级按"独立程度"看:需协助 → 提示下完成 → 独立完成。
+
+developmental_levels:
+  - key: assist
+    zh: 需协助
+    en: With assistance
+  - key: prompted
+    zh: 提示下完成
+    en: With prompts
+  - key: independent
+    zh: 独立完成
+    en: Independent
+
+frameworks_zh:
+  - "任务分析 + 视觉支持 + 视频示范 + 提示褪除 是自理技能的常用循证组合。见 [[steinbrenner_2020]]"
+  - "视觉日程/流程卡增强日常可预期性、减少过渡焦虑(视觉支持 EBP)。"
+  - "TEACCH 的工作系统支持独立完成任务序列。见 [[teacch]](方法总表)"
+  - "本土对齐:中国《培智学校·生活适应课程标准(2016)》。见 [[cn_peizhi_2016]]"
+
+skill_areas:
+  - id: self_care
+    name_zh: 自理常规(洗手/穿衣/刷牙/如厕)
+    name_en: Self-Care Routines
+    targets:
+      - level: prompted
+        zh: 按步骤完成洗手(任务分析拆步)
+        en: Completes handwashing step-by-step (task-analyzed)
+        methods: [task_analysis, video_modeling, visual_supports, prompting]
+        prereq_zh: 基本精细动作、能模仿
+        examples_zh:
+          - 按 卷袖→打湿→抹皂→搓洗→冲净→擦干 完成
+          - 看流程卡自己走一遍洗手
+        indicator_zh: 提示下能按步骤完成洗手(不超过 2 处提示)
+      - level: independent
+        zh: 独立完成穿脱外套/鞋
+        en: Independently puts on/takes off coat and shoes
+        methods: [task_analysis, video_modeling, prompting, reinforcement]
+        prereq_zh: 能在提示下完成该步骤
+        examples_zh:
+          - 自己穿外套并拉上拉链
+          - 分清并穿对鞋子左右
+        indicator_zh: 连续 2 天独立完成穿外套
+      - level: assist
+        zh: 在协助下穿脱简单衣物(套头衫、松紧裤)
+        en: Puts on and takes off simple clothing (pullover, elastic pants) with help
+        methods: [task_analysis, prompting, modeling, reinforcement]
+        prereq_zh: 能配合肢体协助、有基本坐站平衡
+        examples_zh:
+          - 大人扶住领口,孩子把头钻出套头衫
+          - 按季节选对薄/厚外套后在协助下穿上
+        indicator_zh: 在肢体—手势协助下参与完成穿脱一件衣物的过半步骤
+      - level: prompted
+        zh: 按步骤完成扣扣子、拉拉链、穿系鞋(倒向链锁)
+        en: Fastens buttons, zippers and shoes step-by-step (backward chaining)
+        methods: [task_analysis, video_modeling, prompting, time_delay]
+        prereq_zh: 有对捏等精细动作、能在协助下穿脱衣物
+        examples_zh:
+          - 大人扣到最后一颗,孩子独立扣上这一颗,再逐步前推
+          - 看视频示范后练习拉合外套拉链
+        indicator_zh: 提示下能完成一件衣物的扣/拉/系(不超过 2 处提示)
+      - level: prompted
+        zh: 按步骤完成如厕常规并事后洗手
+        en: Completes the toileting routine and washes hands afterward
+        methods: [task_analysis, visual_supports, prompting, reinforcement]
+        prereq_zh: 能表达如厕需求、能在提示下洗手
+        examples_zh:
+          - 按 进厕所→脱裤→如厕→冲水→提裤→洗手 的流程卡走一遍
+          - 用图卡提示如厕后一定要洗手擦干
+        indicator_zh: 提示下能按流程完成一次如厕并事后洗手
+      - level: prompted
+        zh: 按步骤完成刷牙、洗脸与擤鼻涕(个人卫生)
+        en: Brushes teeth, washes face and blows nose step-by-step
+        methods: [task_analysis, video_modeling, visual_supports, prompting]
+        prereq_zh: 能模仿动作、能配合脸部清洁
+        examples_zh:
+          - 按 挤牙膏→上下刷→漱口→擦嘴 完成刷牙
+          - 用纸巾按住一侧鼻孔轻擤,再换另一侧
+        indicator_zh: 提示下能按步骤完成一项个人卫生任务(如刷牙)
+      - level: independent
+        zh: 独立穿好带扣子/拉链的衣物(看视频提示自学)
+        en: Independently dresses in clothing with buttons or zippers (learned via video prompts)
+        methods: [task_analysis, video_modeling, self_management, reinforcement]
+        prereq_zh: 能在提示下完成扣扣子、拉拉链
+        examples_zh:
+          - 看一步一停的视频提示,自己扣好一排扣子并对齐
+          - 早上不经提醒独立穿好带拉链的外套
+        indicator_zh: 连续 3 天在无人手把手协助下独立穿好一件带扣子或拉链的衣物
+      - level: prompted
+        zh: 按步骤梳头与整理仪容(用镜子自查)
+        en: Combs hair and tidies appearance step-by-step (self-checks with a mirror)
+        methods: [task_analysis, visual_supports, prompting, reinforcement]
+        prereq_zh: 能握梳子、能配合头面部清洁
+        examples_zh:
+          - 照镜子按 拿梳子→从前往后梳→压平翘发→放回梳子 完成梳头
+          - 出门前用纸巾擦净嘴角、照镜子检查仪容
+        indicator_zh: 提示下能照镜子完成一次梳头并整理好仪容(不超过 2 处提示)
+    citations: [steinbrenner_2020, bellini_akullian_2007, cn_peizhi_2016, van_laarhoven_2010]
+
+  - id: routines_transitions
+    name_zh: 日常流程与过渡
+    name_en: Routines & Transitions
+    targets:
+      - level: prompted
+        zh: 看视觉日程知道"接下来做什么"
+        en: Uses a visual schedule to know what comes next
+        methods: [visual_supports, prompting]
+        prereq_zh: 能理解图片
+        examples_zh:
+          - 看日程卡从“游戏”过渡到“收拾”
+          - 用“先……再……”理解活动顺序
+        indicator_zh: 提示下能按日程完成一次活动过渡
+      - level: independent
+        zh: 平稳结束活动、平稳过渡(用计时/预告)
+        en: Ends an activity and transitions smoothly (timer/warning)
+        methods: [visual_supports, video_modeling, self_management]
+        prereq_zh: 能看懂视觉日程
+        examples_zh:
+          - 计时器响后收起玩具
+          - 听到“还有五分钟”预告后平稳结束
+        indicator_zh: 给出预告后,能不哭闹地结束一次喜爱的活动
+      - level: prompted
+        zh: 在支持下完成一次简单外出或购物小任务
+        en: Completes a simple errand or short outing with support
+        methods: [visual_supports, video_modeling, prompting, naturalistic_intervention]
+        prereq_zh: 能看懂图片日程、能跟随大人
+        examples_zh:
+          - 带购物图卡去超市拿到清单上的 2 样东西
+          - 按外出流程卡完成 出门→乘车→到达→返回
+        indicator_zh: 在成人支持下能按流程完成一次简单外出小任务
+      - level: independent
+        zh: 按视觉日程独立完成整套居家常规(晨间/睡前)
+        en: Independently completes a whole home routine using a visual schedule (morning or bedtime)
+        methods: [visual_supports, self_management, task_analysis, reinforcement]
+        prereq_zh: 能看懂视觉日程、能独立完成其中各单项
+        examples_zh:
+          - 照晨间日程卡逐项完成 起床→穿衣→洗漱→吃早饭→背书包
+          - 睡前按日程自己完成 收玩具→刷牙→换睡衣→上床,并逐项打勾
+        indicator_zh: 连续 3 天照视觉日程独立走完整套居家常规(全程不超过 1 处提示)
+    citations: [steinbrenner_2020, cn_peizhi_2016]
+
+  - id: following_rules
+    name_zh: 遵守指令与规则
+    name_en: Following Directions & Rules
+    targets:
+      - level: prompted
+        zh: 遵守简单的班级/家庭规则
+        en: Follows simple classroom/home rules
+        methods: [social_narratives, visual_supports, reinforcement]
+        prereq_zh: 能听从一步指令
+        examples_zh:
+          - 排队时站在线上
+          - 轮到自己再拿
+        indicator_zh: 提示下能在一次活动中遵守目标规则
+    citations: [nac_2015, steinbrenner_2020]
+
+  - id: task_completion
+    name_zh: 独立完成任务序列
+    name_en: Independent Task Completion
+    targets:
+      - level: independent
+        zh: 用工作系统独立完成一串小任务
+        en: Uses a work system to finish a set of tasks independently
+        methods: [task_analysis, visual_supports, teacch, self_management]
+        prereq_zh: 能独立完成单一任务
+        examples_zh:
+          - 按“从左到右”完成三项配对并放进“完成”框
+          - 看任务清单逐项打勾
+        indicator_zh: 能独立完成一组 3 项的任务序列
+    citations: [steinbrenner_2020, cooper_2007]
+
+  - id: safety_help
+    name_zh: 安全与求助
+    name_en: Safety & Seeking Help
+    targets:
+      - level: prompted
+        zh: 遇到问题会寻求帮助,而非独自受挫
+        en: Seeks help when stuck rather than struggling alone
+        methods: [social_narratives, video_modeling, prompting]
+        prereq_zh: 有基本沟通方式
+        examples_zh:
+          - 够不到东西时去找大人
+          - 走失时留在原地或找工作人员
+        indicator_zh: 在设定的困难情境中能求助 1 次
+    citations: [nac_2015, steinbrenner_2020]
+
+  - id: mealtime_eating
+    name_zh: 进食与就餐
+    name_en: Mealtime & Eating
+    targets:
+      - level: assist
+        zh: 用勺或叉自主进食(减少洒漏)
+        en: Self-feeds with a spoon or fork with less spilling
+        methods: [task_analysis, prompting, modeling, reinforcement]
+        prereq_zh: 能抓握餐具、能坐在餐椅上
+        examples_zh:
+          - 大人手把手带一勺,再让孩子自己舀一勺
+          - 用叉子叉起小块食物送入口中
+        indicator_zh: 在手势—肢体协助下能自己吃完过半份量
+      - level: prompted
+        zh: 按就餐流程完成一餐(坐好→自己吃→擦嘴→收拾)
+        en: Follows the mealtime routine to finish a meal
+        methods: [visual_supports, task_analysis, prompting, reinforcement]
+        prereq_zh: 能用餐具自主进食
+        examples_zh:
+          - 看就餐流程卡走一遍 坐好→吃饭→擦嘴→放碗
+          - 饭后把碗筷端到指定的地方
+        indicator_zh: 提示下能按流程完成一次就餐并餐后收拾
+      - level: prompted
+        zh: 温和尝试一小口新食物(不强迫)
+        en: Gently tries a small bite of a new food (no forcing)
+        methods: [naturalistic_intervention, reinforcement, prompting, video_modeling]
+        prereq_zh: 能自主进食、对食物有基本耐受
+        examples_zh:
+          - 把新食物放在盘边,按 看→闻→舔→尝一小口 逐级接近
+          - 看同伴或视频示范后愿意尝一小口新蔬菜
+        indicator_zh: 在鼓励下能主动尝试一小口新食物 1 次
+      - level: independent
+        zh: 独立完成整套就餐流程(无需流程卡)
+        en: Independently completes the whole mealtime routine (without a picture card)
+        methods: [task_analysis, self_management, prompting, reinforcement]
+        prereq_zh: 能在提示下按就餐流程完成一餐
+        examples_zh:
+          - 开饭时自己坐好、用餐具吃完、擦嘴、把碗筷端到水池
+          - 用自查小勾核对 坐好→自己吃→擦嘴→收拾
+        indicator_zh: 连续 3 天在无流程卡、无提示下独立完成整套就餐并餐后收拾
+    citations: [steinbrenner_2020, cooper_2007, bellini_akullian_2007, cn_peizhi_2016]
+
+  - id: chores_home
+    name_zh: 家务与整理
+    name_en: Chores & Home Routines
+    targets:
+      - level: prompted
+        zh: 收拾玩具、物归原处
+        en: Tidies up toys and puts things back in place
+        methods: [task_analysis, visual_supports, prompting, reinforcement]
+        prereq_zh: 能配对物品与位置、能听一步指令
+        examples_zh:
+          - 玩完把积木放回贴有图卡的收纳盒
+          - 听到“收拾时间”提示后把玩具归位
+        indicator_zh: 提示下能把一组玩具收回指定位置
+      - level: independent
+        zh: 按家庭常规独立完成一项日常家务(如摆碗筷、擦桌)
+        en: Independently does one daily chore as part of the home routine
+        methods: [task_analysis, visual_supports, self_management, reinforcement]
+        prereq_zh: 能在提示下完成该家务步骤
+        examples_zh:
+          - 开饭前自己把碗筷摆到每个座位
+          - 看家务清单逐项完成并打勾
+        indicator_zh: 连续 2 天独立完成一项分配的日常家务
+    citations: [steinbrenner_2020, cooper_2007, cn_peizhi_2016]
+
+notes_zh:
+  - 自理技能强调"任务分析拆步 + 视觉支持 + 提示由多到少褪除",最终指向独立。
+  - 目标须依据评估的当前水平个别化选取;产出仍为需专业审核的草稿。

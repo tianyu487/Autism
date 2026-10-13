@@ -1,0 +1,87 @@
+# =====================================================================
+# 循证方法条目:视频示范 Video Modeling(+ 回合式练习 + 视觉支持)
+# 这是「视频即康复训练」内容类型的骨架/硬约束。
+# 生成训练模块时把这些规则注入 Prompt,并在 validate.py 中机器校验。
+#
+# 依据:Video Modeling / Video Self-Modeling 被 NPDC(Wong et al. 2015)
+#      列为确证有效实践(EBP);National Standards Project(2015)将
+#      Modeling / Video Modeling 列为 Established。配套的任务分析、提示、
+#      正向强化、视觉支持均为公认 EBP。
+# =====================================================================
+
+id: video_modeling
+name_zh: 视频示范训练
+name_en: Video Modeling
+evidence_level: established
+one_line_zh: 用视频一步步示范目标技能,配合"提示→留白让孩子做→示范正确反应→鼓励"的练习回合,让看视频这件事本身就是一次康复训练。
+one_line_en: Show the target skill step-by-step on video, then run practice trials (prompt → wait → model the correct response → reinforce) so watching the video is itself a training session.
+
+# --- 适用与目标 ---
+use_for_zh:
+  - 训练一个具体、可观察的技能或行为(如社交回应、日常自理步骤、情绪表达)
+  - 把复杂技能拆成小步骤,反复示范 + 练习,促进掌握与泛化
+  - 在安全、可预期的画面里,让孩子先"看会",再"试着做"
+target_audience_zh: 有一定注意力与模仿能力的自闭症儿童;由家长、特教老师或康复师陪同,在孩子作答的"留白"处引导与强化。
+
+# --- 方法要件(循证成分,均注入生成)---
+method_components_zh:
+  video_modeling: 视频示范——完整、正确地示范目标行为,只示范"怎么做对",不演示错误做法。
+  task_analysis: 任务分析——把目标技能拆成 3–6 个清晰的小步骤,一步一屏。
+  practice_trials: 回合式练习——每个回合给一次尝试机会,留白让孩子自己做,再示范正确反应。
+  reinforcement: 正向强化——用具体、及时、真诚的鼓励肯定孩子的尝试(强化"努力/参与",不空泛夸"聪明")。
+  prompting: 提示——提示清楚、字面、尽量少;跨回合逐步减少提示(由多到少),推动独立完成。
+  generalization: 泛化——练习回合之间轻微变化情境/人物,帮助把技能迁移到真实生活。
+  visual_supports: 视觉支持——配套可打印卡片(步骤卡/情绪卡/选择卡/流程卡),可离屏反复使用。
+
+# --- 生成硬规则(注入 Prompt + 部分可机器校验)---
+writing_rules_zh:
+  - 每个模块只训练"一个"具体、可观察、可测量的目标行为;learning_objective 要写清"谁、在什么情境、做出什么、达到什么程度"。
+  - 开场与收尾都用第一人称、故事化叙述,直接进入情境;不要用"今天我们来练习/学习""这是可以学会的"等元话语或说教口吻(练习段的互动提示如"轮到你"除外)。
+  - 示范段只示范正确做法,正向、具体、字面化;不演示"错误示范",不用恐吓或负面框架。
+  - 练习段至少 2 个回合:每回合 = 提示(引出一次尝试)→ 留白(pause_seconds 秒静默,让孩子自己做)→ 示范正确反应 → 具体正向鼓励。
+  - 鼓励要针对"孩子刚做的事"(如"你自己说出来了,真好"),不空泛、不承诺"治愈/一定会好"。
+  - 跨回合让提示逐步减少、情境略有变化,以促进独立与泛化。
+  - 社交情境选择:给真实、贴近孩子的情境和 2–3 个选项;每个选择都给温和、写实的结果反馈,没有"错误惩罚",可自然点出更合适的做法。
+  - 用词、句子长度匹配孩子年龄与阅读水平;一屏一个要点;画面低刺激、可预期。
+  - 自然融入孩子的名字与兴趣(写实、贴切,不夸张失真),照顾其感官特点。
+
+# --- 阶段系统(用于分屏/分段渲染与校验)---
+phase_system:
+  intro:
+    zh: 开场
+    role_zh: 直接进入故事情境——第一人称、写实地把孩子带入当下正发生的事(像故事开头),不做"今天我们要练习什么"的说教。
+  teach:
+    zh: 示范段
+    role_zh: 分步示范目标技能(Video Modeling),一步一屏,只示范正确做法。
+  practice:
+    zh: 练习段
+    role_zh: 数个练习回合:提示 → 留白(轮到你)→ 示范正确反应 → 鼓励强化。
+  choice:
+    zh: 社交选择段
+    role_zh: 给社交情境与若干选项,每个选择都有温和结果反馈(无惩罚)。
+  review:
+    zh: 收尾
+    role_zh: 以故事化方式收束(情境圆满解决)+ 温暖鼓励,让孩子带着掌控感与成就感结束;不做"今天我们练习了"的总结说教。
+
+# --- 强化(正向)规则 ---
+reinforcement_rules_zh:
+  - 及时:在孩子尝试之后马上给。
+  - 具体:说清是"哪件事"做得好(描述行为,而非泛泛"真棒")。
+  - 真诚正向:强化努力与参与;不用讽刺、不用与他人比较、不用"否则……"的威胁。
+
+# --- 每个模块建议 ---
+per_module_guidance_zh:
+  min_steps: 3
+  max_steps: 6
+  min_trials: 2
+  max_trials: 4
+  min_cards: 3
+  max_cards: 6
+  pause_seconds_default: 4
+
+# --- 引用(详见 knowledge/citations.yaml)---
+citations:
+  - bellini_akullian_2007
+  - charlop_christy_2000
+  - wong_2015
+  - nac_2015

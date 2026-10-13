@@ -1,0 +1,280 @@
+{
+  "title_zh": "我可以一起玩吗?",
+  "title_en": "Can I Play Too?",
+  "learning_objective": "想加入同伴正在进行的游戏时,孩子能先观察再用恰当方式问“我可以一起玩吗”,并在被拒时保持平和,提示下达成 1 次。",
+  "method_id": "social_skills_training",
+  "cast": "park_peers",
+  "intro_zh": "在游乐场,我看到小朋友在玩一个好玩的游戏,我也很想加入。我可以用友好的方式问一问。",
+  "intro_en": "At the playground, I see my friend playing a fun game, and I want to join. I can ask in a friendly way.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "先在旁边看一看他们在玩什么。",
+      "text_en": "First I watch what they are playing.",
+      "narration_zh": "我先在旁边看一看小朋友在玩什么,不直接冲进去。",
+      "narration_en": "First I watch what my friends are playing; I do not rush in.",
+      "visual_keyword": "先观察",
+      "icon": "👀",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "走近一点,对小朋友微笑。",
+      "text_en": "I step closer and smile at my friend.",
+      "narration_zh": "我走近一点,对小朋友微笑,打个招呼。",
+      "narration_en": "I step a little closer and smile at my friend to say hello.",
+      "visual_keyword": "微笑",
+      "icon": "🙂",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "友好地问:我可以一起玩吗?",
+      "text_en": "I ask kindly: Can I play too?",
+      "narration_zh": "我用友好的声音问:我可以一起玩吗?",
+      "narration_en": "I ask in a friendly voice: Can I play too?",
+      "visual_keyword": "友好询问",
+      "icon": "🗣️",
+      "duration_hint": 7.0
+    },
+    {
+      "index": 4,
+      "text_zh": "可以就一起玩;这次不行,我也平静地去玩别的。",
+      "text_en": "If yes, we play; if not this time, I calmly do something else.",
+      "narration_zh": "如果可以,我们就一起玩;如果这次不行,我也能平静地去玩别的。",
+      "narration_en": "If yes, we play together; if not this time, I can calmly go and do something else.",
+      "visual_keyword": "一起玩",
+      "icon": "🤝",
+      "duration_hint": 7.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "小朋友在玩球,你也想加入。轮到你,试着说说看、做做看。",
+      "prompt_en": "Your friends are playing ball and you want to join. Your turn — give it a try.",
+      "pause_seconds": 4.0,
+      "answer_zh": "我可以一起玩吗?",
+      "answer_en": "Can I play too?",
+      "reinforce_zh": "你用友好的话问,做得很好。",
+      "reinforce_en": "You asked with friendly words. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "问之前,你要先做什么呢?",
+      "prompt_en": "Before you ask, what do you do first?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先在旁边看一看。",
+      "answer_en": "First I watch from the side.",
+      "reinforce_zh": "你先观察再加入,真棒。",
+      "reinforce_en": "You watched first before joining. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "如果小朋友说“现在人满了”,你可以怎么办?",
+      "prompt_en": "If your friends say the game is full right now, what can you do?",
+      "pause_seconds": 5.0,
+      "answer_zh": "没关系,我先玩别的,等一下再问。",
+      "answer_en": "That's okay, I'll do something else and ask again later.",
+      "reinforce_zh": "你被拒绝还能保持平静,做得好。",
+      "reinforce_en": "You stayed calm when they said not now. Well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "你想加入小朋友的游戏……你可以怎么做?",
+    "scenario_en": "You want to join your friends' game... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "先看一看,再问我可以一起玩吗",
+        "label_en": "Watch first, then ask to join",
+        "outcome_zh": "你礼貌地问,小朋友很高兴让你加入,你们玩得很开心。",
+        "outcome_en": "You ask politely, your friends are happy to let you join, and you all have fun.",
+        "icon": "😊"
+      },
+      {
+        "label_zh": "这次不行就先去玩别的",
+        "label_en": "If not now, do something else first",
+        "outcome_zh": "你平静地去玩别的,过一会儿再来问,大家还是好朋友。",
+        "outcome_en": "You calmly do something else and ask again later; you are still good friends.",
+        "icon": "🙂"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "加入游戏三步",
+      "title_en": "Three steps to join",
+      "caption_zh": "看一看 → 微笑 → 问我可以一起玩吗",
+      "caption_en": "Watch → Smile → Ask to play",
+      "icon": "🤝"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以说的话",
+      "title_en": "What I can say",
+      "caption_zh": "我可以一起玩吗? / 没关系,我先玩别的。",
+      "caption_en": "Can I play too? / That's okay, I'll play something else.",
+      "icon": "🗣️"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "被拒绝时的心情",
+      "title_en": "If they say not now",
+      "caption_zh": "有点失望没关系,我可以先玩别的",
+      "caption_en": "A little disappointed is okay; I can play something else",
+      "icon": "🙂"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "加入的顺序",
+      "title_en": "Joining order",
+      "caption_zh": "观察 → 询问 → 一起玩 或 玩别的",
+      "caption_en": "Watch → Ask → Play together or play something else",
+      "icon": "🔁"
+    }
+  ],
+  "review_zh": "我学会了加入游戏:先看一看,微笑走近,再友好地问“我可以一起玩吗”。就算这次不行,我也能平静地去玩别的。我越来越会和小朋友相处了。",
+  "review_en": "I learned how to join in: I watch first, step closer with a smile, and ask kindly, \"Can I play too?\" Even if not this time, I can calmly play something else. I am getting better at being with friends.",
+  "citations_used": [
+    "gates_2017",
+    "chan_2009",
+    "steinbrenner_2020",
+    "nac_2015"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子的社交水平与真实同伴情境个别化调整。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy and a young girl smiling together at a sunny playground, cheerful friends, both facing forward, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy at a sunny playground looking over at a girl playing a fun game, curious and friendly, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy standing to the side and watching a girl play at the playground, observing calmly before joining, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy stepping a little closer and smiling warmly at a girl at the playground, friendly and cheerful, both facing forward, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy standing near a girl at the playground with a friendly open welcoming gesture and a warm smile, both smiling, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "step4": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy and a girl happily playing together at the playground, cheerful and joyful, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy at the playground watching a girl play with a ball and wanting to join, friendly, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy smiling warmly and giving a friendly wave to a girl at the playground, both facing forward, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy at the playground pausing to watch first before joining, thoughtful, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy standing calmly to the side watching a girl play before joining, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy at the playground staying calm and understanding when the game is full right now, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a calm young boy happily going to do a different fun activity at the playground, content, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, big bright lively sparkling eyes with clear catchlight highlights, gentle warm encouragement"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy at the playground near a girl playing, deciding how to join in a friendly way, both with bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy and a girl smiling and starting to play together happily at the playground, both with big bright lively sparkling eyes with clear catchlight highlights"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a calm young boy cheerfully playing something else at the playground, content, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "review": {
+      "roles": [
+        "boy_ming",
+        "girl_friend"
+      ],
+      "visual_en": "a young boy and a girl happily playing together at a sunny playground, cheerful friends, both with big bright lively sparkling eyes with clear catchlight highlights"
+    }
+  }
+}

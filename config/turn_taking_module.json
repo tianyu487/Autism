@@ -1,0 +1,152 @@
+{
+  "title_zh": "轮到你,我先等一等",
+  "title_en": "Waiting for My Turn",
+  "learning_objective": "当和同伴想玩同一个玩具或活动时,孩子能轮流并等待自己的一轮(通过看一看、等一等、温和询问),而不是抢夺或哭闹。",
+  "method_id": "video_modeling",
+  "cast": "peer_play",
+  "intro_zh": "我和朋友在一起玩。桌上有一列小火车,我们都想玩。一次只能一个人玩,那我们可以轮流玩。",
+  "intro_en": "My friend and I are playing together. There is a toy train on the table, and we both want it. Only one person can play at a time, so we can take turns.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "看到朋友在玩,我先看一看,等一等。",
+      "text_en": "When my friend is playing, I look and wait.",
+      "narration_zh": "看到朋友正在玩,我先看一看,等一等,不去抢。",
+      "narration_en": "When my friend is playing, I look and wait. I do not grab.",
+      "visual_keyword": "看一看等一等",
+      "icon": "👀",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "轮到别人时,我耐心等一小会儿,深呼吸。",
+      "text_en": "When it is someone else's turn, I wait calmly and take a breath.",
+      "narration_zh": "轮到别人玩的时候,我耐心等一小会儿,深呼吸,让自己平静。",
+      "narration_en": "When it is someone else's turn, I wait calmly and take a slow breath.",
+      "visual_keyword": "耐心等待",
+      "icon": "😌",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "我可以轻声问:轮到我了吗?",
+      "text_en": "I can gently ask: Is it my turn?",
+      "narration_zh": "等了一会儿,我可以用温和的声音问:请问,轮到我了吗?",
+      "narration_en": "After a little while, I can gently ask: Is it my turn now?",
+      "visual_keyword": "温和询问",
+      "icon": "🗣️",
+      "duration_hint": 7.0
+    },
+    {
+      "index": 4,
+      "text_zh": "轮到我了,我开心地玩,玩一会儿再换给朋友。",
+      "text_en": "On my turn, I play happily, then give it back to my friend.",
+      "narration_zh": "轮到我了,我开心地玩一会儿,然后把玩具换给朋友,大家轮流玩。",
+      "narration_en": "On my turn, I play happily for a while, then give it back so we take turns.",
+      "visual_keyword": "轮流玩",
+      "icon": "🚂",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "朋友正在玩小火车,你也很想玩。轮到你,试着说说看、做做看。",
+      "prompt_en": "Your friend is playing with the toy train, and you want it too. Your turn — give it a try.",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先等一等,轮到我再玩。",
+      "answer_en": "I will wait; I can play when it is my turn.",
+      "reinforce_zh": "你愿意先等一等,做得很好。",
+      "reinforce_en": "You chose to wait. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "你已经等了一会儿,想知道是不是该你了。你会怎么问?",
+      "prompt_en": "You have waited a while and want to know if it is your turn. How can you ask?",
+      "pause_seconds": 4.0,
+      "answer_zh": "请问,轮到我了吗?",
+      "answer_en": "Excuse me, is it my turn now?",
+      "reinforce_zh": "你用温和的话来问,真棒。",
+      "reinforce_en": "You asked with kind words. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "你玩了一会儿小火车,朋友也想玩。你可以怎么做?",
+      "prompt_en": "You have played with the train for a while, and your friend wants a turn. What can you do?",
+      "pause_seconds": 5.0,
+      "answer_zh": "该你了,给你玩。",
+      "answer_en": "It's your turn now — here you go.",
+      "reinforce_zh": "你主动和朋友轮流,做得好。",
+      "reinforce_en": "You took turns with your friend. Well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "你们都想玩同一列小火车……你可以怎么做?",
+    "scenario_en": "You both want the same toy train... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "轮流玩",
+        "label_en": "Take turns",
+        "outcome_zh": "你们轮流玩,一人玩一会儿,都玩得很开心。",
+        "outcome_en": "You take turns, and you both have a happy time.",
+        "icon": "😊"
+      },
+      {
+        "label_zh": "先等一等,再问轮到我了吗",
+        "label_en": "Wait, then ask for my turn",
+        "outcome_zh": "你耐心等一等,朋友很快让给你,你们相处得很好。",
+        "outcome_en": "You wait patiently, your friend soon shares, and you get along well.",
+        "icon": "🙂"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "轮流三步",
+      "title_en": "Three steps to take turns",
+      "caption_zh": "看一看 → 等一等 → 轮到我",
+      "caption_en": "Look → Wait → My turn",
+      "icon": "🔁"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以说的话",
+      "title_en": "What I can say",
+      "caption_zh": "请问,轮到我了吗? / 该你了,给你玩。",
+      "caption_en": "Is it my turn? / Here you go, your turn.",
+      "icon": "🗣️"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "等待时的心情",
+      "title_en": "While I wait",
+      "caption_zh": "等一等,深呼吸,我可以做到。",
+      "caption_en": "Wait, breathe, I can do it.",
+      "icon": "😌"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "轮流的顺序",
+      "title_en": "Turn-taking order",
+      "caption_zh": "朋友玩 → 我玩 → 朋友玩",
+      "caption_en": "Friend's turn → My turn → Friend's turn",
+      "icon": "📋"
+    }
+  ],
+  "review_zh": "我们轮流玩小火车,我会看一看、等一等,轮到我就开心地玩。我和朋友轮流,大家都很开心。",
+  "review_en": "We take turns with the toy train. I look and wait, and on my turn I play happily. We take turns, and everyone is happy.",
+  "citations_used": [
+    "bellini_akullian_2007",
+    "charlop_christy_2000",
+    "chan_2009",
+    "parten_1932"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需专业人员按孩子的语言水平与真实同伴情境调整。"
+  ]
+}

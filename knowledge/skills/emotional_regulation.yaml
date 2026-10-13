@@ -1,0 +1,243 @@
+# =====================================================================
+# 技能领域库:情绪认知与调节 Emotional Recognition & Regulation
+# 每个目标(target)标注:发展层级 level、中英描述、可用循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 生成时这些一并注入,帮助模块选准目标、写出可测量的 learning_objective。
+# =====================================================================
+
+id: emotional_regulation
+name_zh: 情绪认知与调节
+name_en: Emotional Recognition & Regulation
+one_line_zh: 从识别与命名情绪,到理解因果与他人感受,再到自我调节策略的发展序列。
+
+evidence_note_zh: |
+  常见课程序列:识别与命名 → 情境中的情绪 → 情绪的因果 → 理解他人感受(心理理论) → 调节策略。
+  调节策略可借情绪科学的层级理解:情境选择 → 情境修正 → 注意分配 → 认知重评 → 反应调整。
+  低龄/低语言儿童宜先做"识别—命名"与具体可视的调节工具;认知重评类更适合较大/语言较好的孩子。
+
+developmental_levels:
+  - key: recognize
+    zh: 识别与命名
+    en: Recognize & name
+  - key: understand
+    zh: 理解(情境/因果/他人)
+    en: Understand (context/cause/others)
+  - key: regulate
+    zh: 自我调节
+    en: Self-regulate
+
+frameworks_zh:
+  - "Zones of Regulation 情绪调节区域:蓝(低落/疲倦)/绿(平静·可学习)/黄(升高·焦虑挫折)/红(强烈·失控)四区;核心信息:所有区都 OK,重在觉察与工具箱。见 [[kuypers_2011]]"
+  - "The Incredible 5-Point Scale 神奇5分量表:把情绪/行为分 1–5 级并配对应对动作,专为 ASD 自我调节设计。见 [[buron_curtis_2003]]"
+  - "SCERTS 的 ER 成分:自我调节 + 相互调节,以及从失调中恢复,按发展阶段序列化。见 [[prizant_2006]]"
+  - "情绪ABC(Ellis, REBT)是面向较大/语言较好孩子的认知重评概念,不等同于低龄情绪课程,勿混同。"
+
+skill_areas:
+  - id: recognize_name
+    name_zh: 识别与命名情绪
+    name_en: Recognize & Name Emotions
+    targets:
+      - level: recognize
+        zh: 辨识面部表情;命名基本情绪(开心/难过/生气/害怕)
+        en: Identify facial expressions; name basic emotions (happy/sad/angry/scared)
+        methods: [visual_supports, video_modeling, discrete_trial_training]
+        prereq_zh: 能注视人脸、进行简单配对
+        examples_zh:
+          - 看表情图片或镜子里的自己说出情绪词
+          - 把"开心/难过"表情卡与相应场景配对
+        indicator_zh: 给 4 种基本情绪的表情图,能正确命名至少 3 种(连续 2 次)
+      - level: recognize
+        zh: 用情绪卡/情绪词把当下感受说出来
+        en: Uses emotion cards/words to label the current feeling
+        methods: [visual_supports, naturalistic_intervention]
+        prereq_zh: 能命名基本情绪
+        examples_zh:
+          - 被表扬时说"我很开心"
+          - 玩具被拿走时用卡片指向"生气"
+        indicator_zh: 日常情境中,提示下能用词或卡说出自己当下的情绪
+      - level: recognize
+        zh: 辨识并命名复合情绪(受挫/担心/尴尬/自豪/羡慕),结合表情与情境线索
+        en: Identify and name complex emotions (frustrated/worried/embarrassed/proud/jealous) from face and context
+        methods: [visual_supports, video_modeling, cognitive_behavioral]
+        prereq_zh: 能命名 4 种基本情绪
+        examples_zh:
+          - 看到皱眉跺脚的图,说"他很受挫"
+          - 看到脸红低头的图,说"她有点尴尬"
+        indicator_zh: 给 4 种复合情绪的表情或短情境,能正确命名至少 3 种(连续 2 次)
+      - level: recognize
+        zh: 用 1–5 强度量表或情绪温度计,给一个情绪"打分"、说出它有多强
+        en: Rates how strong an emotion is using a 1–5 scale or feelings thermometer
+        methods: [visual_supports, self_management, cognitive_behavioral]
+        prereq_zh: 能命名基本情绪
+        examples_zh:
+          - 说"我现在的生气大概是 4 级"
+          - 把"有点担心"放在量表的第 2 格
+        indicator_zh: 给一个当下情绪,提示下能在 1–5 量表上指出对应的强度等级
+    citations: [golan_2010, buron_curtis_2003, ekman_1992]
+
+  - id: emotion_in_context
+    name_zh: 情境中的情绪与因果
+    name_en: Emotions in Context & Cause
+    targets:
+      - level: understand
+        zh: 命名"在某情境里会有什么情绪"
+        en: Names the emotion likely in a given situation
+        methods: [social_narratives, video_modeling]
+        prereq_zh: 能命名基本情绪
+        examples_zh:
+          - 听"生日会"故事说"开心"
+          - 看"玩具坏了"的图说"难过"
+        indicator_zh: 给 3 个常见情境,能说出符合的情绪
+      - level: understand
+        zh: 说出情绪的因果("因为……所以我……感到……")
+        en: States cause–effect of emotions (because ... I feel ...)
+        methods: [social_narratives, cognitive_behavioral]
+        prereq_zh: 能命名情境中的情绪
+        examples_zh:
+          - 因为下雨不能出去玩,所以我有点难过
+          - 因为搭好了积木,所以我很自豪
+        indicator_zh: 能用"因为…所以…感到…"说出一次自己情绪的原因
+    citations: [golan_2010, gray_2015_newbook]
+
+  - id: others_feelings
+    name_zh: 理解他人感受(心理理论)
+    name_en: Understanding Others' Feelings (Theory of Mind)
+    targets:
+      - level: understand
+        zh: 从表情/情境推测他人的感受;换位思考
+        en: Infers others' feelings from expression/context; perspective-taking
+        methods: [social_narratives, social_skills_training, cognitive_behavioral]
+        prereq_zh: 能命名情境中的情绪
+        examples_zh:
+          - 同伴摔倒哭了,说"他很疼、很难过"
+          - 朋友分到礼物,说"他很开心"
+        indicator_zh: 给他人情境,能说出对方可能的感受(3 次中≥2)
+    citations: [gates_2017, gray_garand_1993]
+
+  - id: regulation_strategies
+    name_zh: 自我调节策略
+    name_en: Self-Regulation Strategies
+    targets:
+      - level: regulate
+        zh: 觉察自己的情绪"区/级"(用四区或 5 分量表定位)
+        en: Notices own emotional "zone/level" (via Zones or 5-Point Scale)
+        methods: [visual_supports, self_management, cognitive_behavioral]
+        prereq_zh: 能命名基本情绪
+        examples_zh:
+          - 用四区说"我现在在黄区"
+          - 察觉身体信号(心跳变快、拳头握紧)
+        indicator_zh: 情绪升高时,提示下能说出自己的"区/级"
+      - level: regulate
+        zh: 使用具体的平复工具(深呼吸、数数、暂停、去安静角、寻求帮助)
+        en: Uses concrete calming tools (deep breaths, counting, break, ask for help, calm corner)
+        methods: [visual_supports, cognitive_behavioral, video_modeling]
+        prereq_zh: 能觉察自己的情绪"区/级"
+        examples_zh:
+          - 挫折时做三次深呼吸
+          - 想要东西时说"我需要帮助"而不是抢
+        indicator_zh: 在触发情境中,提示下能用至少 1 种平复工具让自己平静下来
+      - level: regulate
+        zh: 较大/语言较好的孩子:自我对话与重评("这没那么糟,我可以试……")
+        en: "For older/verbal children: self-talk & reappraisal"
+        methods: [cognitive_behavioral, self_management]
+        prereq_zh: 有一定语言与因果理解
+        examples_zh:
+          - 对自己说"这没那么糟,我可以再试一次"
+          - 心里想"输了游戏也没关系,我们可以再玩"
+        indicator_zh: 遇到小挫折,能说出一句帮助自己的话
+      - level: regulate
+        zh: 从"冷静工具箱"里为不同情境选出合适的策略,并说明为什么选它
+        en: Chooses a fitting calm-down strategy from a toolbox to match the situation
+        methods: [visual_supports, self_management, cognitive_behavioral]
+        prereq_zh: 认识多种平复工具,能觉察自己的情绪"区/级"
+        examples_zh:
+          - 太吵时选"去安静角",而不是"用力推墙"
+          - 排队着急时选"数到十"配合深呼吸
+        indicator_zh: 给 3 个不同触发情境,能各选出并说出一个合适的平复策略(3 次中≥2)
+    citations: [wood_2009, kuypers_2011, lee_2007]
+
+  - id: emotion_expression
+    name_zh: 情绪表达与沟通
+    name_en: Emotion Expression & Communication
+    targets:
+      - level: recognize
+        zh: 用语言、情绪卡或 1–5 量表,主动把自己的感受和需要告诉别人
+        en: Communicates own feelings and needs with words, emotion cards, or a 1–5 scale
+        methods: [visual_supports, naturalistic_intervention, prompting]
+        prereq_zh: 能命名自己当下的基本情绪
+        examples_zh:
+          - 累了时递出"我需要休息"的卡片
+          - 说"我有点担心,可以陪陪我吗"
+        indicator_zh: 日常情境中,提示下能用语言或图片把一次自己的感受和需要说给他人
+      - level: regulate
+        zh: 用被接纳的方式表达强烈情绪,替代发脾气、打人或退缩
+        en: Expresses strong feelings in acceptable ways instead of tantrums, hitting, or shutting down
+        methods: [social_narratives, video_modeling, cognitive_behavioral, reinforcement]
+        prereq_zh: 能用语言或图片表达基本感受
+        examples_zh:
+          - 生气时说"我很生气,我要先离开一下",而不是动手
+          - 想要东西时用语言请求,而不是去抢
+        indicator_zh: 在触发情境中,提示下能用一次恰当表达代替以往的问题行为
+    citations: [prizant_2006, gray_2015_newbook, nac_2015]
+
+  - id: self_monitoring
+    name_zh: 自我监控与觉察
+    name_en: Self-Monitoring & Awareness
+    targets:
+      - level: regulate
+        zh: 觉察情绪升高前的"身体预警信号"(心跳变快、拳头握紧、脸发烫)
+        en: Notices early body warning signals before emotions escalate (racing heart, clenched fists, hot face)
+        methods: [visual_supports, cognitive_behavioral, self_management]
+        prereq_zh: 能命名基本情绪
+        examples_zh:
+          - 发现"我的心跳变快了,可能要生气了"
+          - 感到肚子打结时说"我有点担心"
+        indicator_zh: 情绪升高时,提示下能说出至少 1 个自己的身体预警信号
+      - level: regulate
+        zh: 在固定时刻或情境里自我检查"我现在在几区/几级",并做简单自我记录
+        en: Checks own zone or level at set times or situations, and self-records it
+        methods: [self_management, visual_supports]
+        prereq_zh: 能觉察自己的情绪"区/级"
+        examples_zh:
+          - 每节课后在心情打卡表上贴今天的"区"
+          - 用小贴纸记录一天里平静(绿区)的次数
+        indicator_zh: 一周内,提示下能完成至少 3 次自我检查并记录自己的"区/级"
+    citations: [lee_2007, kuypers_2011, mahler_2015]
+
+  - id: coping_specific
+    name_zh: 针对特定情绪的应对
+    name_en: Coping with Specific Emotions
+    targets:
+      - level: regulate
+        zh: 应对焦虑/担心：识别引发担心的想法,用深呼吸、寻求确认与一小步行动来缓解
+        en: "Copes with anxiety/worry: spots worry thoughts and uses breathing, reassurance, and small steps"
+        methods: [cognitive_behavioral, social_narratives, visual_supports]
+        prereq_zh: 能命名"担心/焦虑"并觉察其身体信号
+        examples_zh:
+          - 去新地方前,看社交叙事并做几次深呼吸
+          - 对自己说"我先做第一小步就好"
+        indicator_zh: 在引发担心的情境中,提示下能用至少 1 种应对方法让担心降一级
+      - level: regulate
+        zh: 应对愤怒/挫折：在身体升温时先暂停,用深呼吸、用力活动或数数把情绪降下来
+        en: "Copes with anger/frustration: pauses when the body heats up, then uses breathing, heavy work, or counting"
+        methods: [cognitive_behavioral, visual_supports, self_management]
+        prereq_zh: 能觉察愤怒/挫折的身体预警信号
+        examples_zh:
+          - 拼图拼不上时,先做三次深呼吸再请求帮助
+          - 被打断时握拳数到十,而不是大喊
+        indicator_zh: 在愤怒/挫折触发情境中,提示下能用 1 种策略把强度从高降到可控
+      - level: regulate
+        zh: 调节"过高"与"过低"的唤醒：失望时给自己缓冲、过度兴奋时降档、低落疲倦时适度提升
+        en: "Regulates arousal up and down: soothes disappointment, dials down over-excitement, lifts low or tired states"
+        methods: [visual_supports, self_management, cognitive_behavioral]
+        prereq_zh: 能用 1–5 量表或四区觉察自己的唤醒水平
+        examples_zh:
+          - 计划取消很失望时,先深呼吸再想一个替代活动
+          - 太兴奋坐不住时,做慢呼吸或用力活动把自己"降档"到绿区
+        indicator_zh: 给"过高"或"过低"两类情境各一个,提示下能各选一种把自己调回绿区的方法
+    citations: [wood_2009, kuypers_2011, buron_curtis_2003]
+
+notes_zh:
+  - 低龄/低语言优先"识别—命名"与可视化的具体调节工具;认知重评类留给较大/语言较好的孩子。
+  - “所有区/级的情绪都被接纳”,避免把某些情绪贴上“坏”的标签;调节的目标是觉察与应对,不是压抑。
+  - 目标须依据评估的当前水平个别化选取;产出仍为需专业审核的草稿。

@@ -1,0 +1,269 @@
+{
+  "title_zh": "我的心情叫什么名字",
+  "title_en": "Naming My Feelings",
+  "learning_objective": "看四种基本情绪(开心/难过/生气/害怕)的表情图,孩子能正确命名至少 3 种,并在提示下说出自己当下的心情,连续 2 次达成。",
+  "method_id": "visual_supports",
+  "cast": "solo_child",
+  "intro_zh": "我心里会有各种各样的感觉。今天我看四张表情图,认识开心、难过、生气、害怕,学着说出它们的名字,也说出我现在的心情。",
+  "intro_en": "I have all kinds of feelings inside. Today I look at four face cards to learn happy, sad, angry, and afraid, and I practice naming them, and naming how I feel right now.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "看表情图,认识开心的样子。",
+      "text_en": "Look at the face cards and learn the happy face.",
+      "narration_zh": "我先看这张表情图。嘴角弯弯的,眼睛亮亮的,这是开心。",
+      "narration_en": "First I look at this face card. The mouth curves up and the eyes look bright — this is happy.",
+      "visual_keyword": "开心",
+      "icon": "😊",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "再认识难过、生气、害怕的样子。",
+      "text_en": "Now learn the sad, angry, and afraid faces.",
+      "narration_zh": "还有三种心情:难过的时候嘴角向下;生气的时候眉毛皱皱的;害怕的时候眼睛睁得大大的。",
+      "narration_en": "There are three more feelings: sad has a downturned mouth, angry has eyebrows drawn together, and afraid has wide-open eyes.",
+      "visual_keyword": "四种心情",
+      "icon": "🖼️",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "指一指,说出这是什么心情。",
+      "text_en": "Point to a card and say which feeling it is.",
+      "narration_zh": "我指着一张表情图,说出它的名字:开心、难过、生气,还是害怕。",
+      "narration_en": "I point to a face card and say its name: happy, sad, angry, or afraid.",
+      "visual_keyword": "指认命名",
+      "icon": "👉",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 4,
+      "text_zh": "说出我现在的心情。",
+      "text_en": "Say how I feel right now.",
+      "narration_zh": "最后我摸摸自己,想一想,说出我现在的心情叫什么名字。",
+      "narration_en": "Last, I check myself, think, and say the name of the feeling I have right now.",
+      "visual_keyword": "我的心情",
+      "icon": "💭",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "这张表情图嘴角弯弯、眼睛亮亮的。轮到你,这是什么心情?",
+      "prompt_en": "This face has a curved-up mouth and bright eyes. Your turn — what feeling is this?",
+      "pause_seconds": 4.0,
+      "answer_zh": "这是开心。",
+      "answer_en": "This is happy.",
+      "reinforce_zh": "对,你认出了开心,真棒。",
+      "reinforce_en": "Yes, you named happy. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "这张表情图嘴角向下、眼睛看着下面。这是什么心情?",
+      "prompt_en": "This face has a downturned mouth and eyes looking down. What feeling is this?",
+      "pause_seconds": 4.0,
+      "answer_zh": "这是难过。",
+      "answer_en": "This is sad.",
+      "reinforce_zh": "你说对了,这是难过,观察得真仔细。",
+      "reinforce_en": "You got it — this is sad. You looked very carefully.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "现在摸摸自己,想一想:你现在的心情叫什么名字?",
+      "prompt_en": "Now check yourself and think — what is the name of the feeling you have right now?",
+      "pause_seconds": 5.0,
+      "answer_zh": "我现在很开心。",
+      "answer_en": "Right now I feel happy.",
+      "reinforce_zh": "你说出了自己现在的心情,做得非常好。",
+      "reinforce_en": "You said the name of your own feeling right now. Very well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "我心里有一种感觉,可是我不知道它叫什么……我可以怎么做?",
+    "scenario_en": "I have a feeling inside, but I do not know its name... what can I do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "看表情图,找出和我一样的那张",
+        "label_en": "Look at the face cards and find the one that matches me",
+        "outcome_zh": "你找到和自己一样的表情图,就知道这个心情叫什么名字了,心里更清楚。",
+        "outcome_en": "You find the card that matches you, so you learn the name of the feeling and feel clearer inside.",
+        "icon": "😊"
+      },
+      {
+        "label_zh": "指着表情图,说出这个心情",
+        "label_en": "Point to a card and name the feeling",
+        "outcome_zh": "你把心情的名字说出来,别人就更懂你,也能更好地帮到你。",
+        "outcome_en": "You say the name of your feeling, so others understand you better and can help you.",
+        "icon": "🙂"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "emotion",
+      "title_zh": "四种心情",
+      "title_en": "Four feelings",
+      "caption_zh": "开心 · 难过 · 生气 · 害怕",
+      "caption_en": "Happy · Sad · Angry · Afraid",
+      "icon": "🙂"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "开心的样子",
+      "title_en": "The happy face",
+      "caption_zh": "嘴角弯弯,眼睛亮亮",
+      "caption_en": "Mouth curves up, eyes look bright",
+      "icon": "😊"
+    },
+    {
+      "kind": "step",
+      "title_zh": "怎样说出心情",
+      "title_en": "How to name a feeling",
+      "caption_zh": "看表情 → 指一指 → 说名字",
+      "caption_en": "Look → Point → Name it",
+      "icon": "👉"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "我现在的心情",
+      "title_en": "How I feel now",
+      "caption_zh": "摸摸自己,说出名字",
+      "caption_en": "Check myself, say the name",
+      "icon": "💭"
+    }
+  ],
+  "review_zh": "我认识了四种心情:开心、难过、生气、害怕。我会看表情图,指一指、说出它叫什么名字;我也会说出我现在的心情。把心情说出来,别人更懂我。",
+  "review_en": "I learned four feelings: happy, sad, angry, and afraid. I can look at the face cards, point, and name each one, and I can also say how I feel right now. When I name my feelings, others understand me better.",
+  "citations_used": [
+    "ekman_1992",
+    "buron_curtis_2003",
+    "golan_2010"
+  ],
+  "review_flags": [
+    "草稿:循证内容,正式使用前需特教老师或康复师按孩子实际的情绪认知水平审核并个别化调整。",
+    "表情图中的难过/生气/害怕须用温和、绘本化的表情呈现,不夸张、不吓人;害怕仅作为要教的情绪名称使用。",
+    "引用 golan_2010 在 citations.yaml 中 verify:false,商用前须核对其卷期/页码/DOI 原文。"
+  ],
+  "page_visuals": {
+    "title": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy standing happily beside a low table that holds a set of four simple gentle picture-book emotion face cards, a happy face, a soft sad face, a mild angry face and a gentle afraid face, the boy looking cheerfully at the cards, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "intro": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy sitting on a soft rug looking at a small chart on the wall with four simple gentle picture-book emotion face cards, a happy face, a soft sad face, a mild angry face and a gentle afraid face, calm and interested, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step1": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pointing to the happy face card among a set of four simple gentle picture-book emotion face cards on the wall, the boy himself smiling happily, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step2": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy gently looking at the soft sad face card, the mild angry face card and the gentle afraid face card among a set of four simple picture-book emotion face cards on the wall, the cards kept soft and calm and not distressing, the boy calm and gentle, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step3": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pointing with one finger to a single emotion face card among the four simple gentle picture-book cards on the wall, a calm focused gentle expression, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "step4": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy gently pointing to himself with a soft happy expression that shows his own current feeling, standing next to the set of four simple gentle picture-book emotion face cards on the wall, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy looking at the four simple gentle picture-book emotion face cards on the wall, about to point to one, attentive and calm, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pointing to the happy face card among the four simple gentle picture-book emotion face cards on the wall, the boy smiling warmly, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial1_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, gentle warm encouragement, big bright lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy looking thoughtfully at the soft sad face card among the four simple gentle picture-book emotion face cards on the wall, a curious thinking expression with one hand near his chin, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pointing to the soft gentle sad face card among the four simple picture-book emotion face cards on the wall, the sad card kept soft and calm and not distressing, the boy calm and gentle, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial2_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, gentle warm encouragement, big bright lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_prompt": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy with one hand gently resting on his own chest, thinking about his own feeling, standing near the set of four simple gentle picture-book emotion face cards on the wall, a calm reflective expression, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_answer": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy gently pointing to himself with a soft content happy expression that shows his current feeling, next to the four simple gentle picture-book emotion face cards on the wall, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "trial3_reinforce": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy proud young boy smiling warmly, gentle warm encouragement, big bright lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy with a hand on his own chest noticing a feeling inside, standing beside the set of four simple gentle picture-book emotion face cards on the wall, a calm wondering expression, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_A": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pointing to the emotion face card that matches his own feeling among the four simple gentle picture-book cards on the wall, calm and content, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "choice_B": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a young boy pointing to one emotion face card among the four simple gentle picture-book cards on the wall while gently gesturing to himself, a soft warm expression, close up upper body, bright clear lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    },
+    "review": {
+      "roles": [
+        "boy_ming"
+      ],
+      "visual_en": "a happy young boy standing proudly beside the set of four simple gentle picture-book emotion face cards on the wall, cheerful and content, close up upper body, big bright lively eyes with dark pupils, white sclera and a catchlight sparkle"
+    }
+  }
+}

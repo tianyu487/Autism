@@ -1,0 +1,255 @@
+# 职业前/作业技能专属证据已核验入库(2026-07-13),现引用于各 skill_area:
+#   - [[lattimore_2006]] 现场+模拟训练教 ASD 支持性就业者工作技能(JABA)
+#   - [[van_laarhoven_2010]] 视频提示教多步作业/生活技能,优于图片提示(FAODD)
+#   - [[allen_2010]] 视频示范教 ASD 青少年/青年职业技能(零售/吉祥物岗位,ETC)
+#   卷期/DOI 已核对(lattimore DOI 待终核),现置 verify:true,商用前再终核原文。
+
+# =====================================================================
+# 技能领域库:职业前与工作准备技能 Pre-Vocational & Work-Readiness Skills
+# 每个目标(target)标注:发展层级 level、中英描述、可用循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 生成时一并注入,帮助模块为大龄儿童/青少年挑选发展适宜、循证的工作准备目标。
+# =====================================================================
+
+id: prevocational
+name_zh: 职业前与工作准备技能
+name_en: Pre-Vocational & Work-Readiness Skills
+one_line_zh: 面向大龄儿童与青少年,从独立开始一件任务到独立完成整段工作时段的工作准备技能序列;帮助生成器挑选发展适宜、循证、可迁移的作业目标。
+
+evidence_note_zh: |
+  职业前技能指进入实习/职业培训/庇护性或支持性就业前所需的通用工作能力:
+  任务坚持与完成、跟随工作日程、工具材料管理、守时专注等工作行为、可迁移的手上作业、
+  以及卡住时求助与接受反馈。这些技能的核心不是某一具体工种,而是「独立、可迁移的工作习惯」。
+  实务要点:优先借结构化教学(TEACCH:物理结构、视觉日程、独立工作系统——做什么/做多少/
+  怎样算完成/接下来做什么)把工作常规可视化、可预期;用任务分析把多步作业拆成小步并做链锁;
+  用视频示范/视频提示教多步作业与工作行为;用提示—强化—提示褪除建立独立性;
+  用自我管理(自我监控、自查、打勾表)把「靠成人监督」转为「靠自己」。
+  本领域与「入学与课堂准备(独立工作系统)」及「自我管理」高度重叠——
+  前者的独立工作系统是本领域的直接基础,后者提供自我监控与自查的通用机制;
+  此处目标一律锚定在「工作/作业」情境,发展序列见 developmental_levels。
+  注意:TEACCH 的独立工作系统对提升独立完成有直接实证,但 TEACCH 整体疗效为小效应,勿夸大。
+  目标应基于评估的当前水平与个别化需要,而非年龄。
+
+developmental_levels:
+  - key: emerging
+    zh: 萌发(高支持)
+    en: Emerging
+  - key: supported
+    zh: 支持下完成
+    en: Supported
+  - key: independent
+    zh: 独立
+    en: Independent
+
+frameworks_zh:
+  - "TEACCH 结构化教学与独立工作系统:物理结构、视觉工作日程、工作系统(做什么/做多少/怎样算完成/接下来做什么)是工作准备技能的核心组织框架;独立工作系统有实证支持,但 TEACCH 整体为小效应,勿夸大。见 [[hume_odom_2007]]、[[virues_ortega_2013]]、[[teacch]]"
+  - "任务分析加链锁(前向/后向/整体呈现)加提示褪除:把多步作业拆成可教小步、逐步建立独立完成。见 [[cooper_2007]]、[[steinbrenner_2020]]"
+  - "视频提示/视频示范教多步作业与工作场所行为:证据显示视频提示常优于图片提示,视频示范可教青少年/青年真实岗位技能。见 [[van_laarhoven_2010]]、[[allen_2010]]、[[lattimore_2006]]"
+  - "自我管理:自我监控、打勾表、自查与自我强化,把外部监督转为内部调节,是通用工作独立性的关键机制,与 skills/self_management 联动。见 [[lee_2007]]"
+  - "中国本土:GB/T 47041-2026 机构服务国标强调康教结合、个别化与生活/社会适应导向,可作本土工作准备目标骨架。见 [[cn_gbt_47041_2026]]"
+
+skill_areas:
+  - id: task_completion
+    name_zh: 任务坚持与完成
+    name_en: Task Persistence & Completion
+    targets:
+      - level: emerging
+        zh: 在提示与视觉支持下独立开始一件已掌握的任务,并持续操作数个步骤
+        en: "With prompts and visual supports, independently starts a mastered task and keeps working for several steps"
+        methods: [visual_supports, task_analysis, prompting, reinforcement]
+        prereq_zh: 能完成单件已掌握的操作、能容忍在工位停留
+        examples_zh:
+          - 看到工位上摆好的材料后不需再叫就自己拿起开始做
+          - 用步骤图卡提示「先做哪步、再做哪步」
+        indicator_zh: 在≤2 次提示下独立开始并持续操作≥3 分钟不离位,5 次中≥3 次
+      - level: supported
+        zh: 依视觉工作系统或检查表把一整件多步任务做到完成,不半途而废
+        en: "Uses a visual work system or checklist to carry one multi-step task through to completion without abandoning it"
+        methods: [visual_supports, task_analysis, time_delay, reinforcement]
+        prereq_zh: 能独立开始并持续操作一段时间
+        examples_zh:
+          - 按从左到右的顺序做完一整篮任务再放入「完成」框
+          - 对照检查表逐项打勾,确认每一步都已做完
+        indicator_zh: 独立做完一整件多步任务(全部步骤)不半途放弃,过程提示≤1 次,5 次中≥4 次
+      - level: independent
+        zh: 独立开始、坚持到底、做完全部并自查有无遗漏或错误
+        en: Independently starts, persists, completes everything, and checks own work for omissions or errors
+        methods: [self_management, reinforcement]
+        prereq_zh: 能依检查表完成一整件多步任务
+        examples_zh:
+          - 自己开始并做完整套任务后,回头对照样板检查一遍
+          - 用打勾表自我监控「开始—做完—已检查」三格
+        indicator_zh: 无成人提示独立完成并自查,发现并纠正≥1 处遗漏/错误,连续 5 个工作时段中≥4 次
+    citations: [hume_odom_2007, steinbrenner_2020, cooper_2007, lattimore_2006]
+
+  - id: work_routines
+    name_zh: 工作常规
+    name_en: Work Routines
+    targets:
+      - level: emerging
+        zh: 借视觉工作日程,在提示下走到工位并开始第一件任务
+        en: "With a visual work schedule and prompts, goes to the work station and starts the first task"
+        methods: [visual_supports, prompting, reinforcement]
+        prereq_zh: 认得工作日程图卡、能容忍在工位坐/站
+        examples_zh:
+          - 看「现在—接下来」工作日程走到自己的工位
+          - 听到「开始工作」提示音时坐到工位拿起第一件任务
+        indicator_zh: 视觉加口头提示下就位并开始第一件任务,5 次中≥3 次
+      - level: supported
+        zh: 跟随工作日程按序完成多件任务,准时开始、准时结束,并在任务间过渡
+        en: "Follows the work schedule to complete tasks in order, starts and stops on time, and transitions between tasks"
+        methods: [visual_supports, video_modeling, time_delay, reinforcement]
+        prereq_zh: 能在提示下就位并开始第一件任务
+        examples_zh:
+          - 依工作日程做完第一件后自己取下一张任务卡继续
+          - 计时器响时结束当前任务、转向日程上的下一件
+        indicator_zh: 仅需视觉提示按日程完成≥3 件任务并按时起止,过程提示≤1 次,5 次中≥4 次
+      - level: independent
+        zh: 独立依工作日程开始与结束一整段工作时段,并自主完成任务间过渡
+        en: Independently starts and ends a whole work session by the schedule and manages transitions between tasks
+        methods: [self_management, reinforcement]
+        prereq_zh: 能跟随工作日程完成多件任务
+        examples_zh:
+          - 上工时自己查日程、按时开始,收工时自己收尾离位
+          - 用自我记录卡核对「今天该做的几件是否都按序做完」
+        indicator_zh: 无成人提示独立按日程完成整段工作时段并自主过渡,连续 5 个工作日中≥4 次
+    citations: [hume_odom_2007, virues_ortega_2013, steinbrenner_2020]
+
+  - id: tool_material_care
+    name_zh: 工具与材料管理
+    name_en: Tool & Material Care
+    targets:
+      - level: emerging
+        zh: 在提示与视觉标示下取用当前任务所需的工具与材料
+        en: "With prompts and visual labels, gets the tools and materials needed for the current task"
+        methods: [visual_supports, prompting, reinforcement]
+        prereq_zh: 能辨认常用工具/材料、能听懂「拿……」
+        examples_zh:
+          - 依图示标签从收纳盒取出胶水与剪刀
+          - 按材料清单卡备齐这件任务要用的东西
+        indicator_zh: 视觉标示加提示下备齐所需工具材料,5 次中≥3 次
+      - level: supported
+        zh: 用完把工具与材料整理归位,并保持桌面/工位整洁
+        en: "After use, returns tools and materials to their places and keeps the desk and work station tidy"
+        methods: [task_analysis, video_modeling, modeling, reinforcement]
+        prereq_zh: 能在提示下取用所需工具材料
+        examples_zh:
+          - 看整理步骤的视频示范后把工具放回对应轮廓位
+          - 做完把废料丢进垃圾盒、把材料放回原收纳格
+        indicator_zh: 仅需视觉提示把工具材料归位并清整工位,过程提示≤1 次,5 次中≥4 次
+      - level: independent
+        zh: 独立完成「取用—归位—清整」全过程,工作前后工位保持整洁有序
+        en: Independently manages the whole get-use-return-tidy cycle, keeping the station orderly before and after work
+        methods: [self_management, reinforcement]
+        prereq_zh: 能在提示下把工具材料归位并清整
+        examples_zh:
+          - 上工自己备料、收工自己归位并擦净桌面
+          - 用打勾表自查「工具已归位、桌面已清整」
+        indicator_zh: 无成人提示独立完成取用—归位—清整,工位达整洁标准,连续 5 个工作时段中≥4 次
+    citations: [steinbrenner_2020, cooper_2007, virues_ortega_2013]
+
+  - id: work_behaviors
+    name_zh: 工作行为
+    name_en: Work Behaviors
+    targets:
+      - level: emerging
+        zh: 在提示与视觉支持下守时到岗,并遵守工位的基本规则
+        en: "With prompts and visual supports, arrives on time and follows the basic work-station rules"
+        methods: [visual_supports, prompting, reinforcement]
+        prereq_zh: 认得工位规则图卡、能容忍在工位停留
+        examples_zh:
+          - 依上工时间提示按时到达并就位
+          - 看工位规则卡(手放桌上、说话先举手)照做
+        indicator_zh: 视觉加口头提示下按时到岗并遵守≥2 条工位规则,5 次中≥3 次
+      - level: supported
+        zh: 在支持下专注于当前作业,并耐受重复性任务持续一段时间
+        en: "With support, stays focused on the current work and tolerates a repetitive task for a sustained period"
+        methods: [video_modeling, self_management, reinforcement]
+        prereq_zh: 能守时到岗并遵守基本规则
+        examples_zh:
+          - 连续做同一种装配动作而不频繁走神/离位
+          - 用自我监控卡每隔几分钟给「有没有在专心工作」打勾
+        indicator_zh: 支持下专注并耐受重复性任务≥10 分钟、离位/走神≤1 次,5 次中≥4 次
+      - level: independent
+        zh: 独立守时出勤、遵守规则、维持专注并耐受重复,直至工作时段结束
+        en: Independently attends on time, follows rules, sustains focus, and tolerates repetition until the session ends
+        methods: [self_management, reinforcement]
+        prereq_zh: 能在支持下专注并耐受重复一段时间
+        examples_zh:
+          - 整段工作时间内持续作业、遵守规则、不需成人反复提醒
+          - 用出勤/专注自我记录表核对一天的表现
+        indicator_zh: 无成人提示维持专注与守规直至时段结束(≥20 分钟),连续 5 个工作日中≥4 次
+    citations: [steinbrenner_2020, lee_2007, cooper_2007, allen_2010]
+
+  - id: functional_work_tasks
+    name_zh: 功能性作业技能
+    name_en: Functional Work Tasks
+    targets:
+      - level: emerging
+        zh: 按单一维度完成分类/配对等基础手上作业
+        en: "Completes basic hands-on tasks such as sorting or matching by a single dimension"
+        methods: [discrete_trial_training, prompting, reinforcement]
+        prereq_zh: 能辨认颜色/形状/类别、能抓放物件
+        examples_zh:
+          - 把混在一起的螺丝按大小分到两个盒里
+          - 把餐具与对应图卡配对摆放
+        indicator_zh: 独立完成单维度分类/配对,准确率≥80%,过程提示≤2 次
+      - level: supported
+        zh: 依样板或视频提示完成装配/包装等多步手上作业
+        en: "Follows a model or video prompt to complete multi-step hands-on tasks such as assembly or packaging"
+        methods: [task_analysis, video_modeling, prompting, reinforcement]
+        prereq_zh: 能完成单维度分类/配对
+        examples_zh:
+          - 看视频提示一步步把零件装配成成品
+          - 按样板把三件文具装袋、封口、放入成品箱
+        indicator_zh: 依样板/视频提示完成多步装配或包装,准确率≥80%,过程提示≤1 次,5 次中≥4 次
+      - level: independent
+        zh: 独立按标准完成可迁移的作业任务,并达到基本的质量与产量要求
+        en: Independently completes transferable work tasks to standard, meeting basic quality and output expectations
+        methods: [task_analysis, self_management, reinforcement]
+        prereq_zh: 能依样板/视频提示完成多步作业
+        examples_zh:
+          - 不看样板独立完成一批装袋任务并自查合格率
+          - 在约定时间内完成约定数量并对照质检卡自评
+        indicator_zh: 无成人提示按标准完成一批作业,合格率≥90% 且达约定产量,连续 3 个工作时段达成
+    citations: [steinbrenner_2020, cooper_2007, nac_2015, cn_gbt_47041_2026, van_laarhoven_2010, allen_2010]
+
+  - id: help_and_feedback
+    name_zh: 寻求帮助与接受反馈
+    name_en: Seeking Help & Accepting Feedback
+    targets:
+      - level: emerging
+        zh: 卡住或缺料时,用手势/求助卡/语言发起求助
+        en: "When stuck or out of materials, requests help using a gesture, a help card, or words"
+        methods: [time_delay, prompting, reinforcement, visual_supports]
+        prereq_zh: 有基本沟通方式(口语/图片/手势)
+        examples_zh:
+          - 零件用完时举起「我需要帮助」卡
+          - 装不上时说「帮我一下」而不是发脾气或放弃
+        indicator_zh: 遇到卡住/缺料时,在时间延迟支持下主动发起求助,5 次机会中≥3 次
+      - level: supported
+        zh: 接受成人的纠正与示范,并据反馈修改自己的作业
+        en: "Accepts an adult's correction and modeling, and revises own work based on the feedback"
+        methods: [modeling, video_modeling, prompting, reinforcement]
+        prereq_zh: 能在遇卡时发起求助
+        examples_zh:
+          - 被指出装反后,看示范一遍再重新装对
+          - 听到「这里要再对齐」时不抗拒地改过来
+        indicator_zh: 接受纠正不逃避/发脾气并据反馈改正,5 次中≥4 次
+      - level: independent
+        zh: 完成后主动向负责人报告,遇卡自行求助,接受反馈并持续改进
+        en: On finishing, reports to the person in charge; when stuck, seeks help independently; accepts feedback and keeps improving
+        methods: [self_management, naturalistic_intervention, reinforcement]
+        prereq_zh: 能求助并能据反馈修改作业
+        examples_zh:
+          - 做完一批后主动说「我做完了,请检查」
+          - 卡住时先自己想办法,不行再恰当地找人求助
+        indicator_zh: 无成人提示做完主动报告、遇卡自行求助并据反馈改进,连续 5 个工作时段中≥4 次
+    citations: [steinbrenner_2020, cooper_2007, lee_2007]
+
+notes_zh:
+  - 目标须依据评估的当前发展水平选取,并做个别化调整;所有产出仍为需专业审核的草稿。
+  - 本领域与「入学与课堂准备」的独立工作系统、「自我管理」高度重叠:独立工作系统([[hume_odom_2007]])是本领域的直接基础,自我管理([[lee_2007]])提供自查与自我监控机制;此处目标一律锚定「工作/作业」情境。
+  - methods 列出的是「证据上适配该目标」的聚焦式实践;TEACCH 作为综合结构化框架见 frameworks_zh 的 [[teacch]],不作为单一目标的 methods。
+  - TEACCH 独立工作系统对独立完成有直接实证,但 TEACCH 整体疗效为小效应([[virues_ortega_2013]]),勿夸大;工作准备技能须在真实作业情境专门训练与泛化,桌面练会不等于在实习/工作现场会做。
+  - 本库为教育/辅助用途,不构成诊断、治疗或就业能力评定;具体到某个孩子由专业人员定夺。

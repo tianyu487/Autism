@@ -1,0 +1,87 @@
+# =====================================================================
+# 循证方法条目:社交技能训练(SST)
+# 作为「训练模块(video-modeling 内容类型)」的可生成方法:用视频分步示范
+# + 回合式练习 + 视觉支持,承载社交技能的明确讲授与结构化演练。
+# 生成时经 generate_training 注入本文件规则;经 validate_training 校验。
+#
+# 证据:SST 属 NCAEP 2020 的 28 项 EBP;NSP2 2015 "Social Skills Package"
+#      列为 Established。见 methods/_registry.yaml。
+# =====================================================================
+
+id: social_skills_training
+name_zh: 社交技能训练
+name_en: Social Skills Training
+evidence_level: established
+one_line_zh: 把一个具体社交技能明确拆成小步、示范出来,再让孩子在真实社交情境里结构化地演练,并逐步迁移到生活中。
+one_line_en: Break one concrete social skill into clear steps, demonstrate it, then have the child rehearse it in real social situations and generalize to daily life.
+
+# --- 适用与目标 ---
+use_for_zh:
+  - 训练一个具体、可观察的社交技能(如"加入同伴游戏时,先看、再问'我可以一起玩吗'")
+  - 对话、发起/回应、轮流、分享、合作、友谊等社交互动技能
+  - 把不易自行领悟的社交规则,通过明确讲授 + 示范 + 演练变成可用、可迁移的行为
+target_audience_zh: 有一定语言与社交动机的自闭症儿童;由家长/康复师或同伴陪同,在"轮到你"处引导、给具体反馈,并创造真实练习机会。
+
+# --- 方法要点(注入生成)---
+method_components_zh:
+  explicit: 明确讲授——不假设孩子自行领悟,把社交规则与步骤讲清楚。
+  task_analysis: 任务分析——把社交技能拆成可教、可观察的小步。
+  modeling: 示范——先看恰当做法(视频/真人),再模仿。
+  structured_practice: 结构化演练——有"轮到你"的角色扮演/演练,并给及时、具体的正向反馈。
+  perspective: 观点采择——用简单方式说明"为什么这样做"(他人感受),但不说教。
+  generalization: 泛化——跨回合略变同伴/情境,并鼓励在真实生活中再练。
+
+# --- 生成硬规则(注入 Prompt + 部分可机器校验)---
+writing_rules_zh:
+  - 每个模块只训练"一个"具体、可观察、可测量的社交技能目标;learning_objective 写清"谁、在什么情境、做出什么、达到什么程度"。
+  - 把社交技能明确拆成可教的小步(任务分析),用具体、字面的语言讲清"怎么做对",不假设孩子会自行领悟。
+  - 只示范恰当做法;必要时用简单方式说明"为什么这样做"(他人感受/观点采择),但不说教、不评判。
+  - 练习段要有结构化的"轮到你"演练 + 及时、具体的正向反馈,并让提示逐步减少。
+  - 为泛化设计:跨回合略变同伴/情境,并鼓励在真实生活里再练 1–2 次。
+  - 正向、优势取向;强化接近目标的尝试,不惩罚"做得不够好"的回应。
+  - 开场与收尾用第一人称、故事化叙述,直接进入社交情境;不用"今天我们来练习/学习"等说教口吻(练习互动提示如"轮到你"除外)。
+  - 自然融入孩子的兴趣与真实社交情境(写实、贴切,不夸张),照顾其感官特点。
+
+# --- 正向强化规则 ---
+reinforcement_rules_zh:
+  - 及时:在孩子做出社交尝试之后马上给。
+  - 具体:说清是"哪件事"做得好(如"你先看了看,再开口问"),描述行为而非泛泛"真棒"。
+  - 真诚正向:强化尝试与努力;不讽刺、不与他人比较、不用威胁。
+
+# --- 阶段系统(用于分屏/分段渲染与校验)---
+phase_system:
+  intro:
+    zh: 开场
+    role_zh: 直接进入故事——一个真实的社交情境正在发生(第一人称),不做说教。
+  teach:
+    zh: 示范段
+    role_zh: 把社交技能分步示范(任务分析),一步一屏,只示范恰当做法。
+  practice:
+    zh: 练习段
+    role_zh: 数个回合:给一次社交机会 → 留白(轮到你)让孩子试 → 示范恰当做法 → 具体鼓励。
+  choice:
+    zh: 社交选择段
+    role_zh: 给社交情境与若干回应选项,每个选择都有温和、写实的结果反馈(无惩罚)。
+  review:
+    zh: 收尾
+    role_zh: 故事化收束——互动顺利、关系融洽 + 温暖鼓励,让孩子带着成就感结束。
+
+# --- 每模块建议 ---
+per_module_guidance_zh:
+  min_steps: 3
+  max_steps: 6
+  min_trials: 2
+  max_trials: 4
+  min_cards: 3
+  max_cards: 6
+  pause_seconds_default: 4
+
+# --- 关联技能库 ---
+skill_domain: social_interaction
+
+# --- 引用(详见 knowledge/citations.yaml)---
+citations:
+  - gates_2017
+  - prizant_2006
+  - steinbrenner_2020
+  - nac_2015

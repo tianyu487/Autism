@@ -1,0 +1,278 @@
+# =====================================================================
+# EBP 方法总表(方法广度骨架)
+# 把与本生成器相关的循证方法系统登记,便于:①按技能/领域挑选与组合方法;
+# ②逐步为 generator_ready: true 的方法补齐完整方法文件(methods/<id>.yaml)。
+#
+# 两套权威证据体系并行,不 1:1 对应,故分别标注:
+#   ncaep_2020 : 是否属于 NCAEP 2020 的 28 项聚焦式循证实践(EBP)   来源 [[steinbrenner_2020]]/[[hume_2021]]
+#   nsp2_2015  : National Standards Project Phase 2(2015)分级        来源 [[nac_2015]]
+#                established 已确立 | emerging 新兴 | (空)未收录/不适用
+#
+# tier(方法层级):
+#   focused : 聚焦式实践(单一、可操作的教学策略;28 项 EBP 属此)
+#   ndbi    : 自然发展行为干预(融合发展科学 + ABA;由多项聚焦实践打包)  [[schreibman_2015]]
+#   ctm     : 综合治疗模式(围绕框架的高强度成套项目)                  [[odom_2010]]
+#
+# domains(主要服务的技能领域,对应 knowledge/skills/):
+#   social 社交互动 | emotional 情绪认知与调节 | communication 沟通语言
+#   behavior 行为自我调节 | daily_living 生活自理 | play 游戏 | cognition 认知
+#
+# generator_ready: 生成器是否已能据此产出内容(有完整方法文件)。
+# =====================================================================
+
+evidence_systems:
+  ncaep_2020:
+    zh: NCAEP 2020 · 28 项聚焦式循证实践
+    en: NCAEP 2020 · 28 focused intervention practices
+    citations: [steinbrenner_2020, hume_2021]
+  nsp2_2015:
+    zh: 国家标准项目第二阶段(2015)· Established/Emerging 分级
+    en: National Standards Project, Phase 2 (2015)
+    citations: [nac_2015]
+
+# ---------------------------------------------------------------------
+# 聚焦式实践(focused)—— 优先服务「社交互动 / 情绪认知与调节」
+# ---------------------------------------------------------------------
+methods:
+  - id: social_narratives
+    name_zh: 社交叙事(含社交故事 Social Stories™)
+    name_en: Social Narratives (incl. Social Stories)
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # NSP2 内称 "Story-based Intervention"
+    domains: [social, emotional]
+    one_line_zh: 用个别化短叙事描述社交情境、线索与恰当反应,建立理解与预期、降低焦虑。
+    generator_ready: true         # methods/social_stories.yaml
+    content_type: social_story
+    citations: [gray_garand_1993, gray_2015_newbook, kokina_kern_2010, karkhaneh_2010, wong_2015, nac_2015]
+
+  - id: video_modeling
+    name_zh: 视频示范
+    name_en: Video Modeling
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # 归入 "Modeling"
+    domains: [social, emotional, communication, daily_living]
+    one_line_zh: 让孩子观看目标行为的视频示范后再模仿;配合练习回合成为"看即训练"。
+    generator_ready: true         # methods/video_modeling.yaml
+    content_type: training_module
+    citations: [bellini_akullian_2007, charlop_christy_2000, wong_2015, nac_2015]
+
+  - id: modeling
+    name_zh: 示范
+    name_en: Modeling
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established
+    domains: [social, emotional, play]
+    one_line_zh: 现场演示目标技能(常配合提示与强化),供孩子模仿。
+    generator_ready: false
+    citations: [nac_2015, steinbrenner_2020]
+
+  - id: peer_based_intervention
+    name_zh: 同伴中介教学与干预
+    name_en: Peer-Based Instruction & Intervention (PBII)
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # "Peer Training Package"
+    domains: [social, play]
+    one_line_zh: 训练普通发展同伴去示范、提示、强化目标儿童的社交行为,促进真实互动与泛化。
+    generator_ready: false
+    citations: [chan_2009, steinbrenner_2020, nac_2015]
+
+  - id: naturalistic_intervention
+    name_zh: 自然情境干预(NDBI 家族)
+    name_en: Naturalistic Intervention
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # "Natural Teaching Strategies"
+    domains: [social, communication, emotional, play]
+    one_line_zh: 把教学嵌入自然活动,顺孩子兴趣、用自然强化,培养共同注意与社交沟通。
+    generator_ready: false
+    citations: [schreibman_2015, steinbrenner_2020, nac_2015]
+
+  - id: social_skills_training
+    name_zh: 社交技能训练(含小组)
+    name_en: Social Skills Training / Groups (SST)
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # "Social Skills Package"
+    domains: [social, emotional]
+    one_line_zh: 直接讲授社交规则与行为,并做结构化练习(常在小组);含对话、友谊、情绪识别。
+    generator_ready: true         # methods/social_skills_training.yaml
+    content_type: training_module
+    citations: [gates_2017, steinbrenner_2020, nac_2015]
+
+  - id: cognitive_behavioral
+    name_zh: 认知行为策略 / CBT
+    name_en: Cognitive Behavioral/Instructional Strategies (CBIS)
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # "Cognitive Behavioral Intervention Package"
+    domains: [emotional, behavior]
+    one_line_zh: 针对"想法→行为"链条教自我对话、应对与重评;情绪识别、焦虑/愤怒调节的核心方法。
+    generator_ready: true         # methods/cognitive_behavioral.yaml
+    content_type: training_module
+    citations: [wood_2009, steinbrenner_2020, nac_2015]
+
+  - id: scripting
+    name_zh: 脚本教学(含脚本褪除)
+    name_en: Scripting
+    tier: focused
+    ncaep_2020: true              # 2014 为独立项;2020 归并,须以报告 Table 2 为准
+    nsp2_2015: established
+    domains: [social, communication]
+    one_line_zh: 提供社交交流的口头/书面脚本,先教会再逐步褪除,支持发起与对话。
+    generator_ready: false
+    citations: [krantz_mcclannahan_1993, nac_2015]
+
+  - id: self_management
+    name_zh: 自我管理
+    name_en: Self-Management
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established
+    domains: [behavior, emotional, social]
+    one_line_zh: 教孩子自我监控、记录并强化自身行为,培养独立的情绪与行为自我调节。
+    generator_ready: false
+    citations: [lee_2007, steinbrenner_2020, nac_2015]
+
+  - id: visual_supports
+    name_zh: 视觉支持
+    name_en: Visual Supports
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # "Schedules" 为其子集
+    domains: [emotional, behavior, daily_living, social]
+    one_line_zh: 用视觉线索(日程、提示卡、情绪量表)支持理解、预期与调节;情绪卡/5分量表属此。
+    generator_ready: true         # methods/visual_supports.yaml
+    content_type: training_module
+    citations: [steinbrenner_2020, nac_2015, buron_curtis_2003]
+
+  # --- ABA 成分实践(证据来自 NCAEP 本身;无单一奠基论文,教材见 cooper_2007)---
+  - id: prompting
+    name_zh: 提示
+    name_en: Prompting
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # 属 "Behavioral Interventions"
+    domains: [social, emotional, communication, daily_living]
+    one_line_zh: 用言语/手势/肢体/视觉协助引出正确反应,并系统性由多到少褪除。
+    generator_ready: false
+    citations: [steinbrenner_2020, cooper_2007]
+
+  - id: reinforcement
+    name_zh: 强化(正向)
+    name_en: Reinforcement
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established
+    domains: [social, emotional, behavior]
+    one_line_zh: 在目标行为后给予能增加该行为的后果;具体、及时、真诚地强化努力与参与。
+    generator_ready: false
+    citations: [steinbrenner_2020, cooper_2007]
+
+  - id: time_delay
+    name_zh: 时间延迟
+    name_en: Time Delay
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established
+    domains: [communication, social]
+    one_line_zh: 在给予提示前插入延迟,系统性褪除提示,培养独立的社交反应/请求。
+    generator_ready: false
+    citations: [steinbrenner_2020, cooper_2007]
+
+  - id: task_analysis
+    name_zh: 任务分析
+    name_en: Task Analysis
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established
+    domains: [daily_living, social]
+    one_line_zh: 把复杂技能拆成可教的连续小步(如问候、对话、应对情绪的步骤序列)。
+    generator_ready: true         # methods/task_analysis.yaml
+    content_type: training_module
+    citations: [steinbrenner_2020, cooper_2007]
+
+  - id: discrete_trial_training
+    name_zh: 回合式教学
+    name_en: Discrete Trial Training (DTT)
+    tier: focused
+    ncaep_2020: true
+    nsp2_2015: established        # 属 "Behavioral Interventions"
+    domains: [communication, social, emotional, cognition]
+    one_line_zh: 成人主导的成组回合(前提→反应→后果),把技能拆成小步反复教;可教情绪命名等基础反应。
+    generator_ready: false
+    citations: [lovaas_1987, steinbrenner_2020, cooper_2007]
+
+  - id: aac_pecs
+    name_zh: 辅助沟通(含图片交换 PECS)
+    name_en: Augmentative & Alternative Communication (incl. PECS)
+    tier: focused
+    ncaep_2020: true              # 2020 将 PECS 并入 AAC
+    nsp2_2015: emerging
+    domains: [communication, social]
+    one_line_zh: 用图片/符号/设备建立功能性沟通;减少因表达受阻带来的挫败,支持社交发起。
+    generator_ready: true         # methods/aac_pecs.yaml
+    content_type: training_module
+    citations: [bondy_frost_1994, steinbrenner_2020]
+
+  # ---------------------------------------------------------------------
+  # NDBI(自然发展行为干预)—— 由多项聚焦实践打包的手册化方法
+  # ---------------------------------------------------------------------
+  - id: pivotal_response_training
+    name_zh: 关键反应训练
+    name_en: Pivotal Response Training (PRT)
+    tier: ndbi
+    ncaep_2020: false             # 2020 视为手册化 NDBI,非 28 项之一
+    nsp2_2015: established
+    domains: [social, communication, play]
+    one_line_zh: 自然情境 ABA,针对"关键领域"(动机、对多重线索的反应)以带动广泛进步。
+    generator_ready: false
+    citations: [koegel_odell_1987, schreibman_2015, nac_2015]
+
+  - id: jasper
+    name_zh: JASPER(共同注意/象征游戏/参与/调节)
+    name_en: JASPER
+    tier: ndbi
+    ncaep_2020: false
+    nsp2_2015: ""
+    domains: [social, play, emotional, communication]
+    one_line_zh: 靶向 NDBI:发展共同注意、象征游戏、社交参与与情绪调节。
+    generator_ready: false
+    citations: [kasari_2006, schreibman_2015]
+
+  # ---------------------------------------------------------------------
+  # CTM(综合治疗模式)—— 成套、高强度的框架式项目
+  # ---------------------------------------------------------------------
+  - id: esdm
+    name_zh: 早期介入丹佛模式
+    name_en: Early Start Denver Model (ESDM)
+    tier: ctm                     # 亦属综合型 NDBI
+    ncaep_2020: false
+    nsp2_2015: ""
+    domains: [social, emotional, communication, play, cognition]
+    one_line_zh: 面向幼儿的手册化综合 NDBI,在游戏常规中融合发展科学与 ABA。
+    generator_ready: false
+    citations: [dawson_2010, schreibman_2015, odom_2010]
+
+  - id: teacch
+    name_zh: 结构化教学(TEACCH)
+    name_en: TEACCH / Structured Teaching
+    tier: ctm
+    ncaep_2020: false
+    nsp2_2015: ""
+    domains: [daily_living, behavior, communication]
+    one_line_zh: 项目层面的结构化教学(物理结构、视觉日程、工作系统),提升可预期与独立。
+    generator_ready: false
+    citations: [odom_2010, cn_guideline_2010]
+
+# ---------------------------------------------------------------------
+# 使用与合规提醒
+# ---------------------------------------------------------------------
+notes_zh:
+  - 两套证据体系不 1:1 对应;引用时同时给出 NCAEP 与 NSP2 的地位,避免夸大。
+  - 标 verify:true 的引用(见 citations.yaml)在商用前须核对原文卷期/页码/DOI。
+  - 2014→2020 的并归(Scripting、PECS→AAC、Structured Play Groups→PBII、PRT→NDBI)须以 steinbrenner_2020 报告 Table 2 为准。
+  - 中国语境合规见 standards_cn.yaml 与 citations.yaml 中 cn_* 条目。

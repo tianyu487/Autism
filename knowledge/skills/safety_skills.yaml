@@ -1,0 +1,294 @@
+# =====================================================================
+# 技能领域库:安全技能 Safety Skills
+# 每个目标(target)标注:发展层级 level、中英描述、可用循证方法 methods、
+#   先决技能 prereq_zh、情境例子 examples_zh、可观察达标指标 indicator_zh。
+# 安全技能是自闭症儿童的高优先领域;常用循证教法:行为技能训练、视频示范、
+#   社交叙事、任务分析、视觉支持,并强调真实情境演练与泛化(须成人监护)。
+# =====================================================================
+#
+# =====================================================================
+# 安全特异性证据已核验入库(2026-07-13),现引用于各 skill_area:
+#   - [[miltenberger_2008]] 儿童安全技能行为技能训练最佳实践(身体安全/框架)
+#   - [[gunby_2010]] 自闭症儿童防拐技能(陌生人安全)
+#   - [[bergstrom_2012]] 自闭症儿童走失求助(走失求助;原误记 2014,经核实为 2012)
+#   三条卷期/DOI 已核对,现置 verify:true,商用前再终核一次原文。
+# =====================================================================
+
+id: safety_skills
+name_zh: 安全技能
+name_en: Safety Skills
+one_line_zh: 从交通、居家、身体界限到走失求助与紧急应对的安全技能序列;帮助生成器为孩子挑选发展适宜、可测量、以赋能而非恐吓为基调的训练目标。
+
+evidence_note_zh: |
+  安全技能是自闭症儿童的高优先目标:交通、误食、烫伤、走失等风险常高于同龄人。
+  常用循证教法:行为技能训练(讲解→示范→角色演练→反馈)、视频示范、社交叙事、
+  任务分析(拆步)与视觉支持;关键在于真实情境演练与泛化。
+  实务要点:先在结构化环境教会,再到真实场景(路口、商场)在成人严密监护下练习;
+  技能达成不等于可脱离监护。语气应平静、就事论事、赋能,避免恐吓式教育。
+
+developmental_levels:
+  - key: foundational
+    zh: 基础
+    en: Foundational
+  - key: guided
+    zh: 引导下
+    en: Guided
+  - key: independent
+    zh: 独立
+    en: Independent
+
+frameworks_zh:
+  - "安全技能宜用行为技能训练思路(讲解→示范→角色演练→反馈),并结合视频示范、社交叙事、任务分析与视觉支持。见 [[miltenberger_2008]]、[[steinbrenner_2020]]"
+  - "真实情境的在场演练与泛化(在真的路口/商场里练)是安全技能能否奏效的关键;须在成人严密监护下进行。见 [[nac_2015]]"
+  - "本土可对齐《培智学校·生活适应课程标准(2016)》中的安全常识与自我保护目标。见 [[cn_peizhi_2016]]"
+
+skill_areas:
+  - id: road_traffic
+    name_zh: 交通安全
+    name_en: Road & Traffic Safety
+    targets:
+      - level: foundational
+        zh: 走到路缘/马路边会主动停下,并牵住大人的手
+        en: Stops at the curb and holds an adult's hand
+        methods: [social_narratives, video_modeling, task_analysis, prompting, reinforcement]
+        prereq_zh: 能听从“停”的一步指令
+        examples_zh:
+          - 走到路缘石边主动停下等待
+          - 过马路前伸手牵住大人
+        indicator_zh: 5 次接近路缘中≥4 次能主动停下并牵手
+      - level: guided
+        zh: "和大人一起过马路:先等绿灯、再看两边才走"
+        en: "Crosses with an adult: waits for the green light and looks both ways"
+        methods: [task_analysis, video_modeling, visual_supports, prompting, time_delay]
+        prereq_zh: 能在路缘停下、能牵手
+        examples_zh:
+          - 红灯停、绿灯亮后先看左右再走
+          - 跟着大人走在斑马线上过马路
+        indicator_zh: 引导下连续 3 次能等灯并看两边后随大人过马路
+    citations: [steinbrenner_2020, nac_2015, bellini_akullian_2007]
+
+  - id: home_safety
+    name_zh: 居家安全
+    name_en: Home Safety
+    targets:
+      - level: foundational
+        zh: 认识并远离烫、利、电等危险物
+        en: Recognizes and stays away from hot, sharp, and electrical hazards
+        methods: [social_narratives, visual_supports, discrete_trial_training, prompting, reinforcement]
+        prereq_zh: 能区分常见家庭物品
+        examples_zh:
+          - 看到“烫”的标志会后退不去碰
+          - 不玩插座、刀具,需要时找大人
+        indicator_zh: 呈现危险物图片/实景时 5 次中≥4 次能指出并说“危险、不碰”
+      - level: guided
+        zh: "药品与清洁剂规则:只在大人给的时候才服用"
+        en: "Poison/medicine rule: takes medicine only when a trusted adult gives it"
+        methods: [social_narratives, visual_supports, prompting]
+        prereq_zh: 能识别危险标识
+        examples_zh:
+          - 看到药瓶/清洁剂不自己打开,去叫大人
+          - 只在大人递给时才吃药
+        indicator_zh: 情境演练中能拒绝自行取用药品/清洁剂并求助 1 次
+      - level: guided
+        zh: 陌生人敲门不自己开门,先去找大人
+        en: Does not open the door to strangers; finds an adult first
+        methods: [social_narratives, video_modeling, prompting, self_management]
+        prereq_zh: 能理解“先问大人”
+        examples_zh:
+          - 有人敲门时先去叫爸爸妈妈
+          - 不确定是谁时不开门
+        indicator_zh: 敲门演练中 3 次里≥2 次能先找大人再决定
+      - level: foundational
+        zh: 厨房与热源规则:不碰灶台、热锅、开水和刀具,想帮忙先叫大人
+        en: "Kitchen rule: does not touch the stove, hot pans, boiling water, or knives; asks an adult to help"
+        methods: [social_narratives, visual_supports, video_modeling, prompting, reinforcement]
+        prereq_zh: 能识别危险标识、能听从“停”的一步指令
+        examples_zh:
+          - 看到灶台或热锅会后退,不伸手去碰
+          - 想用刀或想帮忙做饭时,先叫大人
+        indicator_zh: 厨房情境演练中 5 次里≥4 次能不碰热源/刀具并求助
+      - level: independent
+        zh: 安全用药:只吃大人给的药,按大人说的量和时间吃,不自己多吃
+        en: "Safe medicine use: takes only medicine an adult gives, in the amount and at the time the adult says, never extra"
+        methods: [social_narratives, task_analysis, visual_supports, prompting, self_management]
+        prereq_zh: 能遵守“只在大人给时才服用”的规则、能理解简单的量与时间
+        examples_zh:
+          - 只吃大人递来的那一份药,不自己再去拿
+          - 按大人说的“早一次、晚一次”吃,不擅自加量
+        indicator_zh: 用药演练中 3 次里≥2 次能只取大人给的份量并说出何时吃
+    citations: [steinbrenner_2020, nac_2015, gray_garand_1993]
+
+  - id: body_safety
+    name_zh: 身体安全与界限
+    name_en: Personal & Body Safety
+    targets:
+      - level: foundational
+        zh: 认识身体隐私部位,区分公开与私密场合
+        en: Knows private body parts and tells public from private settings
+        methods: [social_narratives, visual_supports, discrete_trial_training, modeling]
+        prereq_zh: 能命名基本身体部位
+        examples_zh:
+          - 知道泳衣遮住的地方是隐私部位
+          - 换衣服要在私密的房间里
+        indicator_zh: 能正确区分 4 张图片里的公开/私密场合≥3 张
+      - level: guided
+        zh: “我的身体我做主”:对不舒服的接触说“不”,并告诉信任的大人
+        en: "My body is mine: says no to unwanted touch and tells a trusted adult"
+        methods: [social_narratives, video_modeling, modeling, prompting]
+        prereq_zh: 有基本表达“不”的方式(口语/图片/手势)
+        examples_zh:
+          - 不喜欢被抱时能说“不,请停下”
+          - 遇到让自己不舒服的事,去告诉信任的大人
+        indicator_zh: 角色扮演中能说“不”并走开、再报告大人 1 次
+      - level: guided
+        zh: 认识 2–3 位可以求助的“信任的大人”
+        en: Identifies 2-3 trusted adults to go to for help
+        methods: [social_narratives, visual_supports, prompting]
+        prereq_zh: 能认识熟悉的人
+        examples_zh:
+          - 说出爸爸妈妈、老师是可以求助的人
+          - 做一张“我的信任大人”卡片
+        indicator_zh: 能说出或指出至少 2 位信任的大人
+      - level: foundational
+        zh: 会指出或说出身体哪里痛、受伤或不舒服,并告诉信任的大人
+        en: Points to or names where it hurts, is injured, or feels sick, and tells a trusted adult
+        methods: [social_narratives, visual_supports, discrete_trial_training, modeling, time_delay]
+        prereq_zh: 能命名基本身体部位、有表达方式(口语/图片/手势)
+        examples_zh:
+          - 肚子痛时指着肚子告诉大人“这里痛”
+          - 摔倒擦伤后会主动给大人看伤口
+        indicator_zh: 身体不适或情境演练中 3 次里≥2 次能指出部位并报告大人
+    citations: [steinbrenner_2020, nac_2015, gray_garand_1993, miltenberger_2008]
+
+  - id: getting_help_lost
+    name_zh: 走失求助
+    name_en: Getting Help When Lost
+    targets:
+      - level: foundational
+        zh: 和大人走散时“停在原地”,不乱跑
+        en: Stays put when separated instead of wandering off
+        methods: [social_narratives, video_modeling, task_analysis, prompting, reinforcement]
+        prereq_zh: 能听从“停/等”指令
+        examples_zh:
+          - 和大人走散时站在原地等
+          - 不自己乱走去找
+        indicator_zh: 走散演练中 3 次里≥2 次能停在原地
+      - level: guided
+        zh: "找安全的求助者:穿制服的工作人员或带着孩子的家长"
+        en: "Finds a safe helper: a uniformed staff member or a parent with children"
+        methods: [social_narratives, video_modeling, task_analysis, prompting, time_delay]
+        prereq_zh: 能识别工作人员/家长
+        examples_zh:
+          - 在商场找收银员或保安求助
+          - 找一位带着小孩的家长帮忙
+        indicator_zh: 演练中能走向一位合适的求助者并表达求助 1 次
+      - level: independent
+        zh: 能说出或出示自己与一位家长的姓名和电话
+        en: States or shows own name and a caregiver's name and phone number
+        methods: [discrete_trial_training, task_analysis, visual_supports, time_delay, reinforcement]
+        prereq_zh: 有表达方式(口语/卡片/手环)
+        examples_zh:
+          - 说出妈妈的名字和手机号
+          - 出示写有联系方式的安全卡或手环
+        indicator_zh: 3 次询问中≥2 次能准确提供一位家长的姓名与电话
+    citations: [steinbrenner_2020, nac_2015, bellini_akullian_2007, bergstrom_2012]
+
+  - id: stranger_online
+    name_zh: 陌生人与基本网络安全
+    name_en: Stranger & Basic Online Safety
+    targets:
+      - level: foundational
+        zh: 不跟不认识的人走,先问大人
+        en: Does not go with an unfamiliar person; checks with an adult first
+        methods: [social_narratives, video_modeling, discrete_trial_training, prompting, reinforcement]
+        prereq_zh: 能区分熟悉与不熟悉的人
+        examples_zh:
+          - 陌生人给糖或邀请时,先跑去问大人
+          - 不上陌生人的车
+        indicator_zh: 有大人监护的演练中 3 次里≥2 次能拒绝并求助
+      - level: guided
+        zh: "网络基础:不把姓名/住址/照片给网上不认识的人,遇到就问大人"
+        en: "Online basics: does not share name/address/photos with online strangers and checks with an adult"
+        methods: [social_narratives, visual_supports, video_modeling, self_management]
+        prereq_zh: 会使用基本设备、能理解“先问大人”
+        examples_zh:
+          - 游戏里陌生人问住址时不回答,去告诉大人
+          - 不点陌生链接、见网友前先问大人
+        indicator_zh: 情境判断题中能答对 4 题里≥3 题“该不该告诉、该不该问大人”
+    citations: [steinbrenner_2020, nac_2015, gray_garand_1993, gunby_2010]
+
+  - id: emergency_basics
+    name_zh: 紧急情况基础
+    name_en: Emergency Basics
+    targets:
+      - level: foundational
+        zh: 认识危险信号并作出反应(火、烟、警报声)
+        en: Recognizes danger signals and responds (fire/smoke/alarm)
+        methods: [social_narratives, video_modeling, visual_supports, prompting]
+        prereq_zh: 能对声音/图像线索有反应
+        examples_zh:
+          - 听到火警会停下并跟着大人走
+          - 看到烟或火会离开并叫大人
+        indicator_zh: 警报演练中能在提示内离开现场并跟随大人 1 次
+      - level: guided
+        zh: 参与并配合逃生演练(听指令、排队、走安全出口)
+        en: Participates in and follows evacuation drills (listens, lines up, uses the exit)
+        methods: [task_analysis, video_modeling, visual_supports, prompting, self_management]
+        prereq_zh: 能识别警报、能跟随指令
+        examples_zh:
+          - 演练时跟着队伍走到集合点
+          - 按疏散路线走安全出口
+        indicator_zh: 逃生演练中能配合完成全流程(≤2 处提示)
+      - level: independent
+        zh: 会向大人或拨打紧急电话求助,并知道一个紧急联系人
+        en: Calls for help or dials an emergency number; knows one emergency contact
+        methods: [discrete_trial_training, task_analysis, video_modeling, time_delay, reinforcement]
+        prereq_zh: 能操作电话、能说出简单信息
+        examples_zh:
+          - 紧急时找大人大声求助
+          - 会拨打 120/110 或家长电话并说出“需要帮助”
+        indicator_zh: 模拟情境中能拨出紧急或家长电话并说明求助 1 次
+      - level: guided
+        zh: 火与烟的应对:身上着火就“停—趴—滚”,有烟压低身体往出口走,绝不躲进柜子或床下
+        en: "Fire/smoke response: stop-drop-roll if on fire, stay low under smoke toward the exit, and never hide in a cupboard or under the bed"
+        methods: [video_modeling, task_analysis, visual_supports, prompting, reinforcement]
+        prereq_zh: 能识别火警/烟雾、能跟随一步指令
+        examples_zh:
+          - 演练“停下—趴下—打滚”扑灭身上的火
+          - 有烟时弯低身体跟着大人走向出口,不躲起来
+        indicator_zh: 火情演练中能完成“停—趴—滚”并不躲藏(≤2 处提示)
+    citations: [steinbrenner_2020, nac_2015, bellini_akullian_2007]
+
+  - id: water_safety
+    name_zh: 水与泳池安全
+    name_en: Water & Pool Safety
+    targets:
+      - level: foundational
+        zh: 靠近水边(泳池、浴缸、河湖)会停下,没有大人不靠近、不下水
+        en: Stops near water (pool, bathtub, river, lake) and does not go near or in without an adult
+        methods: [social_narratives, video_modeling, visual_supports, prompting, reinforcement]
+        prereq_zh: 能听从“停/等”指令、能区分有大人/没大人
+        examples_zh:
+          - 到泳池边先停下,等大人牵手才靠近
+          - 没有大人时不自己走近河边、也不下水
+        indicator_zh: 靠近水边演练中 5 次里≥4 次能停下并等待大人
+      - level: guided
+        zh: 下水前穿好浮圈/救生衣,大人说“上来”时立刻离水
+        en: Wears a float or life jacket before entering the water and gets out right away when an adult says to exit
+        methods: [task_analysis, video_modeling, visual_supports, prompting, time_delay]
+        prereq_zh: 能在水边停下等待、能听从简单指令
+        examples_zh:
+          - 下水前让大人帮忙穿好救生衣/浮圈
+          - 听到大人说“上来”就游/走回岸边离开水
+        indicator_zh: 泳池演练中能穿好浮具,并在指令后 3 次里≥2 次及时离水
+    citations: [steinbrenner_2020, nac_2015, miltenberger_2008]
+    # TODO_CITATIONS: 尚缺“溺水预防/水中安全行为技能训练”的专项实证(如泳池安全 BST、防溺水技能研究);
+    #   citations.yaml 暂无对应 id,严禁编造。商用前请检索核验后新增专项引用,再回带到本 skill_area。
+    #   现引用的 miltenberger_2008 为安全技能 BST 的通用最佳实践框架,非水安全专项研究。
+
+notes_zh:
+  - 安全技能是对成人监护的补充,绝不能替代监护;孩子“学会”不等于“可独自应对”,真实风险场合仍须成人在场。
+  - 身体安全等敏感主题须以平静、赋能、非恐吓的方式教授,并按孩子理解水平个别化调整。
+  - methods 列出的是证据上适配该目标的方法(尤其需要真实情境演练与泛化);具体到某孩子由专业人员定夺。
+  - 本领域安全特异性证据([[miltenberger_2008]]、[[gunby_2010]]、[[bergstrom_2012]])已核验入库(verify:true),商用前再终核一次原文;涉及虐待、走失、急救等高风险内容尤须专业人员把关。
+  - 所有产出仍为需专业审核的草稿;应经专业人员与家长共同把关后使用。

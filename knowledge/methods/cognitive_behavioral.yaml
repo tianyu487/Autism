@@ -1,0 +1,89 @@
+# =====================================================================
+# 循证方法条目:认知行为策略 / 情绪调节训练(CBIS / CBT)
+# 作为「训练模块(video-modeling 内容类型)」的可生成方法:用视频分步示范
+# + 回合式练习 + 视觉支持,承载 CBT 的情绪识别与自我调节。
+# 生成时经 generate_training 注入本文件规则;经 validate_training 校验。
+#
+# 证据:CBIS 属 NCAEP 2020 的 28 项 EBP;NSP2 2015 "Cognitive Behavioral
+#      Intervention Package" 列为 Established。见 methods/_registry.yaml。
+# =====================================================================
+
+id: cognitive_behavioral
+name_zh: 认知行为·情绪调节训练
+name_en: Cognitive Behavioral Strategies (Emotion Regulation)
+evidence_level: established
+one_line_zh: 在真实小情境里,教孩子觉察并命名情绪、理解想法—感受—行为的联系,并用具体可操作的应对工具让自己平静下来。
+one_line_en: In a real little scenario, teach the child to notice and name feelings, see the thought–feeling–action link, and use concrete coping tools to calm down.
+
+# --- 适用与目标 ---
+use_for_zh:
+  - 训练一个具体、可观察的情绪调节目标(如"挫折时能用深呼吸让自己平静下来")
+  - 情绪识别与命名、理解他人感受、学会具体的平复/应对策略
+  - 把"觉察→命名→选工具→用出来"的应对流程,通过示范 + 练习变成可迁移的技能
+target_audience_zh: 有一定语言与注意力的自闭症儿童;低龄/低语言者侧重"识别—命名"与具体可视工具,认知重评/自我对话留给较大、语言较好的孩子。由家长/康复师在"轮到你"处引导与强化。
+
+# --- 方法要点(注入生成)---
+method_components_zh:
+  acceptance: 先接纳情绪——所有情绪都是正常信号,没有"坏情绪";目标是觉察与应对,不是压抑或消除。
+  recognition: 用具体、可视的方式识别与命名情绪(表情、身体线索、情绪量表/四区)。
+  link: 用简单、字面的方式呈现"想法→感受→行为"的联系(认知重评仅用于较大/语言较好的孩子)。
+  toolbox: 教具体、可操作的应对工具(深呼吸、数数、暂停、去安静角、寻求帮助),并示范"何时用、怎么用"。
+  graded_practice: 从低压力到较难情境分级练习,及时强化"用了应对工具"的尝试。
+  visual_supports: 配套情绪卡、四区/5分量表、应对工具菜单等可打印视觉支持。
+
+# --- 生成硬规则(注入 Prompt + 部分可机器校验)---
+writing_rules_zh:
+  - 每个模块只训练"一个"具体、可观察、可测量的情绪调节目标;learning_objective 写清"谁、在什么情境、做出什么、达到什么程度"。
+  - 先接纳情绪:所有情绪都是正常的,没有"坏情绪";调节的目标是觉察与应对,不是压抑或消除。
+  - 用具体、可视、字面化的方式识别与命名情绪(表情、身体感觉、情绪量表/四区),匹配孩子年龄与语言水平。
+  - 教具体、可操作的应对工具,并示范"什么时候用、怎么一步步用";低龄/低语言用具体工具,认知重评/自我对话只用于较大、语言较好的孩子。
+  - 只示范恰当的应对方式,不演示失控或负面后果;不吓唬、不评判、不给情绪贴"坏"的标签。
+  - 练习段要有真实的"留白让孩子试着用应对工具",并及时、具体地强化其尝试(而非空泛夸奖)。
+  - 开场与收尾用第一人称、故事化叙述,直接进入情境;不用"今天我们来练习/学习""这是可以学会的"等说教口吻(练习互动提示如"轮到你"除外)。
+  - 自然融入孩子的兴趣与真实触发情境(写实、贴切,不夸张),照顾其感官特点。
+
+# --- 正向强化规则 ---
+reinforcement_rules_zh:
+  - 及时:在孩子尝试使用应对工具之后马上给。
+  - 具体:说清是"哪件事"做得好(如"你自己做了三次深呼吸"),描述行为而非泛泛"真棒"。
+  - 真诚正向:强化觉察与努力;不讽刺、不与他人比较、不用"否则……"的威胁。
+
+# --- 阶段系统(用于分屏/分段渲染与校验)---
+phase_system:
+  intro:
+    zh: 开场
+    role_zh: 直接进入故事——一个会引发情绪的真实小情境正在发生(第一人称),不做说教。
+  teach:
+    zh: 示范段
+    role_zh: 分步示范应对流程(觉察情绪→命名/定位区级→选一个具体工具→用出来),只示范恰当做法。
+  practice:
+    zh: 练习段
+    role_zh: 数个回合:给一个触发情境 → 留白(轮到你)让孩子试着用工具 → 示范正确应对 → 具体鼓励。
+  choice:
+    zh: 应对选择段
+    role_zh: 从几个应对工具中选一个,每个选择都带来平和的结果(无惩罚),可点出更适合的做法。
+  review:
+    zh: 收尾
+    role_zh: 故事化收束——情绪平复、问题解决 + 温暖鼓励,让孩子带着掌控感结束。
+
+# --- 强化(正向)与每模块建议 ---
+per_module_guidance_zh:
+  min_steps: 3
+  max_steps: 6
+  min_trials: 2
+  max_trials: 4
+  min_cards: 3
+  max_cards: 6
+  pause_seconds_default: 4
+
+# --- 关联技能库 ---
+skill_domain: emotional_regulation
+
+# --- 引用(详见 knowledge/citations.yaml)---
+citations:
+  - wood_2009
+  - kuypers_2011
+  - buron_curtis_2003
+  - golan_2010
+  - steinbrenner_2020
+  - nac_2015

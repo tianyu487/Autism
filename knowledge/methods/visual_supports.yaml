@@ -1,0 +1,72 @@
+# =====================================================================
+# 循证方法条目:视觉支持·可预期训练(Visual Supports)
+# 作为「训练模块」可生成方法:教孩子使用视觉日程/流程卡/提示卡/情绪量表,
+# 让"接下来做什么、我在什么状态"看得见,增强可预期、支持独立与自我调节。
+# 证据:Visual Supports 属 NCAEP 2020 的 28 项 EBP。见 methods/_registry.yaml。
+# =====================================================================
+
+id: visual_supports
+name_zh: 视觉支持·可预期训练
+name_en: Visual Supports
+evidence_level: established
+one_line_zh: 用视觉日程、流程卡、提示卡或情绪量表,把流程与期待"看得见",帮孩子更可预期、更独立地完成日常并调节自己。
+one_line_en: Use visual schedules, cue cards, or emotion scales to make routines and expectations visible, supporting predictability, independence, and regulation.
+
+use_for_zh:
+  - 训练"使用某个视觉支持"完成一个可观察目标(看日程过渡、按流程卡做事、用情绪量表觉察)
+  - 增强日常可预期性、减少过渡焦虑,支持独立与自我调节
+target_audience_zh: 能理解图片/符号的自闭症儿童;由家长/康复师协助把视觉支持放进真实环境并示范使用。
+
+method_components_zh:
+  visual_schedule: 视觉日程——用图片排出活动顺序,知道"接下来做什么"。
+  first_then: 先—再板——先完成 A 再做 B,建立可预期与动机。
+  cue_cards: 提示卡——把关键步骤/规则/该说的话做成卡片。
+  choice_board: 选择板——用图片表达选择。
+  emotion_scale: 情绪量表——四区/5分量表把当下状态"看得见"。
+
+writing_rules_zh:
+  - 每个模块只围绕"使用一个具体的视觉支持"达成一个可观察目标;learning_objective 写清情境与达标程度。
+  - 示范"如何看、如何用"该视觉支持;只示范正确用法,视觉、具体、低刺激。
+  - 练习段让孩子自己用视觉支持完成一步/一次;及时、具体地强化使用。
+  - visual_cards 就是该视觉支持本身(日程/流程/提示/情绪卡),做到图文简洁、顺序清楚、可打印。
+  - 开场与收尾用第一人称、故事化叙述,直接进入情境;不用"今天我们来练习/学习"等说教口吻(练习互动提示如"轮到你"除外)。
+  - 自然融入孩子兴趣与真实日常场景(写实、贴切),照顾其感官特点。
+
+reinforcement_rules_zh:
+  - 及时:孩子一使用视觉支持就给。
+  - 具体:说清"你看了日程/用了卡片"这件事做得好。
+  - 真诚正向:强化使用与独立;不讽刺、不比较、不用威胁。
+
+phase_system:
+  intro:
+    zh: 开场
+    role_zh: 直接进入故事——一个可以用视觉支持来把握的日常情境正在发生(第一人称),不说教。
+  teach:
+    zh: 示范段
+    role_zh: 分步示范如何看/用该视觉支持,一步一屏,只示范正确用法。
+  practice:
+    zh: 练习段
+    role_zh: 数个回合:提示 → 留白(轮到你)让孩子用视觉支持做一步 → 示范正确用法 → 具体鼓励。
+  choice:
+    zh: 选择段
+    role_zh: 就"接下来看/用哪张卡、怎么做"给若干选项,每个选择都有温和反馈(无惩罚)。
+  review:
+    zh: 收尾
+    role_zh: 故事化收束——借视觉支持顺利完成 + 温暖鼓励,让孩子带着掌控感结束。
+
+per_module_guidance_zh:
+  min_steps: 3
+  max_steps: 6
+  min_trials: 2
+  max_trials: 4
+  min_cards: 3
+  max_cards: 6
+  pause_seconds_default: 4
+
+skill_domain: daily_living_behavior
+
+citations:
+  - steinbrenner_2020
+  - nac_2015
+  - buron_curtis_2003
+  - cn_peizhi_2016

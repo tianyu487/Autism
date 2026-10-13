@@ -1,0 +1,508 @@
+# =====================================================================
+# 引用库:社交故事及自闭症循证干预相关文献。
+# 每条产出物会回带用到的引用 id,写进 citations.md。
+#
+# ⚠️ 重要:以下条目为公认的真实文献,字段力求准确;但在"商用售卖"前,
+#    请务必核对每条的卷期/页码/DOI 原文(verify: true 的尤其要核)。
+#    请勿在未核实的情况下对外承诺具体疗效数据。
+# =====================================================================
+
+gray_garand_1993:
+  authors: "Gray, C. A., & Garand, J. D."
+  year: 1993
+  title: "Social Stories: Improving responses of students with autism with accurate social information"
+  source: "Focus on Autistic Behavior, 8(1), 1–10"
+  note_zh: 社交故事方法的最初提出文献。
+  verify: false
+
+gray_2015_newbook:
+  authors: "Gray, C."
+  year: 2015
+  title: "The New Social Story Book (Revised and Expanded 15th Anniversary Edition)"
+  source: "Future Horizons, Arlington, TX"
+  note_zh: 社交故事写作标准(含句型系统与基本句比)的权威出处。
+  verify: false
+
+kokina_kern_2010:
+  authors: "Kokina, A., & Kern, L."
+  year: 2010
+  title: "Social Story interventions for students with autism spectrum disorders: A meta-analysis"
+  source: "Journal of Autism and Developmental Disorders, 40(7), 812–826"
+  note_zh: 元分析,提示社交故事总体效应偏小到中等,且高度依赖个体化设计。
+  verify: true
+
+karkhaneh_2010:
+  authors: "Karkhaneh, M., Clark, B., Ospina, M. B., Seida, J. C., Smith, V., & Hartling, L."
+  year: 2010
+  title: "Social Stories to improve social skills in children with autism spectrum disorder: A systematic review"
+  source: "Autism, 14(6), 641–662"
+  note_zh: 系统综述,支持社交故事作为一种有前景的社交干预。
+  verify: true
+
+test_2011:
+  authors: "Test, D. W., Richter, S., Knight, V., & Spooner, F."
+  year: 2011
+  title: "A comprehensive review and meta-analysis of the social stories literature"
+  source: "Focus on Autism and Other Developmental Disabilities, 26(1), 49–62"
+  note_zh: 综述+元分析,讨论社交故事的证据质量与调节因素。
+  verify: true
+
+wong_2015:
+  authors: "Wong, C., Odom, S. L., Hume, K. A., et al."
+  year: 2015
+  title: "Evidence-based practices for children, youth, and young adults with autism spectrum disorder: A comprehensive review"
+  source: "Journal of Autism and Developmental Disorders, 45(7), 1951–1966"
+  note_zh: 将"社交叙事(social narratives)"与"视觉支持"列为循证实践(EBP)。
+  verify: false
+
+nac_2015:
+  authors: "National Autism Center"
+  year: 2015
+  title: "Findings and conclusions: National Standards Project, Phase 2"
+  source: "Randolph, MA: National Autism Center"
+  note_zh: 将"story-based interventions(含社交故事)"与"Modeling / Video Modeling"列为 Established(已确立)干预。
+  verify: false
+
+# --- 视频示范 / 回合式练习 相关(训练模块内容类型)---
+bellini_akullian_2007:
+  authors: "Bellini, S., & Akullian, J."
+  year: 2007
+  title: "A meta-analysis of video modeling and video self-modeling interventions for children and adolescents with autism spectrum disorders"
+  source: "Exceptional Children, 73(3), 264–287"
+  note_zh: 元分析:视频示范/视频自我示范对 ASD 儿童青少年有效,所学技能可维持并泛化。
+  verify: true
+
+charlop_christy_2000:
+  authors: "Charlop-Christy, M. H., Le, L., & Freeman, K. A."
+  year: 2000
+  title: "A comparison of video modeling with in vivo modeling for teaching children with autism"
+  source: "Journal of Autism and Developmental Disorders, 30(6), 537–552"
+  note_zh: 视频示范在教学效率与泛化上不劣于、部分优于真人示范。
+  verify: true
+
+# =====================================================================
+# 循证实践总览:两大权威分类体系(NCAEP 2020 / NSP2 2015)
+# =====================================================================
+steinbrenner_2020:
+  authors: "Steinbrenner, J. R., Hume, K., Odom, S. L., Morin, K. L., Nowell, S. W., Tomaszewski, B., Szendrey, S., McIntyre, N. S., Yücesoy-Özkan, S., & Savage, M. N."
+  year: 2020
+  title: "Evidence-Based Practices for Children, Youth, and Young Adults with Autism"
+  source: "Chapel Hill, NC: The University of North Carolina, Frank Porter Graham Child Development Institute, National Clearinghouse on Autism Evidence and Practice (NCAEP). ERIC ED609029"
+  note_zh: NCAEP 2020 报告,确认 28 项聚焦式循证实践(EBP)。本方法库的国际证据主锚点之一。
+  verify: false
+
+hume_2021:
+  authors: "Hume, K., Steinbrenner, J. R., Odom, S. L., Morin, K. L., Nowell, S. W., Tomaszewski, B., Szendrey, S., McIntyre, N. S., Yücesoy-Özkan, S., & Savage, M. N."
+  year: 2021
+  title: "Evidence-Based Practices for Children, Youth, and Young Adults with Autism: Third Generation Review"
+  source: "Journal of Autism and Developmental Disorders, 51(11), 4013–4032. https://doi.org/10.1007/s10803-020-04844-2"
+  note_zh: NCAEP 2020 报告的同行评审版(含更正 2022)。28 项 EBP 的正式发表来源。
+  verify: false
+
+# =====================================================================
+# 各方法的奠基 / 元分析文献(社交 + 情绪相关)
+# =====================================================================
+schreibman_2015:
+  authors: "Schreibman, L., Dawson, G., Stahmer, A. C., Landa, R., Rogers, S. J., McGee, G. G., Kasari, C., Ingersoll, B., Kaiser, A. P., Bruinsma, Y., McNerney, E., Wetherby, A., & Halladay, A."
+  year: 2015
+  title: "Naturalistic Developmental Behavioral Interventions: Empirically validated treatments for autism spectrum disorder"
+  source: "Journal of Autism and Developmental Disorders, 45(8), 2411–2428. https://doi.org/10.1007/s10803-015-2407-8"
+  note_zh: 自然发展行为干预(NDBI)的定义性文献(融合发展科学与 ABA)。
+  verify: false
+
+dawson_2010:
+  authors: "Dawson, G., Rogers, S., Munson, J., Smith, M., Winter, J., Greenson, J., Donaldson, A., & Varley, J."
+  year: 2010
+  title: "Randomized, controlled trial of an intervention for toddlers with autism: The Early Start Denver Model"
+  source: "Pediatrics, 125(1), e17–e23. https://doi.org/10.1542/peds.2009-0958"
+  note_zh: ESDM 早期介入丹佛模式的关键 RCT(改善认知、语言、社交)。
+  verify: false
+
+kasari_2006:
+  authors: "Kasari, C., Freeman, S., & Paparella, T."
+  year: 2006
+  title: "Joint attention and symbolic play in young children with autism: A randomized controlled intervention study"
+  source: "Journal of Child Psychology and Psychiatry, 47(6), 611–620. https://doi.org/10.1111/j.1469-7610.2005.01567.x"
+  note_zh: JASPER(共同注意/象征游戏)的奠基 RCT;共同注意是社交发展的关键。
+  verify: false
+
+wood_2009:
+  authors: "Wood, J. J., Drahota, A., Sze, K., Har, K., Chiu, A., & Langer, D. A."
+  year: 2009
+  title: "Cognitive behavioral therapy for anxiety in children with autism spectrum disorders: A randomized, controlled trial"
+  source: "Journal of Child Psychology and Psychiatry, 50(3), 224–234. https://doi.org/10.1111/j.1469-7610.2008.01948.x"
+  note_zh: 认知行为疗法(CBT)改善 ASD 儿童焦虑的 RCT;情绪调节相关证据。
+  verify: false
+
+gates_2017:
+  authors: "Gates, J. A., Kang, E., & Lerner, M. D."
+  year: 2017
+  title: "Efficacy of group social skills interventions for youth with autism spectrum disorder: A systematic review and meta-analysis"
+  source: "Clinical Psychology Review, 52, 164–181. https://doi.org/10.1016/j.cpr.2017.01.006"
+  note_zh: 社交技能小组干预的系统综述与元分析。
+  verify: false
+
+golan_2010:
+  authors: "Golan, O., Ashwin, E., Granader, Y., McClintock, S., Day, K., Leggett, V., & Baron-Cohen, S."
+  year: 2010
+  title: 'Enhancing emotion recognition in children with autism spectrum conditions: An intervention using animated vehicles with real emotional faces ("The Transporters")'
+  source: "Journal of Autism and Developmental Disorders, 40(3), 269–279. https://doi.org/10.1007/s10803-009-0862-9"
+  note_zh: 情绪识别训练("The Transporters")的干预研究;情绪认知相关证据。
+  verify: false
+
+bondy_frost_1994:
+  authors: "Bondy, A. S., & Frost, L. A."
+  year: 1994
+  title: "The Picture Exchange Communication System"
+  source: "Focus on Autistic Behavior, 9(3), 1–19. https://doi.org/10.1177/108835769400900301"
+  note_zh: 图片交换沟通系统(PECS)奠基文献;NCAEP 2020 已并入 AAC。
+  verify: false
+
+lovaas_1987:
+  authors: "Lovaas, O. I."
+  year: 1987
+  title: "Behavioral treatment and normal educational and intellectual functioning in young autistic children"
+  source: "Journal of Consulting and Clinical Psychology, 55(1), 3–9"
+  note_zh: 早期强化行为干预(EIBI/回合式教学 DTT)的奠基研究。
+  verify: false
+
+beaumont_sofronoff_2008:
+  authors: "Beaumont, R., & Sofronoff, K."
+  year: 2008
+  title: "A multi-component social skills intervention for children with Asperger syndrome: The Junior Detective Training Program"
+  source: "Journal of Child Psychology and Psychiatry, 49(7), 743–753"
+  note_zh: 多成分社交技能干预(后称 Secret Agent Society);社交+情绪。DOI 待核。
+  verify: true
+
+koegel_odell_1987:
+  authors: "Koegel, R. L., O'Dell, M. C., & Koegel, L. K."
+  year: 1987
+  title: "A natural language teaching paradigm for nonverbal autistic children"
+  source: "Journal of Autism and Developmental Disorders, 17(2), 187–200"
+  note_zh: 关键反应训练(PRT)的奠基文献。卷期存在异文,引用前须核对原文。
+  verify: true
+
+krantz_mcclannahan_1993:
+  authors: "Krantz, P. J., & McClannahan, L. E."
+  year: 1993
+  title: "Teaching children with autism to initiate to peers: Effects of a script-fading procedure"
+  source: "Journal of Applied Behavior Analysis, 26(1), 121–132"
+  note_zh: 脚本教学(Scripting)+脚本褪除;社交发起。卷期/DOI 待核。
+  verify: true
+
+lee_2007:
+  authors: "Lee, S., Simpson, R. L., & Shogren, K. A."
+  year: 2007
+  title: "Effects and implications of self-management for students with autism: A meta-analysis"
+  source: "Focus on Autism and Other Developmental Disabilities, 22(1), 2–13"
+  note_zh: 自我管理(Self-Management)的元分析。卷期/DOI 待核。
+  verify: true
+
+chan_2009:
+  authors: "Chan, J. M., Lang, R., Rispoli, M., O'Reilly, M., Sigafoos, J., & Cole, H."
+  year: 2009
+  title: "Use of peer-mediated interventions in the treatment of autism spectrum disorders: A systematic review"
+  source: "Research in Autism Spectrum Disorders, 3(4), 876–889"
+  note_zh: 同伴中介干预(PBII/PMII)的系统综述。卷期/DOI 待核。
+  verify: true
+
+odom_2010:
+  authors: "Odom, S. L., Boyd, B. A., Hall, L. J., & Hess, K."
+  year: 2010
+  title: "Evaluation of comprehensive treatment models for individuals with autism spectrum disorders"
+  source: "Journal of Autism and Developmental Disorders, 40(4), 425–436"
+  note_zh: 综合治疗模式(CTM,如 ESDM/TEACCH/LEAP)的评估综述。卷期/DOI 待核。
+  verify: true
+
+cooper_2007:
+  authors: "Cooper, J. O., Heron, T. E., & Heward, W. L."
+  year: 2007
+  title: "Applied Behavior Analysis (2nd ed.)"
+  source: "Upper Saddle River, NJ: Pearson"
+  note_zh: 应用行为分析权威教材;提示、强化、时延、任务分析等成分实践的标准出处。
+  verify: false
+
+# =====================================================================
+# 情绪/社交 结构化项目与评估框架
+# =====================================================================
+kuypers_2011:
+  authors: "Kuypers, L. M."
+  year: 2011
+  title: "The Zones of Regulation: A curriculum designed to foster self-regulation and emotional control"
+  source: "San Jose, CA: Think Social Publishing"
+  note_zh: 情绪调节区域(蓝/绿/黄/红四区)自我调节课程;基于 CBT。作者/版本待核。
+  verify: true
+
+buron_curtis_2003:
+  authors: "Buron, K. D., & Curtis, M."
+  year: 2003
+  title: "The Incredible 5-Point Scale"
+  source: "Shawnee Mission, KS: AAPC Publishing"
+  note_zh: 神奇的 5 分量表:把情绪/行为分 5 级并配应对策略,专为 ASD 自我调节设计。版本待核。
+  verify: true
+
+prizant_2006:
+  authors: "Prizant, B. M., Wetherby, A. M., Rubin, E., Laurent, A. C., & Rydell, P. J."
+  year: 2006
+  title: "The SCERTS Model: A Comprehensive Educational Approach for Children with Autism Spectrum Disorders"
+  source: "Baltimore, MD: Paul H. Brookes"
+  note_zh: SCERTS 模式(社会沟通-情绪调节-交往支持);按发展阶段序列化社交与情绪目标。待核。
+  verify: true
+
+sundberg_2008:
+  authors: "Sundberg, M. L."
+  year: 2008
+  title: "VB-MAPP: Verbal Behavior Milestones Assessment and Placement Program"
+  source: "Concord, CA: AVB Press"
+  note_zh: 语言行为里程碑评估(含社交行为、社交游戏、集体技能);技能分级的常用骨架。待核。
+  verify: true
+
+# =====================================================================
+# 中国指南 / 标准 / 政策(本土语境与合规)
+# =====================================================================
+cn_guideline_2010:
+  authors: "中华人民共和国卫生部办公厅"
+  year: 2010
+  title: "儿童孤独症诊疗康复指南(卫办医政发〔2010〕123号)"
+  source: "北京:卫生部;转载见国家心理健康和精神卫生防治中心 ncmhc.org.cn"
+  note_zh: 中国孤独症诊疗康复的基础性指南。干预原则:早期长程、科学系统、个体化、家庭参与。方法清单以原文 PDF 为准。
+  verify: false
+
+cn_screening_2022:
+  authors: "国家卫生健康委办公厅"
+  year: 2022
+  title: "0～6岁儿童孤独症筛查干预服务规范(试行)(国卫办妇幼发〔2022〕12号)"
+  source: "北京:国家卫生健康委;中国政府网 gov.cn"
+  note_zh: 0–6 岁筛查—诊断—干预康复的公共卫生服务路径(健康教育/筛查/诊断/干预)。
+  verify: false
+
+cn_gbt_47041_2026:
+  authors: "国家市场监督管理总局、国家标准化管理委员会"
+  year: 2026
+  title: "GB/T 47041-2026 孤独症儿童康复机构服务质量及评价规范"
+  source: "发布 2026-01-28,实施 2026-05-01(推荐性国家标准)"
+  note_zh: 首个孤独症康复机构服务国标(0–14岁):服务条件/规范/效果三级评价;个别化;康教结合。
+  verify: false
+
+cn_cdpf_group_2020:
+  authors: "中国残疾人康复协会"
+  year: 2020
+  title: "孤独症儿童康复服务(团体标准)"
+  source: "中国残疾人康复协会团体标准 cncard.org.cn"
+  note_zh: 首个孤独症康复服务团体标准:场地功能分区、专业团队、干预人员配比;纳入 VB-MAPP 为评估工具。多方转述,待核。
+  verify: true
+
+cn_care_action_2024:
+  authors: "中国残联、教育部、民政部、国家卫生健康委等七部门"
+  year: 2024
+  title: "孤独症儿童关爱促进行动实施方案(2024—2028年)"
+  source: "北京:中国残联 cdpf.org.cn(印发 2024-07-21)"
+  note_zh: 三大行动:康复服务提升、教康融合、家庭暖心;强调以家庭为中心的早期干预与家长培训。
+  verify: false
+
+cn_peizhi_2016:
+  authors: "中华人民共和国教育部"
+  year: 2016
+  title: "培智学校义务教育课程标准(2016年版)·生活适应课程标准"
+  source: "北京:教育部(2016-12-13 发布);moe.gov.cn"
+  note_zh: 特殊教育课标;《生活适应》心理健康部分含表达情绪、分享合作、调控情绪等社交/情绪目标。
+  verify: false
+
+# =====================================================================
+# 游戏与象征游戏发展 · 执行功能/灵活性 · 情绪与内感受
+# 2026-07-13 联网核验卷期/DOI/ISBN 后入库;先置 verify:true,商用前再终核一次原文。
+# 支撑新增知识模块:skills/play_leisure、skills/cognitive_flexibility、emotion_library。
+# =====================================================================
+parten_1932:
+  authors: "Parten, M. B."
+  year: 1932
+  title: "Social participation among pre-school children"
+  source: "Journal of Abnormal and Social Psychology, 27(3), 243–269. https://doi.org/10.1037/h0074524"
+  note_zh: 帕滕社交游戏六阶段(独自→旁观→平行→联合→合作)的奠基文献;游戏社交发展序列骨架。
+  verify: true
+
+piaget_1962:
+  authors: "Piaget, J."
+  year: 1962
+  title: "Play, Dreams and Imitation in Childhood"
+  source: "New York, NY: W. W. Norton(原著法文 1945;C. Gattegno & F. M. Hodgson 英译)"
+  note_zh: 象征/假装游戏发展的经典理论来源(感觉运动→功能→象征游戏);象征游戏分级的理论依据。
+  verify: true
+
+westby_1980:
+  authors: "Westby, C. E."
+  year: 1980
+  title: "Assessment of cognitive and language abilities through play"
+  source: "Language, Speech, and Hearing Services in Schools, 11(3), 154–168. https://doi.org/10.1044/0161-1461.1103.154"
+  note_zh: Westby 象征游戏量表(约 18 个月–5/7 岁的十阶段游戏发展);象征游戏目标细分的依据。
+  verify: true
+
+lifter_1993:
+  authors: "Lifter, K., Sulzer-Azaroff, B., Anderson, S. R., & Cowdery, G. E."
+  year: 1993
+  title: "Teaching play activities to preschool children with disabilities: The importance of developmental considerations"
+  source: "Journal of Early Intervention, 17(2), 139–159. https://doi.org/10.1177/105381519301700206"
+  note_zh: 依发展水平教游戏技能的重要性;发展适宜的游戏教学证据。
+  verify: true
+
+kenworthy_2014:
+  authors: "Kenworthy, L., Anthony, L. G., Naiman, D. Q., Cannon, L., Wills, M. C., Luong-Tran, C., et al."
+  year: 2014
+  title: "Randomized controlled effectiveness trial of executive function intervention for children on the autism spectrum"
+  source: "Journal of Child Psychology and Psychiatry, 55(4), 374–383. https://doi.org/10.1111/jcpp.12161"
+  note_zh: "Unstuck and On Target(执行功能/灵活性课程)对比社交技能干预的 RCT;问题解决、灵活性、课堂行为改善更大。完整作者列表待终核。"
+  verify: true
+
+cannon_2011:
+  authors: "Cannon, L., Kenworthy, L., Alexander, K. C., Werner, M. A., & Anthony, L."
+  year: 2011
+  title: "Unstuck and On Target! An Executive Function Curriculum to Improve Flexibility for Children with Autism Spectrum Disorders (Research Edition)"
+  source: "Baltimore, MD: Paul H. Brookes Publishing. ISBN 978-1-59857-203-2"
+  note_zh: 执行功能/灵活性课堂课程(约 8–11 岁高功能 ASD);认知灵活性与问题解决干预教材。另有第二版。
+  verify: true
+
+ekman_1992:
+  authors: "Ekman, P."
+  year: 1992
+  title: "An argument for basic emotions"
+  source: "Cognition and Emotion, 6(3–4), 169–200. https://doi.org/10.1080/02699939208411068"
+  note_zh: 基本情绪理论;情绪库中基础情绪清单的依据。
+  verify: true
+
+craig_2002:
+  authors: "Craig, A. D."
+  year: 2002
+  title: "How do you feel? Interoception: the sense of the physiological condition of the body"
+  source: "Nature Reviews Neuroscience, 3(8), 655–666. https://doi.org/10.1038/nrn894"
+  note_zh: 内感受(interoception)神经科学奠基综述;情绪之身体信号(身体侦探玩法)的理论基础。
+  verify: true
+
+mahler_2015:
+  authors: "Mahler, K. J."
+  year: 2015
+  title: "Interoception: The Eighth Sensory System"
+  source: "Shawnee Mission, KS: AAPC Publishing. ISBN 978-1-942197-14-0(部分书目标 2017 重印,原版年份待终核)"
+  note_zh: 面向 ASD 的内感受实用干预(自我调节/自我觉察);身体信号与调节策略的实务来源。
+  verify: true
+
+# =====================================================================
+# 安全技能 · 入学/TEACCH 工作系统 证据
+# 2026-07-13 联网核验卷期/DOI 后入库;verify:true 起步,商用前再终核原文。
+# 支撑:skills/safety_skills、skills/school_readiness。
+# =====================================================================
+miltenberger_2008:
+  authors: "Miltenberger, R. G."
+  year: 2008
+  title: "Teaching safety skills to children: Prevention of firearm injury as an exemplar of best practice in assessment, training, and generalization of safety skills"
+  source: "Behavior Analysis in Practice, 1(1), 30–36. https://doi.org/10.1007/BF03391718"
+  note_zh: 用行为技能训练(讲解→示范→角色扮演→反馈)教儿童安全技能、并促进真实情境泛化的最佳实践范例。
+  verify: true
+
+gunby_2010:
+  authors: "Gunby, K. V., Carr, J. E., & LeBlanc, L. A."
+  year: 2010
+  title: "Teaching abduction-prevention skills to children with autism"
+  source: "Journal of Applied Behavior Analysis, 43(1), 107–112. https://doi.org/10.1901/jaba.2010.43-107"
+  note_zh: 用行为技能训练教自闭症儿童防拐/防诱骗技能。
+  verify: true
+
+bergstrom_2012:
+  authors: "Bergstrom, R., Najdowski, A. C., & Tarbox, J."
+  year: 2012
+  title: "Teaching children with autism to seek help when lost in public"
+  source: "Journal of Applied Behavior Analysis, 45(1), 191–195. https://doi.org/10.1901/jaba.2012.45-191"
+  note_zh: 教自闭症儿童走失时向店员求助(规则+角色扮演+表扬),并泛化到未训练场所。子agent 原误记为 2014,经核实实为 2012。
+  verify: true
+
+hume_odom_2007:
+  authors: "Hume, K., & Odom, S."
+  year: 2007
+  title: "Effects of an individual work system on the independent functioning of students with autism"
+  source: "Journal of Autism and Developmental Disorders, 37(6), 1166–1180. https://doi.org/10.1007/s10803-006-0260-5"
+  note_zh: TEACCH「独立工作系统」提升自闭症学生独立完成任务的实证研究;入学准备之独立工作系统的直接证据。
+  verify: true
+
+virues_ortega_2013:
+  authors: "Virués-Ortega, J., Julio, F. M., & Pastor-Barriuso, R."
+  year: 2013
+  title: "The TEACCH program for children and adults with autism: A meta-analysis of intervention studies"
+  source: "Clinical Psychology Review, 33(8), 940–953. https://doi.org/10.1016/j.cpr.2013.07.005"
+  note_zh: TEACCH 元分析(纳入 13 研究、172 人);对知觉/运动/言语/认知为小效应,沟通与日常生活效应小或可忽略,勿夸大疗效。
+  verify: true
+
+# =====================================================================
+# 心理理论(观点采择) · 职业前(视频示范/模拟) · 感觉统合(证据混杂)
+# 2026-07-13 联网核验卷期/DOI/ISBN 后入库;verify:true 起步,商用前再终核原文。
+# 支撑:social_interaction(perspective_taking)、prevocational、motor_sensory。
+# =====================================================================
+baron_cohen_1985:
+  authors: "Baron-Cohen, S., Leslie, A. M., & Frith, U."
+  year: 1985
+  title: 'Does the autistic child have a "theory of mind"?'
+  source: "Cognition, 21(1), 37–46. https://doi.org/10.1016/0010-0277(85)90022-8"
+  note_zh: 心理理论(ToM)研究的奠基文献;自闭症儿童在错误信念任务上的困难。观点采择目标的理论根基。
+  verify: true
+
+wellman_2001:
+  authors: "Wellman, H. M., Cross, D., & Watson, J."
+  year: 2001
+  title: "Meta-analysis of theory-of-mind development: The truth about false belief"
+  source: "Child Development, 72(3), 655–684. https://doi.org/10.1111/1467-8624.00304"
+  note_zh: 错误信念/心理理论发展的大型元分析(178 研究);ToM 在学前期发生概念性转变,为分级序列提供依据。
+  verify: true
+
+fisher_happe_2005:
+  authors: "Fisher, N., & Happé, F."
+  year: 2005
+  title: "A training study of theory of mind and executive function in children with autistic spectrum disorders"
+  source: "Journal of Autism and Developmental Disorders, 35(6), 757–771. https://doi.org/10.1007/s10803-005-0022-9"
+  note_zh: ToM 训练研究:短期个别化训练可提升 ASD 儿童的心理理论任务表现;支持观点采择可教。
+  verify: true
+
+howlin_1999:
+  authors: "Howlin, P., Baron-Cohen, S., & Hadwin, J."
+  year: 1999
+  title: "Teaching Children with Autism to Mind-Read: A Practical Guide for Teachers and Parents"
+  source: "Chichester: John Wiley & Sons. ISBN 978-0-471-97623-3"
+  note_zh: 教自闭症儿童「读心」的实操指南(情绪、看到即知道、信念三条线索序列);观点采择教学的实务来源。
+  verify: true
+
+lattimore_2006:
+  authors: "Lattimore, L. P., Parsons, M. B., & Reid, D. H."
+  year: 2006
+  title: "Enhancing job-site training of supported workers with autism: A reemphasis on simulation"
+  source: "Journal of Applied Behavior Analysis, 39(1), 91–102. https://doi.org/10.1901/jaba.2006.154-04"
+  note_zh: 现场+模拟训练对比纯现场训练教自闭症支持性就业者工作技能,前者习得更快;职业前技能证据。DOI 待终核。
+  verify: true
+
+van_laarhoven_2010:
+  authors: "Van Laarhoven, T., Kraus, E., Karpman, K., Nizzi, R., & Valentino, J."
+  year: 2010
+  title: "A comparison of picture and video prompts to teach daily living skills to individuals with autism"
+  source: "Focus on Autism and Other Developmental Disabilities, 25(4), 195–208. https://doi.org/10.1177/1088357610380412"
+  note_zh: 视频提示 vs 图片提示教自闭症者生活/作业技能;视频提示更有效更高效。职业前与生活自理的视频提示证据。
+  verify: true
+
+allen_2010:
+  authors: "Allen, K. D., Wallace, D. P., Renes, D., Bowen, S. L., & Burke, R. V."
+  year: 2010
+  title: "Use of video modeling to teach vocational skills to adolescents and young adults with autism spectrum disorders"
+  source: "Education and Treatment of Children, 33(3), 339–349. https://doi.org/10.1353/etc.0.0101"
+  note_zh: 用视频示范教 ASD 青少年/青年职业技能(零售场景);职业前工作技能的视频示范证据。
+  verify: true
+
+schaaf_2014:
+  authors: "Schaaf, R. C., Benevides, T., Mailloux, Z., Faller, P., Hunt, J., van Hooydonk, E., Freeman, R., Leiby, B., Sendecki, J., & Kelly, D."
+  year: 2014
+  title: "An intervention for sensory difficulties in children with autism: A randomized trial"
+  source: "Journal of Autism and Developmental Disorders, 44(7), 1493–1506. https://doi.org/10.1007/s10803-013-1983-8"
+  note_zh: Ayres 感觉统合 OT 干预对比常规照护的 RCT(4–8 岁,n=32),目标达成量表显著改善;样本小、部分结局与评定相关,证据仍新兴,勿据此宣称改善核心症状。
+  verify: true
+
+case_smith_2015:
+  authors: "Case-Smith, J., Weaver, L. L., & Fristad, M. A."
+  year: 2015
+  title: "A systematic review of sensory processing interventions for children with autism spectrum disorders"
+  source: "Autism, 19(2), 133–148. https://doi.org/10.1177/1362361313517762"
+  note_zh: 感觉处理干预系统综述(19 研究);感觉统合疗法证据有限,感觉性策略证据更弱;须谨慎、勿夸大疗效。
+  verify: true

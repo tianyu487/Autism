@@ -1,0 +1,166 @@
+{
+  "title_zh": "跟着全班一起做",
+  "title_en": "Following Group Directions",
+  "learning_objective": "当老师对全班发出 1–2 步指令时,孩子能借视觉提示或看同伴示范跟着完成,提示≤1 次,5 次中≥4 次达成。",
+  "method_id": "visual_supports",
+  "cast": "classroom_teacher",
+  "intro_zh": "在教室里,老师会对全班小朋友说要做什么。我可以看看墙上的步骤图,也看看旁边的小朋友,跟着大家一起做。",
+  "intro_en": "In the classroom, the teacher tells the whole class what to do. I can look at the picture steps on the wall and at my friends, and do it along with everyone.",
+  "steps": [
+    {
+      "index": 1,
+      "text_zh": "老师说话时,我看着老师、认真听。",
+      "text_en": "When the teacher speaks, I look and listen.",
+      "narration_zh": "老师对全班说话时,我先看着老师,认真听她说要做什么。",
+      "narration_en": "When the teacher talks to the class, I look at the teacher and listen carefully.",
+      "visual_keyword": "看老师听",
+      "icon": "👀",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 2,
+      "text_zh": "我看看墙上的步骤图,知道要做什么。",
+      "text_en": "I look at the picture steps to know what to do.",
+      "narration_zh": "我看看墙上的步骤图卡,就知道现在要做什么。",
+      "narration_en": "I look at the picture steps on the wall, and I know what to do now.",
+      "visual_keyword": "看图提示",
+      "icon": "🖼️",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 3,
+      "text_zh": "我也看看旁边的小朋友怎么做。",
+      "text_en": "I also look at what my friends are doing.",
+      "narration_zh": "我看看旁边的小朋友怎么做,跟着他们一起。",
+      "narration_en": "I look at what my friends are doing and follow along with them.",
+      "visual_keyword": "看同伴",
+      "icon": "👧",
+      "duration_hint": 6.0
+    },
+    {
+      "index": 4,
+      "text_zh": "我跟着大家一起做完。",
+      "text_en": "I do it along with everyone.",
+      "narration_zh": "我跟着全班一起,一步一步把老师说的做完。",
+      "narration_en": "I follow along with the whole class and finish what the teacher asked, step by step.",
+      "visual_keyword": "一起做",
+      "icon": "✅",
+      "duration_hint": 6.0
+    }
+  ],
+  "practice_trials": [
+    {
+      "index": 1,
+      "prompt_zh": "老师对全班说“把书翻到第 3 页,坐好”。轮到你,试试看怎么做。",
+      "prompt_en": "The teacher tells the class: turn to page 3 and sit up. Your turn — give it a try.",
+      "pause_seconds": 4.0,
+      "answer_zh": "我先看图,再照着把书翻好、坐好。",
+      "answer_en": "I look at the picture steps, then turn to the page and sit up.",
+      "reinforce_zh": "你跟着指令一步步做,做得很好。",
+      "reinforce_en": "You followed the directions step by step. Well done.",
+      "icon": "🌟"
+    },
+    {
+      "index": 2,
+      "prompt_zh": "如果没完全听清老师说什么,你可以怎么办?",
+      "prompt_en": "If you did not fully hear what the teacher said, what can you do?",
+      "pause_seconds": 4.0,
+      "answer_zh": "我看看墙上的图,或看看旁边的小朋友。",
+      "answer_en": "I look at the picture on the wall, or at my friends.",
+      "reinforce_zh": "你会用提示帮自己,真棒。",
+      "reinforce_en": "You used the supports to help yourself. Great job.",
+      "icon": "🌟"
+    },
+    {
+      "index": 3,
+      "prompt_zh": "做完了老师说要收拾,你可以怎么做?",
+      "prompt_en": "When the teacher says it is time to tidy up, what can you do?",
+      "pause_seconds": 5.0,
+      "answer_zh": "我跟着大家一起把东西收好。",
+      "answer_en": "I tidy up together with everyone.",
+      "reinforce_zh": "你和全班一起完成,做得好。",
+      "reinforce_en": "You finished together with the whole class. Well done.",
+      "icon": "🌟"
+    }
+  ],
+  "social_choice": {
+    "scenario_zh": "老师对全班说要做一件事,你没完全听清……你可以怎么做?",
+    "scenario_en": "The teacher tells the class to do something and you did not fully hear... what can you do?",
+    "icon": "🤝",
+    "options": [
+      {
+        "label_zh": "看墙上的步骤图",
+        "label_en": "Look at the picture steps",
+        "outcome_zh": "你看图就知道要做什么,顺利跟上了大家。",
+        "outcome_en": "You look at the pictures, know what to do, and keep up with everyone.",
+        "icon": "🖼️"
+      },
+      {
+        "label_zh": "看旁边小朋友怎么做",
+        "label_en": "Watch what a friend does",
+        "outcome_zh": "你看看同伴,照着做,也跟上了全班。",
+        "outcome_en": "You watch your friend, do the same, and keep up with the class.",
+        "icon": "👧"
+      }
+    ]
+  },
+  "visual_cards": [
+    {
+      "kind": "step",
+      "title_zh": "跟上全班三步",
+      "title_en": "Three steps to follow along",
+      "caption_zh": "看老师听 → 看步骤图 → 跟着做",
+      "caption_en": "Look & listen → Check the pictures → Do it along",
+      "icon": "👩‍🏫"
+    },
+    {
+      "kind": "reminder",
+      "title_zh": "我可以用的帮助",
+      "title_en": "Supports I can use",
+      "caption_zh": "墙上的步骤图 · 旁边的小朋友",
+      "caption_en": "The picture steps · My friends nearby",
+      "icon": "🖼️"
+    },
+    {
+      "kind": "schedule",
+      "title_zh": "课堂顺序",
+      "title_en": "Classroom order",
+      "caption_zh": "听指令 → 看提示 → 一起做 → 完成",
+      "caption_en": "Listen → Check supports → Do together → Done",
+      "icon": "🔁"
+    },
+    {
+      "kind": "emotion",
+      "title_zh": "没听清也没关系",
+      "title_en": "If I miss it, that's okay",
+      "caption_zh": "没听清 → 看提示 → 我也能跟上",
+      "caption_en": "Missed it → Use supports → I can still keep up",
+      "icon": "🙂"
+    }
+  ],
+  "review_zh": "我学会了在教室里跟着全班一起做:看着老师认真听,看看墙上的步骤图,也看看小朋友,再跟着大家一步步做完。就算没听清,我也有办法跟上。",
+  "review_en": "I learned to follow along with the class: I look at the teacher and listen, check the picture steps, watch my friends, and do it step by step with everyone. Even if I miss something, I have ways to keep up.",
+  "citations_used": ["steinbrenner_2020", "cooper_2007", "nac_2015"],
+  "review_flags": [
+    "草稿:集体指令须在真实集体情境专门训练,1 对 1 会做不等于面向全班时会反应。",
+    "本课引用为通用循证锚点(verify:false),商用前须补齐更针对性证据并核对原文。"
+  ],
+  "page_visuals": {
+    "title": {"roles": ["boy_ming", "teacher", "peer_child"], "visual_en": "a warm cheerful preschool classroom, a friendly female teacher and a few happy young children doing a simple activity together at low tables, calm and welcoming"},
+    "intro": {"roles": ["boy_ming", "teacher"], "visual_en": "a young boy in a cozy preschool classroom with a female teacher nearby and a wall of simple picture-step cards, the boy looking calm and ready to begin"},
+    "step1": {"roles": ["boy_ming", "teacher"], "seed": 256, "visual_en": "a friendly female teacher standing and gently addressing the whole class, a young boy sitting attentively and looking up at the teacher listening carefully, the boy shown with a clean natural side-profile face looking up at the teacher, every face natural clean and well-formed, no distorted or warped faces, clear eyes with round dark pupils and visible white sclera"},
+    "step2": {"roles": ["boy_ming"], "visual_en": "a classroom wall with a row of simple colorful picture-step cards and an icon visual schedule made of little drawings and pictograms, a young boy standing in front of the wall and looking up at the picture steps attentively"},
+    "step3": {"roles": ["boy_ming", "peer_child"], "seed": 6060, "visual_en": "two young children at a low classroom table, one classmate child busy and focused doing a simple craft activity, the boy sitting close beside and watching attentively how the classmate does it"},
+    "step4": {"roles": ["boy_ming", "peer_child"], "visual_en": "a small group of young children doing the same simple activity together at a low table, the boy joining in and doing it along with the others, everyone calm and engaged"},
+    "trial1_prompt": {"roles": ["boy_ming", "teacher"], "visual_en": "a female teacher gently giving the class an instruction, a young boy sitting at his desk with a picture book in front of him, ready to follow along"},
+    "trial1_answer": {"roles": ["boy_ming"], "visual_en": "a young boy sitting up nicely at his desk and calmly turning to a page of his picture book, following the instruction"},
+    "trial2_prompt": {"roles": ["boy_ming"], "seed": 11, "visual_en": "a young boy at his classroom desk pausing and thinking, looking a little unsure about what to do next"},
+    "trial2_answer": {"roles": ["boy_ming"], "visual_en": "a young boy looking up at the row of simple picture-step cards on the classroom wall to find out what to do"},
+    "trial3_prompt": {"roles": ["boy_ming", "peer_child"], "seed": 909, "visual_en": "young children finishing an activity at the tables during tidy-up time in the classroom, a young boy in front ready to help put things away, a background classmate who is a normal front-facing boy with a well-formed natural face, gentle depth-of-field background blur kept soft and out of focus, every face natural clean and well-formed, no distorted or warped faces, clear eyes with round dark pupils and visible white sclera"},
+    "trial3_answer": {"roles": ["boy_ming", "peer_child"], "seed": 909, "visual_en": "two young children close together tidying up the classroom and putting toys and materials neatly into a basket, shown close up at upper body, both children facing forward, cheerful and engaged, both children with big bright full lively sparkling eyes and clear round catchlight highlights, warm happy expressive faces"},
+    "choice": {"roles": ["boy_ming", "teacher"], "visual_en": "a female teacher giving the whole class an instruction, a young boy who did not fully catch it pausing to think about what to do"},
+    "choice_A": {"roles": ["boy_ming"], "visual_en": "a young boy looking up at the simple picture-step cards on the classroom wall to know what to do"},
+    "choice_B": {"roles": ["boy_ming", "peer_child"], "visual_en": "a young boy watching the classmate beside him to see what to do, ready to do the same"},
+    "review": {"roles": ["boy_ming", "teacher", "peer_child"], "visual_en": "a happy young boy in the classroom having followed along with the class, a friendly teacher and classmates nearby, warm and cheerful"}
+  }
+}
